@@ -15,8 +15,7 @@ const Container = styled.div`
   margin: auto;
   border: 5px solid #80ce2d;
   display: flex;
-  flex-direction: row;
-  gap-0;
+  flex-direction: column;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 1%;
@@ -24,17 +23,13 @@ const Container = styled.div`
 
   scrollbar-width: thin;
   scrollbar-color: #80ce2d transparent;
-  scrollbar-border-radius: 2px;
-
   &::-webkit-scrollbar {
     width: 8px;
   }
-
   &::-webkit-scrollbar-thumb {
     background-color: #80ce2d;
     border-radius: 10px;
   }
-
   &::-webkit-scrollbar-track {
     background: transparent;
   }
@@ -44,6 +39,7 @@ const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: auto;
+  width: 100%;
 `;
 
 const Section = styled.div`
@@ -54,24 +50,24 @@ const Section = styled.div`
   height: 60vh;
   box-sizing: border-box;
   padding-top: 0;
-
-  /* Make section responsive */
+  width: 100%;
+  
   @media (max-width: 1024px) {
-    flex-direction: column-reverse; /* Text below image on small screens */
+    flex-direction: column-reverse;
     height: auto;
   }
 `;
 
 const TextBlock = styled.div`
   width: 35%;
-  background:transparent;
+  background: transparent;
   color: white;
   padding: 2rem;
   border-radius: 10px;
-  margin-right: 0;
   margin-top: 10px;
+  opacity: 0; /* Start with hidden text */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
 
-  /* Full width on smaller screens */
   @media (max-width: 1024px) {
     width: 100%;
     margin-top: 1rem;
@@ -81,28 +77,17 @@ const TextBlock = styled.div`
 const ImageWrapper = styled.div`
   width: 60%;
   overflow: hidden;
-  display: absolute;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-right: 0px;
+  position: relative;
   margin-left: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
   border-radius: 10px;
-  border-top: none;
-  border-bottom: none;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
   overflow: hidden;
+  border-left: 2px solid #80ce2d;
+  border-right: 2px solid #80ce2d;
 
-  /* Full width on smaller screens */
   @media (max-width: 1024px) {
     width: 100%;
     margin-left: 0;
   }
-
-  
 `;
 
 const Button = styled.a`
@@ -119,14 +104,19 @@ const Button = styled.a`
 `;
 
 const ScrollAnimation = () => {
+  const containerRef = useRef(null);
   const sectionsRef = useRef([]);
+  const textBlocksRef = useRef([]);
 
   useEffect(() => {
+    const container = containerRef.current;
+
     sectionsRef.current.forEach((section, index) => {
       const imageWrapper = section.querySelector('.image-wrapper img');
+      const textBlock = textBlocksRef.current[index];
 
-      if (section) {
-        // GSAP animation for image parallax effect
+      if (section && textBlock) {
+        // GSAP parallax effect for the image
         gsap.fromTo(
           imageWrapper,
           { y: 50 },
@@ -137,12 +127,35 @@ const ScrollAnimation = () => {
               start: 'top bottom',
               end: 'bottom top',
               scrub: true,
+              scroller: container, // Track the scroll of the container, not the window
             },
           }
         );
+
+        // Create a GSAP timeline for the fade-in/fade-out effect of the text block
+        const fadeTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: 'top center',
+            end: 'bottom center',
+            scroller: container, // Track the scroll of the container
+            onEnter: () => gsap.to(textBlock, { opacity: 1, duration: 0.5 }),  // Fade in when entering
+            onLeaveBack: () => gsap.to(textBlock, { opacity: 0, duration: 0.5 }),  // Fade out when leaving
+            onLeave: () => gsap.to(textBlock, { opacity: 0, duration: 0.5 }),  // Fade out when leaving
+            onEnterBack: () => gsap.to(textBlock, { opacity: 1, duration: 0.5 }),  // Fade in when re-entering
+          },
+        });
+
+        // Attach timeline to the ScrollTrigger
+        ScrollTrigger.create({
+          animation: fadeTimeline,
+          trigger: section,
+          scroller: container, // Ensure ScrollTrigger is using the container's scroll
+        });
       }
     });
 
+    // Refresh ScrollTrigger on resize
     window.addEventListener('resize', ScrollTrigger.refresh);
 
     return () => {
@@ -152,19 +165,13 @@ const ScrollAnimation = () => {
   }, []);
 
   return (
-    <Container>
+    <Container ref={containerRef}>
       <SectionWrapper>
         {[0, 1, 2, 3, 4].map((i) => (
           <Section ref={(el) => (sectionsRef.current[i] = el)} key={i}>
-            <TextBlock className="text-block">
-              <h4 className='text-white'>{`Heading ${i + 1}`}</h4>
-              <p className='text-white'>{`This is the description for section ${i + 1}.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
-                  adipiscing nec, ultricies sed, dolor. Cras elementum ultrices
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  
-              `}</p>
+            <TextBlock ref={(el) => (textBlocksRef.current[i] = el)} className="text-block">
+              <h4>{`Heading ${i + 1}`}</h4>
+              <p>{`This is the description for section ${i + 1}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum.`}</p>
               <Button href="#">Learn More</Button>
             </TextBlock>
             <ImageWrapper className="image-wrapper">
