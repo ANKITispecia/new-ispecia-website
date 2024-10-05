@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FaArrowRight,
   FaEnvelope,
@@ -12,6 +13,17 @@ import {
 } from 'react-icons/fa';
 
 const FooterEight = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Prevent rendering until the component has mounted
+  if (!isMounted) {
+    return null; // Optionally return a loading spinner or placeholder
+  }
+
   return (
     <>
       {/* footer area start */}
@@ -50,7 +62,7 @@ const FooterEight = () => {
                   <p className="mt-3 text-sm" style={{ fontSize: '12px', lineHeight: '1.7' }}>
                     Ispecia Technologies,<br /> an Indian-based IT company,<br />
                     provides 360-degree solutions to all sizes of <br /> businesses.<br />
-                    Its primary objective is to accomplish  clients’ <br /> businesses
+                    Its primary objective is to accomplish clients’ <br /> businesses
                     in the online realm with innovative solutions.
                   </p>
                   <ul className="social-media text-center text-md-start mb-4 mb-md-0">
@@ -159,7 +171,7 @@ const FooterEight = () => {
                     <FaPhoneAlt /> (+91) 8650406532
                   </li>
                   <li className="mt-2">
-                    <FaEnvelope /> info.ispecia.com
+                    <FaEnvelope /> info@ispecia.com
                   </li>
                   <li className="mt-2">
                     <FaPhoneAlt /> er.sudeepgupta
@@ -174,7 +186,7 @@ const FooterEight = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6 text-center text-md-start">
-                <p>© ispecia – Your Technology Partner | All Rights Reserved</p>
+                <p>© Ispecia – Your Technology Partner | All Rights Reserved</p>
               </div>
               <div className="col-md-6 text-center text-md-end">
                 <Link href="#">Terms &amp; Conditions</Link>

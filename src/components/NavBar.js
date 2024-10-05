@@ -90,18 +90,18 @@ const NavBar = () => {
             </button>
           </div>
           <div className="logo">
-      <Link href="/index-1">
-        {isImageError ? (
-          <p>Ispeica Technologies</p>
-            ) : (
-          <img
-            src="assets/img/logo.webp"
-            alt="Ispeica Technologies"
-            onError={() => setIsImageError(true)}
-          />
-        )}
-      </Link>
-    </div>
+            <Link href="/">
+              {isImageError ? (
+                <span>Ispeica Technologies</span> // Changed from <p> to <span> for consistency
+              ) : (
+                <img
+                  src="assets/img/logo.webp"
+                  alt="Ispeica Technologies"
+                  onError={() => setIsImageError(true)}
+                />
+              )}
+            </Link>
+          </div>
           <div className="nav-right-part nav-right-part-mobile">
             <span className="search-bar-btn" onClick={searchActive}>
               <FaSearch />
@@ -116,9 +116,9 @@ const NavBar = () => {
             id="itech_main_menu"
           >
             <ul className="navbar-nav menu-open text-lg-end">
-              <li className="menu-item-has-children">
+              {/* <li className="menu-item-has-children">
                 <Link href="/">Home</Link>
-              </li>
+              </li> */}
 
               {/* Services Mega Menu */}
               <li className="menu-item-has-children mega-menu">
@@ -202,15 +202,15 @@ const NavBar = () => {
                           <span className="menu-title">Technologies</span>
                         </li>
                         <li><Link href="/development/ai">AI</Link></li>
-                        <li>Blockchain</li>
-                        <li>IoT</li>
-                        <li>Data Science</li>
+                        <li><Link href="/development/blockchain">Blockchain</Link></li>
+                        <li><Link href="/development/iot">IoT</Link></li>
+                        <li><Link href="/development/data-science">Data Science</Link></li>
                       </ul>
                     </div>
                     <div className="col-lg-3 col-xl-3">
                       <ul>
                         <li>
-                          <span className="menu-title">Industries</span>
+                          <span className="menu-title" style={{ fontWeight:"bold" }}>Industries</span>
                         </li>
                         <li>E-Governance</li>
                         <li>Finance</li>
@@ -222,12 +222,12 @@ const NavBar = () => {
                     <div className="col-lg-3 col-xl-3">
                       <ul>
                         <li>
-                          <span className="menu-title">Languages</span>
+                          <span className="menu-title" style={{ fontWeight:"bold" }}>Languages</span>
                         </li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Kotlin</li>
-                        <li>Swift</li>
+                        <li><Link href="/development/javascript">JavaScript</Link></li>
+                        <li><Link href="/development/python">Python</Link></li>
+                        <li><Link href="/development/kotlin">Kotlin</Link></li>
+                        <li><Link href="/development/swift">Swift</Link></li>
                       </ul>
                     </div>
                     <div className="col-lg-3 col-xl-3">
@@ -235,10 +235,10 @@ const NavBar = () => {
                         <li>
                           <span className="menu-title">Platforms</span>
                         </li>
-                        <li>Web</li>
-                        <li>iOS</li>
-                        <li>Android</li>
-                        <li>Cross-platform</li>
+                        <li><Link href="/development/web">Web</Link></li>
+                        <li><Link href="/development/ios">IOS</Link></li>
+                        <li><Link href="/development/android">Android</Link></li>
+                        <li><Link href="/development/cross-platform">Cross-platform</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -246,7 +246,10 @@ const NavBar = () => {
               </li>
 
               <li>
-                <Link href="/portfolio">Testimonials</Link>
+                <Link href="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link href="/testimonial">Testimonial</Link>
               </li>
               <li className="menu-item-has-children">
                 <Link href="/career">Career</Link>

@@ -69,9 +69,9 @@ const page = () => {
 
       {/* Service Area One */}
 
-      {/* <ServiceAreaOne /> */}
+      <ServiceAreaOne />
       {/* <ServiceAreaTwo/> */}
-      <ServiceAreaThree/>
+      {/* <ServiceAreaThree/> */}
 
       
 
@@ -83,7 +83,7 @@ const page = () => {
       </ParallaxProviderWrapper> */}
       
       {/* Case Study Area One */}
-      <TestimonialTen/>
+      {/* <TestimonialTen/> */}
 
       <TestimonialNine/>
       
@@ -91,12 +91,14 @@ const page = () => {
 
       {/* Case Study Area Two */}
       {/* Team Area One */}
-      {/* <TeamAreaOne /> */}
+      <TeamAreaOne />
 
       {/* Counter Area One */}
       <CounterAreaOne />
 
       {/* Contact Area One */}
+
+
       <ContactAreaOne />
 
       {/* Work Process One */}

@@ -9,22 +9,9 @@ const AboutAreaThree = () => {
       <div className='about-area bg-gradient-gray pd-top-120'>
         <div className='container'>
           <div className='row'>
+            
             <div
-              className='col-lg-6 '
-              data-aos='fade-right'
-              data-aos-delay='100'
-              data-aos-duration='1500'
-            >
-              <div className='about-thumb-inner mb-4 mb-lg-0'>
-                <img
-                  className='main-img'
-                  src='assets/img/about/11.png'
-                  alt='img'
-                />
-              </div>
-            </div>
-            <div
-              className='col-lg-6 wow animated fadeInRight'
+              className='wow animated fadeInRight'
               data-aos='fade-left'
               data-aos-delay='100'
               data-aos-duration='1500'
@@ -66,36 +53,13 @@ const AboutAreaThree = () => {
                   authentication. However, it is important to research and
                   choose a reputable provider and also to ensure that
                 </p>
-                <Link className='btn btn-border-base' href='/about'>
+                <Link className='btn btn-border-base' href='/about' style={{marginBottom: '20px'}}>
                   Discover More <FaPlus />
                 </Link>
               </div>
             </div>
           </div>
-          <div className='bg-base client-border-radius p-xl-5 p-3 mt-5'>
-            <div className='client-slider'>
-              <Marquee gradient={false}>
-                <div className='thumb'>
-                  <img src='assets/img/client/1.svg' alt='img' />
-                </div>
-                <div className='thumb'>
-                  <img src='assets/img/client/2.svg' alt='img' />
-                </div>
-                <div className='thumb'>
-                  <img src='assets/img/client/3.svg' alt='img' />
-                </div>
-                <div className='thumb'>
-                  <img src='assets/img/client/4.svg' alt='img' />
-                </div>
-                <div className='thumb'>
-                  <img src='assets/img/client/5.svg' alt='img' />
-                </div>
-                <div className='thumb'>
-                  <img src='assets/img/client/6.svg' alt='img' />
-                </div>
-              </Marquee>
-            </div>
-          </div>
+          
         </div>
       </div>
 
