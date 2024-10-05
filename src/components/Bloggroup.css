@@ -1,0 +1,153 @@
+/* BlogGroup.css */
+
+.single-blog-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    justify-content: center; /* Center the blog card */
+}
+
+.thumb {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    display: block;
+    border-radius: 8px;
+}
+
+.details {
+    width: 55%;
+    flex-grow: 1;
+}
+
+.details h2.title {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.secondary-navbar .category-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the navbar items */
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.secondary-navbar .category-navbar li {
+    margin: 5px 10px;
+}
+
+.secondary-navbar .category-navbar button {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-navbar .category-navbar button:hover {
+    background-color: #ddd;
+}
+
+.btn-border-base {
+    border: 2px solid #000; /* Modify this as per the base button design */
+    padding: 10px 15px;
+    display: inline-block;
+    color: #000;
+    background: transparent;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-border-base:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination .page-numbers {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-numbers.current {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.pagination .page-numbers:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .single-blog-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thumb {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .secondary-navbar .category-navbar {
+        justify-content: center; /* Navbar items centered for small screens */
+    }
+
+    .pagination {
+        flex-direction: column; /* Pagination stacked for small screens */
+    }
+}
+.load-more {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .load-more button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  

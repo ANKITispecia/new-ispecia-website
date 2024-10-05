@@ -1,0 +1,22 @@
+/* Portfolio container */
+.portfolio-container {
+    max-width: 100vh;
+    margin: 5vh 2vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Portfolio title */
+  .portfolio-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Portfolio grid */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8vh;
+  }
+  
