@@ -61,7 +61,7 @@ const CaseStudyAreaThree = () => {
         className="gallery-area bg-relative pd-top-120 pd-bottom-90"
         style={{ backgroundImage: 'url("./assets/img/bg/15.png")' }}
       >
-        <div className="container ">
+        <div className="container">
           <div className="row">
             <div className="col-lg-5">
               <div className="section-title style-white">

@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 const NavBar = () => {
   const [active, setActive] = useState(false);
   const [searchShow, setSearchShow] = useState(false);
+  const [isImageError, setIsImageError] = useState(false);
 
   const menuActive = () => {
     setActive(!active);
@@ -89,10 +90,18 @@ const NavBar = () => {
             </button>
           </div>
           <div className="logo">
-            <Link href="/index-1">
-              <img src="assets/img/logo.webp" alt="img" />
-            </Link>
-          </div>
+      <Link href="/index-1">
+        {isImageError ? (
+          <p>Ispeica Technologies</p>
+            ) : (
+          <img
+            src="assets/img/logo.webp"
+            alt="Ispeica Technologies"
+            onError={() => setIsImageError(true)}
+          />
+        )}
+      </Link>
+    </div>
           <div className="nav-right-part nav-right-part-mobile">
             <span className="search-bar-btn" onClick={searchActive}>
               <FaSearch />
@@ -152,13 +161,13 @@ const NavBar = () => {
                     <div className="col-lg-3 col-xl-3">
                       <ul>
                         <li>
-                          <Link href="/service/website">Website Development</Link>
+                          <Link href="/service/website-development">Website Development</Link>
                         </li>
                         <li>
-                          <Link href="/service/web-app">Web App Development</Link>
+                          <Link href="/service/web-app-development">Web App Development</Link>
                         </li>
                         <li>
-                          <Link href="/service/pwa">Progressive Web App (PWA)</Link>
+                          <Link href="/service/progressive-web-apps">Progressive Web App (PWA)</Link>
                         </li>
                       </ul>
                     </div>
@@ -168,10 +177,10 @@ const NavBar = () => {
                           <Link href="/service/graphic-design">Graphic Design</Link>
                         </li>
                         <li>
-                          <Link href="/service/software">Software Development</Link>
+                          <Link href="/service/software-development">Software Development</Link>
                         </li>
                         <li>
-                          <Link href="/service/seo">SEO Services</Link>
+                          <Link href="/service/seo-services">SEO Services</Link>
                         </li>
                       </ul>
                     </div>
@@ -179,7 +188,7 @@ const NavBar = () => {
                 </div>
               </li>
               <li className="menu-item-has-children">
-                <Link href="#">About</Link>
+                <Link href="/about">About</Link>
               </li>
 
               {/* Development Mega Menu */}
@@ -192,7 +201,7 @@ const NavBar = () => {
                         <li>
                           <span className="menu-title">Technologies</span>
                         </li>
-                        <li>AI</li>
+                        <li><Link href="/development/ai">AI</Link></li>
                         <li>Blockchain</li>
                         <li>IoT</li>
                         <li>Data Science</li>

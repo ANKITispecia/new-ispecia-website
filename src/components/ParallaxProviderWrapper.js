@@ -4,6 +4,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 const ParallaxProviderWrapper = ({ children }) => {
   return (
+    <div style={{ position: "" }}>
     <ParallaxProvider>
       <br/>
       <br/>
@@ -11,6 +12,7 @@ const ParallaxProviderWrapper = ({ children }) => {
       <br/>
       <br/>
     </ParallaxProvider>
+    </div>
   );
 };
 
