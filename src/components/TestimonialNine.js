@@ -26,7 +26,7 @@ const TestimonialNine = () => {
     arrows: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 2, // Display 2 slides
     slidesToScroll: 1,
     swipeToSlide: true,
     initialSlide: 0,
@@ -36,7 +36,7 @@ const TestimonialNine = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2, // Show 2 slides on medium screens
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -45,7 +45,7 @@ const TestimonialNine = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 slide on smaller screens
           slidesToScroll: 1,
           arrows: false,
           swipe: true,
@@ -75,46 +75,50 @@ const TestimonialNine = () => {
               {/* Embed YouTube videos with staggered positioning */}
               <div className="item staggered" style={{ transform: 'translateY(-20px)' }}>
                 <iframe
-                  width="100%"
-                  height="315"
+                  width="90%"
+                  height="450"
                   src="https://www.youtube.com/embed/9s4Kye-bJcE"
                   title="YouTube video player"
                   frameBorder="1"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  style={{ border: '2px solid #ccc', borderRadius: '15px' }} // Add border and border-radius here
                 />
               </div>
               <div className="item staggered" style={{ transform: 'translateY(20px)' }}>
                 <iframe
-                  width="100%"
-                  height="315"
+                  width="90%"
+                  height="450"
                   src="https://www.youtube.com/embed/O98OiqSnzt8"
                   title="YouTube video player"
                   frameBorder="1"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  style={{ border: '2px solid #ccc', borderRadius: '15px' }} // Add border and border-radius here
                 />
               </div>
               <div className="item staggered" style={{ transform: 'translateY(-20px)' }}>
                 <iframe
-                  width="100%"
-                  height="315"
+                  width="90%"
+                  height="450"
                   src="https://www.youtube.com/embed/L_zUCF875EY"
                   title="YouTube video player"
                   frameBorder="1"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  style={{ border: '2px solid #ccc', borderRadius: '15px' }} // Add border and border-radius here
                 />
               </div>
               <div className="item staggered" style={{ transform: 'translateY(20px)' }}>
                 <iframe
-                  width="100%"
-                  height="315"
+                  width="90%"
+                  height="450"
                   src="https://www.youtube.com/embed/HP9bEm2q_rU"
                   title="YouTube video player"
                   frameBorder="1"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  style={{ border: '2px solid #ccc', borderRadius: '15px' }} // Add border and border-radius here
                 />
               </div>
             </Slider>

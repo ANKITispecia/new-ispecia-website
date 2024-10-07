@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import testimonials from '@/app/testimonial/data'; // Import the testimonials data
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import "./testimonialarea.css";
@@ -8,36 +8,40 @@ const TestimonialGrid = () => {
   const videosPerPage = 8; // Display 8 videos per page (2 columns, 4 rows)
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Pagination logic
-  const indexOfLastVideo = currentPage * videosPerPage;
-  const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
-  const currentVideos = testimonials.slice(indexOfFirstVideo, indexOfLastVideo);
+  // Memoize the currentVideos to avoid recalculating unless currentPage changes
+  const currentVideos = useMemo(() => {
+    const indexOfLastVideo = currentPage * videosPerPage;
+    const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+    return testimonials.slice(indexOfFirstVideo, indexOfLastVideo);
+  }, [currentPage]);
 
   const totalPages = Math.ceil(testimonials.length / videosPerPage);
 
-  const nextPage = () => {
+  // Memoize the nextPage and prevPage functions with useCallback
+  const nextPage = useCallback(() => {
     if (currentPage < totalPages) {
       setCurrentPage(prevPage => prevPage + 1);
     }
-  };
+  }, [currentPage, totalPages]);
 
-  const prevPage = () => {
+  const prevPage = useCallback(() => {
     if (currentPage > 1) {
       setCurrentPage(prevPage => prevPage - 1);
     }
-  };
+  }, [currentPage]);
 
-  const handleMouseEnter = (id) => {
+  // Memoize the mouse enter/leave handlers using useCallback
+  const handleMouseEnter = useCallback((id) => {
     const iframe = document.getElementById(`iframe-${id}`);
     const src = iframe.src;
     iframe.src = `${src}?autoplay=1`;
-  };
+  }, []);
 
-  const handleMouseLeave = (id) => {
+  const handleMouseLeave = useCallback((id) => {
     const iframe = document.getElementById(`iframe-${id}`);
     const src = iframe.src.split('?')[0]; // Remove autoplay on leave
     iframe.src = src;
-  };
+  }, []);
 
   return (
     <div className="testimonial-grid">
@@ -48,19 +52,19 @@ const TestimonialGrid = () => {
               <h3>{testimonial.title}</h3>
               <p>{testimonial.description}</p>
               <iframe
-                  id={`iframe-${testimonial.id}`}
-                  loading="lazy"
-                  width="100%"
-                  height="455"
-                  src={testimonial.videoUrl}
-                  title={testimonial.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="video"
-                  onMouseEnter={() => handleMouseEnter(testimonial.id)}
-                  onMouseLeave={() => handleMouseLeave(testimonial.id)}
-                ></iframe>
+                id={`iframe-${testimonial.id}`}
+                loading="lazy"
+                width="100%"
+                height="455"
+                src={testimonial.videoUrl}
+                title={testimonial.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="video"
+                onMouseEnter={() => handleMouseEnter(testimonial.id)}
+                onMouseLeave={() => handleMouseLeave(testimonial.id)}
+              ></iframe>
             </div>
           </div>
         ))}

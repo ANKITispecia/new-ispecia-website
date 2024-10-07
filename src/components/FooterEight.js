@@ -191,7 +191,7 @@ const FooterEight = () => {
               <div className="col-md-6 text-center text-md-end">
                 <Link href="#">Terms &amp; Conditions</Link>
                 <Link href="#">Privacy Policy</Link>
-                <Link href="#">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </div>
             </div>
           </div>

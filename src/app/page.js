@@ -91,7 +91,7 @@ const page = () => {
 
       {/* Case Study Area Two */}
       {/* Team Area One */}
-      <TeamAreaOne />
+      {/* <TeamAreaOne /> */}
 
       {/* Counter Area One */}
       <CounterAreaOne />

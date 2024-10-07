@@ -1,0 +1,79 @@
+// app/components/CommentForm.js
+'use client';  // This is a client component
+
+import { useState } from 'react';
+import "./slug.css";
+const CommentForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    comment: ''
+  });
+
+  const [errors, setErrors] = useState({});
+
+  // Basic email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Form submission handler
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, comment } = formData;
+
+    let formErrors = {};
+
+    if (!name) formErrors.name = "Name is required";
+    if (!email || !emailRegex.test(email)) formErrors.email = "Valid email is required";
+    if (!comment) formErrors.comment = "Comment is required";
+
+    if (Object.keys(formErrors).length === 0) {
+      console.log("Form submitted", formData); // Handle the form submission
+    } else {
+      setErrors(formErrors);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  return (
+    <form className="comment-form" onSubmit={handleSubmit}>
+      <h2>Leave a Comment</h2>
+
+      <label htmlFor="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value={formData.name}
+        onChange={handleInputChange}
+      />
+      {errors.name && <p className="error">{errors.name}</p>}
+
+      <label htmlFor="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={formData.email}
+        onChange={handleInputChange}
+      />
+      {errors.email && <p className="error">{errors.email}</p>}
+
+      <label htmlFor="comment">Comment</label>
+      <textarea
+        id="comment"
+        name="comment"
+        value={formData.comment}
+        onChange={handleInputChange}
+      />
+      {errors.comment && <p className="error">{errors.comment}</p>}
+
+      <button type="submit">Submit Comment</button>
+    </form>
+  );
+};
+
+export default CommentForm;
