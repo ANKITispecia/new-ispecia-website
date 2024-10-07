@@ -1,0 +1,60 @@
+.testimonial-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .video-wrapper {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 10vh; /* Add vertical spacing */
+  }
+  
+  .video-wrapper h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .video-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .pagination {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .page-numbers {
+    margin: 0 5px;
+    padding: 10px 15px; /* Adjust padding */
+    line-height: 1.5; /* Ensures text is vertically centered */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .page-numbers.current {
+    background-color: #80ce2d;
+    color: white;
+  }
+  
+  .page-numbers:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .video-wrapper:hover {
+    box-shadow: 0 2px 12px rgba(128, 206, 45, 0.8); /* Green shadow on hover */
+  }
+  
+  .video {
+    border-radius: 2%;
+  }
+  
+  .testimonial-grid {
+    margin-bottom: 80px; /* Add more vertical space after testimonials */
+  }
+  
