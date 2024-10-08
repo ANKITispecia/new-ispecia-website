@@ -1,7 +1,21 @@
+'use client';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos'; // Import AOS for animations
 
 const ContactAreaOne = () => {
+  const [isClient, setIsClient] = useState(false); // Ensure component renders properly on client
+
+  // Ensure AOS initializes only on the client side
+  useEffect(() => {
+    setIsClient(true); // Wait for client-side rendering
+    if (typeof window !== 'undefined') {
+      AOS.init({ duration: 1500 });
+    }
+  }, []);
+
+  if (!isClient) return null; // Prevent rendering on the server to avoid mismatches
+
   return (
     <>
       {/* ========================= contact Area One start =========================*/}
@@ -10,12 +24,12 @@ const ContactAreaOne = () => {
           <div className="contact-inner-1">
             <img
               className="top_image_bounce animate-img-1"
-              src="assets/img/banner/2.png"
+              src="/assets/img/banner/2.png"
               alt="img"
             />
             <img
               className="top_image_bounce animate-img-2"
-              src="assets/img/about/6.png"
+              src="/assets/img/about/6.png"
               alt="img"
             />
             <div className="row">
@@ -25,7 +39,7 @@ const ContactAreaOne = () => {
                 data-aos-delay="200"
                 data-aos-duration="1500"
               >
-                <img className="w-100" src="assets/img/bg/4.jpg" alt="img" />
+                <img className="w-100" src="/assets/img/bg/4.jpg" alt="img" />
               </div>
               <div
                 className="col-lg-4 wow animated fadeInRight"
@@ -51,12 +65,12 @@ const ContactAreaOne = () => {
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Email" />
+                          <input type="email" placeholder="Your Email" />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Phone" />
+                          <input type="number" placeholder="Your Phone" />
                         </div>
                       </div>
                       <div className="col-lg-6">
@@ -66,16 +80,16 @@ const ContactAreaOne = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="single-input-inner style-border">
-                          <textarea placeholder="Message" defaultValue={''} />
+                          <textarea placeholder="Your Message" />
                         </div>
                       </div>
                       <div className="col-12">
-                        <Link
+                        <button
                           className="btn btn-black mt-0 w-100 border-radius-5"
-                          href="#"
+                          type="submit"
                         >
                           Submit now
-                        </Link>
+                        </button>
                       </div>
                     </div>
                   </form>

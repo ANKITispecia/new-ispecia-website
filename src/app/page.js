@@ -1,5 +1,6 @@
 
 import AboutAreaOne from "@/components/AboutAreaOne";
+import BannerFour from "@/components/BannerFour";
 import BannerOne from "@/components/BannerOne";
 import BlogAreaOne from "@/components/BlogAreaOne";
 import CaseStudyAreaGroupOne from "@/components/CaseStudyAreaGroupOne";
@@ -62,6 +63,11 @@ const page = () => {
       {/* <NavBar/> */}
 
       {/* Banner One */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      
       <BannerOne />
 
       {/* About Area One */}
@@ -110,9 +116,7 @@ const page = () => {
       {/* Blog Area One */}
       <BlogAreaOne />
 
-      {/* Footer One */}
-      {/* 5 8  */}
-      {/* <FooterEight /> */}
+      
 
 
     </>

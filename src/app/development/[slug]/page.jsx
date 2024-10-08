@@ -34,11 +34,11 @@ const DevelopmentService = ({ params }) => {
                     onError={() => setIsImageError(true)} // Set error state if image fails to load
                   />
                 ) : (
-                  <h5>{service.name}</h5> // Display service name if image fails
+                  <h6>{service.name}</h6> // Display service name if image fails
                 )}
               </div>
 
-              <div className="details mt-4">
+              <div className="details mt-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: '40vw', margin: '0 auto' }}>
                 <div className="icon mb-3">
                   <Image
                     src="/assets/img/service-icon/1.png" // Assuming service has an icon property
@@ -48,8 +48,10 @@ const DevelopmentService = ({ params }) => {
                   />
                 </div>
 
-                <h1 className="mb-3">{service.name}</h1>
+                <h4 className="mb-3">{service.name} with us</h4>
                 <p className="mb-4">{service.description}</p>
+                <br/>
+                <h5 className="mb-3">Why Choose Us</h5>
                 <p className="mb-4">{service.whyChooseUs}</p>
                 
               </div>
@@ -106,7 +108,7 @@ const DevelopmentService = ({ params }) => {
                   padding: '10px 20px',
                   width: '100%'  // Makes the button full-width
                 }}>
-                  Contact Us <FaPlus style={{ marginLeft: '8px' }} />
+                  Contact Us 
                 </Link>
               </div>
             </div>

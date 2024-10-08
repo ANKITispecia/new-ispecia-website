@@ -72,12 +72,14 @@
 }
 
 .navbar-area {
-  position: relative;
+  position: fixed;
   z-index: 99;
-  margin-top: 20px;
+  margin-top: 0;
+  width: 100%;
   .nav-container {
     transition: all 0.4s;
     position: relative;
+    width: 80%;
     &.navbar-bg {
       position: relative;
       padding-left: 40px;
@@ -294,16 +296,15 @@
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   left: 0;
-  // position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999;
+  // z-index: 9999;
   -webkit-box-shadow: 0 10px 20px 0 rgb(46 56 220 / 5%);
   box-shadow: 0 10px 20px 0 rgb(46 56 220 / 5%);
   border-bottom: 0;
-  background: #fff;
+  background-color: white;
 }
-
 .menu-open {
   opacity: 1;
   margin-right: 0;
@@ -738,7 +739,7 @@
 
         .navbar-nav {
           display: block;
-          margin-top: 20px;
+          margin-top: 0;
           li {
             a {
               display: block;

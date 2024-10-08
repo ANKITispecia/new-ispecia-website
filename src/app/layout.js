@@ -4,6 +4,8 @@ import "./font.css";
 import "./globals.scss";
 import NavBar from "@/components/NavBar";
 import FooterEight from "@/components/FooterEight";
+import React from "react"; // Import React for StrictMode
+import FloatingContactButton from "@/components/FloatingContactButton";
 
 export const metadata = {
   title: "Service || AglieTech - IT Solutions & Technology NEXT JS Template",
@@ -14,15 +16,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <BootstrapInit />
+      
       <body suppressHydrationWarning={true}>
-        
-        <NavBar/>
-        
-        {children}
-       
-        <FooterEight/>
-        </body>
+      <BootstrapInit />
+        {/* Enable React Strict Mode */}
+        <React.StrictMode>
+          <NavBar />
+          <FloatingContactButton/>
+          {children}
+          <FooterEight />
+        </React.StrictMode>
+      </body>
     </html>
   );
 }

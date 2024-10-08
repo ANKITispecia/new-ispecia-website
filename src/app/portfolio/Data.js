@@ -1,6 +1,14 @@
 const data = [
-    {
-      id: 1,
+  {
+    id: 1,
+    heading: "Project 1",
+    description: "This is the description for Project 1.",
+    image: "/assets/img/p6.webp", // Replace with real image paths
+    link: "https://example.com/project1",
+    category: "Category 1",
+  },  
+  {
+      id: 1.5,
       heading: "Project 1",
       description: "This is the description for Project 1.",
       image: "/assets/img/p1.webp", // Replace with real image paths
@@ -24,7 +32,7 @@ const data = [
       category: "Category 3",
     },
     {
-      id: 3,
+      id: 3.2,
       heading: "Project 3",
       description: "This is the description for Project 3.",
       image: "/assets/img/p3.webp",
@@ -32,7 +40,7 @@ const data = [
       category: "Category 3",
     },
     {
-      id: 3,
+      id: 3.3,
       heading: "Project 3",
       description: "This is the description for Project 3.",
       image: "/assets/img/p3.webp",

@@ -2,8 +2,9 @@ const developmentServices = [
     {
       id: 'ai',
       name: 'AI Development',
-      description: 'Building AI-driven applications and solutions.',
-      whyChooseUs: 'Our AI solutions are tailored for businesses to optimize processes.',
+      description: `Building AI-driven applications and solutions. Building AI-driven applications and solutions.
+      Building AI-driven applications and solutions.Building AI-driven applications and solutions.`,
+      whyChooseUs: `Our AI solutions are tailored for businesses to optimize processes. Our AI solutions are tailored for businesses to optimize processes. Our AI solutions are tailored for businesses to optimize processes. Our AI solutions are tailored for businesses to optimize processes.`,
       contactText: 'Tell us about your AI project.',
     },
     {

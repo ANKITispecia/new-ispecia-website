@@ -1,22 +1,20 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
-  const [searchShow, setSearchShow] = useState(false);
+  
   const [isImageError, setIsImageError] = useState(false);
 
   const menuActive = () => {
     setActive(!active);
   };
 
-  const searchActive = () => {
-    setSearchShow(!searchShow);
-  };
-
+  
   const router = useRouter();
 
   // Control sidebar navigation
@@ -24,7 +22,7 @@ const NavBar = () => {
     const items = document.querySelectorAll('.menu-item-has-children > a');
 
     const handleClick = (event) => {
-      event.preventDefault(); // Prevent default link behavior
+      
       const subMenu = event.currentTarget.parentElement.querySelector('.sub-menu');
       if (subMenu) {
         subMenu.classList.toggle('active');
@@ -46,32 +44,10 @@ const NavBar = () => {
 
   return (
     <>
-      {/* search popup start */}
-      <div
-        className={searchShow ? 'td-search-popup active' : 'td-search-popup'}
-        id="td-search-popup"
-      >
-        <form action="/" className="search-form">
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search....."
-            />
-          </div>
-          <button type="submit" className="submit-btn">
-            <FaSearch />
-          </button>
-        </form>
-      </div>
-      {/* search popup end */}
-      <div
-        onClick={searchActive}
-        className={searchShow ? 'body-overlay active' : 'body-overlay'}
-        id="body-overlay"
-      ></div>
+      
+     
       {/* navbar start */}
-      <nav className="navbar navbar-area navbar-area_1 navbar-expand-lg">
+      <nav className="navbar navbar-area navbar-area_1 navbar-expand-lg sticky-active">
         <div className="container nav-container navbar-bg">
           <div className="responsive-mobile-menu">
             <button
@@ -94,19 +70,17 @@ const NavBar = () => {
               {isImageError ? (
                 <span>Ispeica Technologies</span> // Changed from <p> to <span> for consistency
               ) : (
-                <img
-                  src="assets/img/logo.webp"
+                <Image
+                  src="/assets/img/logo.webp"
                   alt="Ispeica Technologies"
                   onError={() => setIsImageError(true)}
+                  width={150}
+                  height={43}
                 />
               )}
             </Link>
           </div>
-          <div className="nav-right-part nav-right-part-mobile">
-            <span className="search-bar-btn" onClick={searchActive}>
-              <FaSearch />
-            </span>
-          </div>
+          
           <div
             className={
               active
@@ -122,7 +96,7 @@ const NavBar = () => {
 
               {/* Services Mega Menu */}
               <li className="menu-item-has-children mega-menu">
-                <Link href="/service">Services</Link>
+                <Link href="/service" onClick={()=>router.push('/service')}>Services</Link>
                 <div className="sub-menu hidden">
                   <div className="row">
                     <div className="col-lg-3 col-xl-3 ">
@@ -188,7 +162,7 @@ const NavBar = () => {
                 </div>
               </li>
               <li className="menu-item-has-children">
-                <Link href="/about">About</Link>
+                <Link href="/about" onClick={()=>router.push('/about')}>About</Link>
               </li>
 
               {/* Development Mega Menu */}
@@ -252,7 +226,7 @@ const NavBar = () => {
                 <Link href="/testimonial">Testimonial</Link>
               </li>
               <li className="menu-item-has-children">
-                <Link href="/career">Career</Link>
+                <a href="/Career" onClick={()=>router.push('/Career')}>Career</a>
               </li>
               <li>
                 <Link href="/blog">Blogs</Link>

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import jobData from "@/app/career/data"; // Adjust the path based on your file structure
+import jobData from "../../public/assets/data/data"; // Adjust the path based on your file structure
 
 
 const CareerComponent = () => {

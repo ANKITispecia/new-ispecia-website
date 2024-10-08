@@ -47,27 +47,17 @@ const Breadcrumb = ({ title }) => {
           background-color: black; /* Initial black background */
           background-image: url('/assets/img/bcmb.jpg'); /* Add your image path here */
           background-size: cover;
+          background-opacity: 0.5;
           background-position: center;
           animation: fadeToImage 3.5s ease forwards;
+          margin-top: 6vh;
+          display: flex;
+          flex-direction:row;
+          text-align: center;
+          font-size: 1em;
         }
 
-        /* Animation to fade from black to the image */
-        @keyframes fadeToImage {
-          0% {
-            background-color: black;
-            background-size: 100%; /* Start fully zoomed in */
-          }
-          50% {
-            background-color: black;
-            opacity: 0.7;
-            background-size: 110%; /* Slight zoom effect */
-          }
-          100% {
-            background-color: transparent;
-            opacity: 1;
-            background-size: 100%; /* Normal size for the image */
-          }
-        }
+        
 
         .page-title {
           position: relative;
@@ -79,6 +69,21 @@ const Breadcrumb = ({ title }) => {
           position: relative;
           z-index: 1;
           color: #fff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          .breadcrumb-area {
+            margin-top: 3vh;
+          }
+
+          .page-title {
+            font-size: 1.5rem; /* Adjust text size for small screens */
+          }
+
+          .page-list {
+            font-size: 1rem; /* Adjust breadcrumb list text size */
+          }
         }
       `}</style>
       {/* ================ Breadcrumb End ================ */}

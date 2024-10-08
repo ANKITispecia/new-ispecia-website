@@ -84,8 +84,8 @@ const BlogAreaOne = () => {
 
             {/* See More Blogs button */}
             <div className="col-lg-4 d-flex align-items-center justify-content-center">
-              <Link href="/blog">
-                <button className="see-more-button">See More Blogs</button>
+              <Link href="/blog" className="btn btn-border-base mt-0">
+                See More Blogs
               </Link>
             </div>
           </div>
