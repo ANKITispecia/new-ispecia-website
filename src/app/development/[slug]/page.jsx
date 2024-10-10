@@ -4,16 +4,35 @@ import Image from 'next/image';
 import Link from "next/link";
 import { useState } from 'react';
 import { FaPlus } from "react-icons/fa";
+import { handleFormSubmission } from '../../../actions/handleFormSubmission'; // Adjust the import path as needed
 
 const DevelopmentService = ({ params }) => {
   const { slug } = params; // Extract slug from params
   const [isImageError, setIsImageError] = useState(false); // State for handling image load errors
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    message: '',
+  });
+  const [submissionStatus, setSubmissionStatus] = useState(''); // State to hold submission status
 
   const service = developmentServices.find((service) => service.id === slug);
 
   if (!service) {
     return <p>Service not found</p>;
   }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+    const response = await handleFormSubmission(formData); // Call the server action
+    setSubmissionStatus(response.message); // Update submission status based on response
+  };
 
   return (
     <div className="service-area bg-relative pd-top-120 pd-bottom-90">
@@ -58,12 +77,12 @@ const DevelopmentService = ({ params }) => {
             </div>
           </div>
         </div>
-          <div className='section-title' style={{ marginTop: '50px', display: 'flex', flexDirection: 'column', alignItems:        'center' }}>
+        <div className='section-title' style={{ marginTop: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h6 className='sub-title'>{service.contactText}</h6>
           <h2 className='title mb-4'>
             Smarter Applications For The <span>Smarter</span> Individuals
           </h2>
-          <form className="mt-4" style={{ 
+          <form className="mt-4" onSubmit={handleSubmit} style={{ 
             marginTop: '50px', 
             display: 'flex', 
             flexDirection: 'column', 
@@ -71,10 +90,10 @@ const DevelopmentService = ({ params }) => {
             justifyContent: 'center',  // Added for centering
             marginLeft: 'auto', 
             marginRight: 'auto', 
-            width: '100%' // Updated width to full width
+            width: '60%' // Updated width to full width
           }}>
             <div className="row" style={{ 
-              width: '80%', // Form fields are centered with reduced width
+              width: '40vw', // Form fields are centered with reduced width
               display: 'flex', 
               flexDirection: 'column',  // Ensures fields are stacked
               gap: '15px',  // Space between the fields
@@ -82,26 +101,53 @@ const DevelopmentService = ({ params }) => {
             }}>
               <div className="col-lg-6" style={{ width: '100%' }}>
                 <div className="single-input-inner style-border" style={{ marginBottom: '15px', width: '100%' }}>
-                  <input type="text" placeholder="Name Here" style={{ width: '100%', padding: '10px' }} />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name Here"
+                    style={{ width: '100%', padding: '10px' }}
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ width: '100%' }}>
                 <div className="single-input-inner style-border" style={{ marginBottom: '15px', width: '100%' }}>
-                  <input type="text" placeholder="Contact Here" style={{ width: '100%', padding: '10px' }} />
+                  <input
+                    type="text"
+                    name="contact"
+                    placeholder="Contact Here"
+                    style={{ width: '100%', padding: '10px' }}
+                    value={formData.contact}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ width: '100%' }}>
                 <div className="single-input-inner style-border" style={{ marginBottom: '15px', width: '100%' }}>
-                  <input type="text" placeholder="Email Here" style={{ width: '100%', padding: '10px' }} />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Here"
+                    style={{ width: '100%', padding: '10px' }}
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ width: '100%' }}>
                 <div className="single-input-inner style-border" style={{ marginBottom: '15px', width: '100%' }}>
-                  <textarea placeholder="Message" style={{ width: '100%', padding: '10px', height: '100px' }} />
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    style={{ width: '100%', padding: '10px', height: '100px' }}
+                    value={formData.message}
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="col-6" style={{ width: '100%' }}>
-                <Link className="btn btn-border-gray mt-0" href="#" style={{ 
+                <button className="btn btn-border-gray mt-0" type="submit" style={{ 
                   display: 'inline-flex', 
                   alignItems: 'center', 
                   justifyContent: 'center',  // Centers the button text and icon
@@ -109,12 +155,12 @@ const DevelopmentService = ({ params }) => {
                   width: '100%'  // Makes the button full-width
                 }}>
                   Contact Us 
-                </Link>
+                </button>
               </div>
             </div>
+            {submissionStatus && <p>{submissionStatus}</p>} {/* Display submission status */}
           </form>
         </div>
-
       </div>
     </div>
   );

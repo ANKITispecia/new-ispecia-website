@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import {
@@ -55,7 +56,7 @@ const FooterEight = () => {
             <div className="col-lg-3 col-md-6 text-center text-md-start mb-4 mb-md-0">
               <div className="widget widget_about">
                 <div className="thumb">
-                  <img src="assets/img/logo.webp" alt="img" />
+                  <Image src="/assets/img/logo.webp" alt="img" width={150} height={43}/>
                 </div>
                 <div className="details">
                   <p className="footer-title">About Us</p>

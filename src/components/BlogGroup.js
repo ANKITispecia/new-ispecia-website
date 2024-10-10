@@ -106,7 +106,7 @@ function BlogGroup() {
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </h2>
                     <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                    <Link className="btn btn-border-base mt-3" href={`/blog/${post.slug}`}>
+                    <Link className="btn btn-border-base mt-0 pt-0" href={`/blog/${post.slug}`}>
                       Read More <FaPlus />
                     </Link>
                   </div>
@@ -114,7 +114,7 @@ function BlogGroup() {
               ))}
               {visiblePostsCount < filteredPosts.length && (
                 <div className="load-more">
-                  <button className="btn btn-border-base mt-3" onClick={() => setVisiblePostsCount(prev => prev + 5)}>
+                  <button className="btn btn-border-base mt-0 pt-0" onClick={() => setVisiblePostsCount(prev => prev + 5)}>
                     Load More <FaChevronRight />
                   </button>
                 </div>
@@ -127,7 +127,7 @@ function BlogGroup() {
   );
 }
 
-function App() {
+function Bloggroup() {
   return (
     <QueryClientProvider client={queryClient}>
       <BlogGroup />
@@ -135,4 +135,4 @@ function App() {
   );
 }
 
-export default App;
+export default Bloggroup;

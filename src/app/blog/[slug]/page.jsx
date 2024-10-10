@@ -1,4 +1,3 @@
-// app/blog/[slug]/page.js
 import Breadcrumb from "@/components/Breadcrumb";
 import { notFound } from "next/navigation";
 import CommentForm from "./CommentForm";  // Import the client component
@@ -46,7 +45,7 @@ const BlogPost = async ({ params }) => {
         <p>Published on: {new Date(post.date).toLocaleDateString()}</p>
 
         {/* Comment form */}
-        <CommentForm />  {/* Include the client-side form */}
+        <CommentForm postId={post.id} />  {/* Pass postId to CommentForm */}
       </div>
     </>
   );

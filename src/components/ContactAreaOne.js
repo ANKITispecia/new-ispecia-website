@@ -2,9 +2,18 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos'; // Import AOS for animations
+import { handleFormSubmission } from '../actions/handleFormSubmission'; // Adjust the path accordingly
 
 const ContactAreaOne = () => {
   const [isClient, setIsClient] = useState(false); // Ensure component renders properly on client
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [responseMessage, setResponseMessage] = useState('');
 
   // Ensure AOS initializes only on the client side
   useEffect(() => {
@@ -13,6 +22,27 @@ const ContactAreaOne = () => {
       AOS.init({ duration: 1500 });
     }
   }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+    setResponseMessage(''); // Reset response message
+
+    try {
+      const response = await handleFormSubmission(formData);
+      if (response.success) {
+        setResponseMessage('Email sent successfully!');
+      } else {
+        setResponseMessage(`Error: ${response.message}`);
+      }
+    } catch (error) {
+      setResponseMessage(`Unexpected error: ${error.message}`);
+    }
+  };
 
   if (!isClient) return null; // Prevent rendering on the server to avoid mismatches
 
@@ -56,31 +86,60 @@ const ContactAreaOne = () => {
                     For your car we will do everything advice design in us
                     repairs and maintenance. We are the some preferred.
                   </p>
-                  <form className="mt-4">
+                  <form className="mt-4" onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Name" />
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            value={formData.name}
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="email" placeholder="Your Email" />
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            value={formData.email}
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="number" placeholder="Your Phone" />
+                          <input
+                            type="number"
+                            name="phone"
+                            placeholder="Your Phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="single-input-inner style-border">
-                          <input type="text" placeholder="Your Subject" />
+                          <input
+                            type="text"
+                            name="subject"
+                            placeholder="Your Subject"
+                            value={formData.subject}
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12">
                         <div className="single-input-inner style-border">
-                          <textarea placeholder="Your Message" />
+                          <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            value={formData.message}
+                            onChange={handleChange}
+                          />
                         </div>
                       </div>
                       <div className="col-12">
@@ -93,6 +152,7 @@ const ContactAreaOne = () => {
                       </div>
                     </div>
                   </form>
+                  {responseMessage && <p>{responseMessage}</p>} {/* Display response message */}
                 </div>
               </div>
             </div>
