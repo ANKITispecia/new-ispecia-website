@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import "./portfoliocard.css";
+import "./Portfoliocard.css";
 
 const PortfolioCard = ({ card }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
