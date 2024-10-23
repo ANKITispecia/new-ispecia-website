@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import services from '@/app/service/[id]/service';
+import services from '@/app/service/[id]/service.json';
 import Link from 'next/link';
 import { FaPlus } from 'react-icons/fa';
 import Loading from '@/app/loading';

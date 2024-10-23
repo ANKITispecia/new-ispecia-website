@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useMemo, useCallback } from 'react';
-import testimonials from '@/app/testimonial/data'; // Import the testimonials data
+import testimonials from '@/app/testimonial/data.json'; // Import the testimonials data
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import "./testimonialarea.css";
 

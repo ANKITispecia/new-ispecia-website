@@ -20,16 +20,16 @@ const FooterEight = () => {
     setIsMounted(true);
   }, []);
 
-  // Prevent rendering until the component has mounted
+  // Prevent rendering until the component has mounted to avoid hydration errors
   if (!isMounted) {
-    return null; // Optionally return a loading spinner or placeholder
+    return null;
   }
 
   return (
     <>
       {/* footer area start */}
-      <footer className="footer-area footer-area_8 bg-black-2-ico bg-cover mt-0">
-        <div className="footer-subscribe">
+      <footer className="footer-area footer-area_8 bg-black-2-ico bg-cover mt-0 p-5">
+        {/* <div className="footer-subscribe">
           <div className="container">
             <div className="footer-subscribe-inner style-3 bg-cover">
               <div className="row">
@@ -48,7 +48,7 @@ const FooterEight = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="container">
           <div className="row">
@@ -56,7 +56,13 @@ const FooterEight = () => {
             <div className="col-lg-3 col-md-6 text-center text-md-start mb-4 mb-md-0">
               <div className="widget widget_about">
                 <div className="thumb">
-                  <Image src="/assets/img/logo.webp" alt="img" width={150} height={43}/>
+                  <Image
+                    src="/assets/img/logo.webp"
+                    alt="img"
+                    width={150}
+                    height={43}
+                    priority={true} // Optimize critical image loading
+                  />
                 </div>
                 <div className="details">
                   <p className="footer-title">About Us</p>

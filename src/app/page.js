@@ -1,15 +1,23 @@
+import dynamic from 'next/dynamic';
 
-import AboutAreaOne from "@/components/AboutAreaOne";
+// Dynamically imported components
+const BannerThree = dynamic(() => import('@/components/BannerThree'));
+const AboutAreaOne = dynamic(() => import('@/components/AboutAreaOne'));
+const ServiceAreaOne = dynamic(() => import('@/components/ServiceAreaOne'));
+const CaseStudyAreaThree = dynamic(() => import('@/components/CaseStudyAreaThree'));
+const TestimonialNine = dynamic(() => import('@/components/TestimonialNine'));
+const FaqAreaOne = dynamic(() => import('@/components/FaqAreaOne'));
+const CounterAreaOne = dynamic(() => import('@/components/CounterAreaOne'));
+const ContactAreaOne = dynamic(() => import('@/components/ContactAreaOne'));
+const WorkProcessOne = dynamic(() => import('@/components/WorkProcessOne'));
+const BlogAreaOne = dynamic(() => import('@/components/BlogAreaOne'));
+
+// Unused imports (kept as-is)
 import BannerFour from "@/components/BannerFour";
 import BannerOne from "@/components/BannerOne";
-import BlogAreaOne from "@/components/BlogAreaOne";
 import CaseStudyAreaGroupOne from "@/components/CaseStudyAreaGroupOne";
 import CaseStudyAreaOne from "@/components/CaseStudyAreaOne";
-import CaseStudyAreaThree from "@/components/CaseStudyAreaThree";
 import CaseStudyAreaTwo from "@/components/CaseStudyAreaTwo";
-import ContactAreaOne from "@/components/ContactAreaOne";
-import CounterAreaOne from "@/components/CounterAreaOne";
-import FaqAreaOne from "@/components/FaqAreaOne";
 import FaqAreaThree from "@/components/FaqAreaThree";
 import FaqAreaTwo from "@/components/FaqAreaTwo";
 import FooterEight from "@/components/FooterEight";
@@ -33,28 +41,22 @@ import ParallaxProviderWrapper from "@/components/ParallaxProviderWrapper";
 import ScrollAnimation from "@/components/Parralaxx";
 import Parralaxx from "@/components/Parralaxx";
 import PricingAreaOne from "@/components/PricingAreaOne";
-import ServiceAreaOne from "@/components/ServiceAreaOne";
-import ServiceAreaThree from "@/components/ServiceAreaThree";
 import ServiceAreaTwo from "@/components/ServiceAreaTwo";
+import ServiceAreaThree from "@/components/ServiceAreaThree";
 import TeamAreaOne from "@/components/TeamAreaOne";
 import TestimonialEight from "@/components/TestimonialEight";
 import TestimonialFive from "@/components/TestimonialFive";
-import TestimonialNine from "@/components/TestimonialNine";
-import TestimonialOne from "@/components/TestimonialOne";
 import TestimonialSeven from "@/components/TestimonialSeven";
 import TestimonialSix from "@/components/TestimonialSix";
 import TestimonialTen from "@/components/TestimonialTen";
 import TestimonialThree from "@/components/TestimonialThree";
 import TestimonialTwo from "@/components/TestimonialTwo";
-import WorkProcessOne from "@/components/WorkProcessOne";
-
 
 export const metadata = {
   title: "Home || AglieTech - IT Solutions & Technology NEXT JS Template",
   description:
     "Agiletech provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
 };
-
 
 const page = () => {
   return (
@@ -68,29 +70,26 @@ const page = () => {
       <br/>
       <br/>
       
-      <BannerOne />
+      {/* <BannerOne /> */}
+      <BannerThree/>
 
       {/* About Area One */}
       <AboutAreaOne />
 
       {/* Service Area One */}
-
       <ServiceAreaOne />
       {/* <ServiceAreaTwo/> */}
       {/* <ServiceAreaThree/> */}
 
-      
-
       {/* FAQ Area One */}
       <CaseStudyAreaThree/>
+
       {/* <ParallaxProviderWrapper>
       <ScrollAnimation/>
-      
       </ParallaxProviderWrapper> */}
-      
+
       {/* Case Study Area One */}
       {/* <TestimonialTen/> */}
-
       <TestimonialNine/>
       
       <FaqAreaOne/>
@@ -103,22 +102,15 @@ const page = () => {
       <CounterAreaOne />
 
       {/* Contact Area One */}
-
-
       <ContactAreaOne />
 
       {/* Work Process One */}
       <WorkProcessOne />
 
       {/* Pricing Area One */}
-      
 
       {/* Blog Area One */}
       <BlogAreaOne />
-
-      
-
-
     </>
   );
 };

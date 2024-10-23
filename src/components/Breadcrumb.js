@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation'; // Import usePathname to get the current route
+import Image from 'next/image';
 
 const Breadcrumb = ({ title }) => {
   const pathname = usePathname(); // Get the current route
@@ -17,20 +18,26 @@ const Breadcrumb = ({ title }) => {
   return (
     <>
       {/* ================ Breadcrumb Start ================ */}
-      <div className="breadcrumb-area">
+      <div className="breadcrumb-area" >
+        {/* <Image
+        src={'/assets/img/service.webp'}
+        height={200}
+        width={500}
+        alt='image'
+        /> */}
         <div className="container justify-center">
           <div className="breadcrumb-inner justify-center">
             <div className="row justify-content-center justify-center">
               <div className="col-lg-6 justify-center">
                 {/* Page title */}
-                <h2 className="page-title">{title}</h2>
+                <h2 className="page-title text-black">{title}</h2>
                 {/* Breadcrumb list directly under title */}
-                <ul className="page-list text-white">
-                  <li className="text-white">
+                <ul className="page-list text-black">
+                  <li className="text-black">
                     <Link href="/">Home</Link>
                   </li>
                   {" / "}
-                  <li className="text-white">{title}</li>
+                  <li className="text-black">{title}</li>
                 </ul>
               </div>
             </div>
@@ -42,10 +49,10 @@ const Breadcrumb = ({ title }) => {
       <style jsx>{`
         .breadcrumb-area {
           position: relative;
-          height: 20vh;
+          height: max-content;
           overflow: hidden;
-          background-color: black; /* Initial black background */
-          background-image: url('/assets/img/bcmb.jpg'); /* Add your image path here */
+          background-color: white; /* Initial black background */
+          
           background-size: cover;
           background-opacity: 0.5;
           background-position: center;

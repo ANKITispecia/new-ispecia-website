@@ -16,13 +16,7 @@ const AboutAreaFive = () => {
               data-aos-duration="1500"
             >
               <div className="about-thumb-inner">
-                <img
-                  className="animate-img-3 z-index-2 top_image_bounce"
-                  src="assets/img/about/rubee.png"
-                  alt="img"
-                  width={270}
-                  height={200}
-                />
+                
                 <img
                   className="main-img"
                   src="assets/img/about/20.jpg"

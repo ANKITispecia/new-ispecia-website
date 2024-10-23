@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Testimonial 1",
+    "description": "Our customer shares their experience with our AI development services.",
+    "videoUrl": "https://www.youtube.com/embed/L_zUCF875EY?si=VY34aUL1GhPbm6ir"
+  },
+  {
+    "id": 2,
+    "title": "Testimonial 2",
+    "description": "Here’s how our blockchain solutions made a difference.",
+    "videoUrl": "https://www.youtube.com/embed/O98OiqSnzt8?si=8XnZlUpls5hkoHZY"
+  },
+  {
+    "id": 3,
+    "title": "Testimonial 3",
+    "description": "A successful project in IoT development.",
+    "videoUrl": "https://www.youtube.com/embed/HP9bEm2q_rU?si=br76mCOx3natgEk-"
+  },
+  {
+    "id": 4,
+    "title": "Testimonial 4",
+    "description": "Why businesses trust us for data science projects.",
+    "videoUrl": "https://www.youtube.com/embed/9s4Kye-bJcE?si=jUQDjemjK6MO2p2b"
+  },
+  {
+    "id": 5,
+    "title": "Testimonial 5",
+    "description": "Our customer shares their experience with our CRM services.",
+    "videoUrl": "https://www.youtube.com/embed/e2okvKxrlo0?si=RrPd1rfON366Ie7W"
+  },
+  {
+    "id": 6,
+    "title": "Testimonial 6",
+    "description": "A great outcome for mobile app development.",
+    "videoUrl": "https://www.youtube.com/embed/pWjkGfJsjKA?si=J8Q7u9C1FJ0wpGAv"
+  },
+  {
+    "id": 7,
+    "title": "Testimonial 7",
+    "description": "What our clients say about our UI/UX services.",
+    "videoUrl": "https://www.youtube.com/embed/rXoswaC7BlU?si=GPllfFYyuvo_4VjQ"
+  },
+  {
+    "id": 8,
+    "title": "Testimonial 8",
+    "description": "SEO success stories from our clients.",
+    "videoUrl": "https://www.youtube.com/embed/wkMwLAAkYpg?si=WMC2N1ZjtyI56GRR"
+  },
+  {
+    "id": 9,
+    "title": "Testimonial 9",
+    "description": "Another success story in software development.",
+    "videoUrl": "https://www.youtube.com/embed/e2okvKxrlo0?si=ZCceW81RozNdiPMF"
+  },
+  {
+    "id": 10,
+    "title": "Testimonial 10",
+    "description": "Another success story in software development.",
+    "videoUrl": "https://www.youtube.com/embed/3UhFV3g7EBc?si=1rJJ3gHNL_bj1hPX"
+  }
+]

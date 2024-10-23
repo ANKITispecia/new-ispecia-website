@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
@@ -16,7 +17,7 @@ const BannerThree = () => {
         <img className="bg-img-2" src="assets/img/banner-3/4.png" alt="img" />
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 align-self-center">
+            <div className="col-lg-6 align-self-center"  style={{width:'50vw'}}>
               <div className="banner-inner pe-xl-5">
                 <h6
                   className="subtitle "
@@ -32,7 +33,7 @@ const BannerThree = () => {
                   data-aos-delay="200"
                   data-aos-duration="1500"
                 >
-                  Empowering Your <span>Financial</span> Freedom
+                   <span>Ispecia </span> Your No1 Technology Partner
                 </h2>
                 <p
                   className="content pe-xl-5"
@@ -40,9 +41,11 @@ const BannerThree = () => {
                   data-aos-delay="250"
                   data-aos-duration="1500"
                 >
-                  And In Order To Make A Business, Brand Advertising And
-                  Marketing Plays An Important Role. Similarly, In Making
-                  Cultivation Business Are Necessary.
+                  We assist in improving your website traffic with proven SEO techniques.
+                  <br/>
+                  Retain Your Digital Presence With Our SEO Agency.
+                  <br/>
+                  We Will Get Your Business Soar To Height.
                 </p>
                 <Link
                   className="btn btn-border-base "
@@ -59,17 +62,13 @@ const BannerThree = () => {
                   data-aos-delay="300"
                   data-aos-duration="1500"
                 >
-                  <span
-                    onClick={() => setOpen(true)}
-                    className="video-play-btn-hover"
-                  >
-                    <img src="assets/img/video.svg" alt="img" />{' '}
-                    <h6 className="d-inline-block">how we work</h6>
-                  </span>
+                  
+
+                
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-10">
+            <div className="col-lg-6 col-md-10" style={{width:'40vw'}}>
               <div
                 className="banner-thumb-3"
                 data-aos="fade-left"
@@ -77,6 +76,39 @@ const BannerThree = () => {
                 data-aos-duration="1500"
               >
                 <div className="main-img-wrap">
+                  
+                  <Image
+                    className="banner-animate-img banner-animate-img-1 left_image_bounce"
+                    src="/assets/img/reat.png"
+                    alt="img"
+                    width={120}
+                    height={120}
+                    style={{ position: 'absolute', left: '-40px', zIndex: 1 }}
+                  />
+
+                  
+                  <Image
+                    className="banner-animate-img banner-animate-img-2 left_image_bounce"
+                    src="/assets/img/seo.png"
+                    alt="img"
+                    width={240}
+                    height={230}
+                    style={{ position: 'absolute', right: '10px', top: '150px', zIndex: 1 }}
+                  />
+
+                  
+                  <Image
+                    className="main-img"
+                    src="/assets/img/unnamed2.png"
+                    alt="Main banner image"
+                    width={500}  
+                    height={500}  
+                    style={{ position: 'relative', zIndex: 0 }} 
+                  />
+                </div>
+
+
+                {/* <div className="main-img-wrap">
                   <img
                     className="banner-animate-img banner-animate-img-1 left_image_bounce"
                     src="assets/img/banner-3/2.svg"
@@ -89,10 +121,12 @@ const BannerThree = () => {
                   />
                   <img
                     className="main-img"
-                    src="assets/img/banner-3/1.png"
+                    src="assets/img/banner/3.png"
                     alt="img"
+                    
                   />
-                </div>
+                </div> */}
+                
               </div>
             </div>
           </div>

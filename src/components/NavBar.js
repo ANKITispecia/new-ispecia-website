@@ -49,23 +49,8 @@ const NavBar = () => {
       {/* navbar start */}
       <nav className="navbar navbar-area navbar-area_1 navbar-expand-lg sticky-active">
         <div className="container nav-container navbar-bg">
-          <div className="responsive-mobile-menu">
-            <button
-              onClick={menuActive}
-              className={
-                active
-                  ? 'menu toggle-btn d-block d-lg-none open'
-                  : 'menu toggle-btn d-block d-lg-none'
-              }
-              data-target="#itech_main_menu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="icon-left" />
-              <span className="icon-right" />
-            </button>
-          </div>
-          <div className="logo">
+          <div className="responsive-mobile-menu" style={{backgroundColor: 'white',height: '50px'}}>
+          <span className="logo" style={{marginRight:'60px', marginLeft:'0px'}}>  
             <Link href="/">
               {isImageError ? (
                 <span>Ispeica Technologies</span> // Changed from <p> to <span> for consistency
@@ -79,7 +64,24 @@ const NavBar = () => {
                 />
               )}
             </Link>
+            </span>
+            <button
+              onClick={menuActive}
+              className={
+                active
+                  ? 'menu toggle-btn d-block d-lg-none open'
+                  : 'menu toggle-btn d-block d-lg-none'
+              }
+              data-target="#itech_main_menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style={{position:'absolute',right:0,marginLeft:'40px'}}
+            >
+              <span className="icon-left" />
+              <span className="icon-right" />
+            </button>
           </div>
+          
           
           <div
             className={
@@ -89,10 +91,13 @@ const NavBar = () => {
             }
             id="itech_main_menu"
           >
-            <ul className="navbar-nav menu-open text-lg-end">
+            
+            <ul className="navbar-nav menu-open text-lg-end" >
               {/* <li className="menu-item-has-children">
                 <Link href="/">Home</Link>
               </li> */}
+            
+          
 
               {/* Services Mega Menu */}
               <li className="menu-item-has-children mega-menu">
@@ -101,8 +106,8 @@ const NavBar = () => {
                   <div className="row">
                     <div className="col-lg-3 col-xl-3 ">
                       <ul>
-                        <li>
-                          <span className="menu-title">Our Services</span>
+                        <li style={{marginLeft:'50px'}}>
+                          <span className="menu-title" >Our Services</span>
                         </li>
                         <li>
                           <Link href="/service/web-development">Web Development</Link>

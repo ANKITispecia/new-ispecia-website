@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import services from './service';
+
 import ServicepageComponent from '@/components/ServicepageComponent';
 import Breadcrumb from '@/components/Breadcrumb';
 

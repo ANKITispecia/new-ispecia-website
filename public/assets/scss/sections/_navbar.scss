@@ -112,9 +112,11 @@
     }
     .navbar-collapse {
       .navbar-nav {
-        display: block;
-        width: 100%;
-        text-align: left;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        align-items: center;
+        justify-content: start;
         li {
           a {
             color: var(--heading-color);
@@ -1003,7 +1005,7 @@
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .contact-widget .contact_info_list li.single-info-item .details {
     padding-left: 25px;
@@ -1041,6 +1043,7 @@
     i {
     opacity: 0;
     margin-right: -18px;
+    margin-left: 0px;
   }
   .nav-right-part-mobile {
     display: block;
