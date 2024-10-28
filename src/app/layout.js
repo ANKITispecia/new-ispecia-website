@@ -24,10 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,600,700&display=swap" as="style" crossOrigin="anonymous" />
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,600,700&display=swap" />
-        </noscript>
+    
     </head>
 
 

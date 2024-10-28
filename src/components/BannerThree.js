@@ -91,9 +91,9 @@ const BannerThree = () => {
                     className="banner-animate-img banner-animate-img-2 left_image_bounce"
                     src="/assets/img/seo.png"
                     alt="img"
-                    width={240}
-                    height={230}
-                    style={{ position: 'absolute', right: '10px', top: '150px', zIndex: 1 }}
+                    width={150}
+                    height={150}
+                    style={{ position: 'absolute', right: '30px', top: '150px', zIndex: 1 }}
                   />
 
                   

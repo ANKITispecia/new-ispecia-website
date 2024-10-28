@@ -45,9 +45,9 @@ const AboutAreaOne = () => {
                   className='main-img image'
                   src='/assets/img/about/1.jpg'
                   alt='main image'
-                  width={640}
+                  width={525}
                   height={425}
-                  style={{ position: 'relative', zIndex: 1, borderRadius: '10px' }}
+                  style={{ position: 'relative', zIndex: 1, borderRadius: '10px', marginTop:'20%'}}
                   priority
                 />
               </div>
@@ -58,15 +58,16 @@ const AboutAreaOne = () => {
               data-aos-delay='100'
               data-aos-duration='1500'
             >
-              <div className='section-title mt-5 mt-lg-0'>
-                <h6 className='sub-title'>ABOUT US</h6>
+              <div className='section-title mt-5 mt-lg-0 w-[65%]'>
+                <h6 className='sub-title'>Our Recognition</h6>
                 <h2 className='title'>
-                  It Is A Critical Component Of <span>Modern</span> Businesses
+                <span>Ispecia</span> Your Technology partner
                 </h2>
                 <p className='content mb-4 mb-xl-5'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry Loreaim Ipsum has been the industry's
-                  standard dummy
+                Ispecia Technologies, an Indian-based IT company, emphases providing 360-degree solutions to all sizes of businesses. Its primary objective is to accomplish clients’ businesses in the online realm with innovative and result-oriented solutions. 
+                <br/>
+                <br/>
+                Mobile and website development has become a key player in the modern marketing game. Making this our main motto, we strive to deliver our clients innovative and cost-effective solutions to boost their online presence, achieve business objectives and drive high ROI. We offer unparalleled solutions for all types of industries and clients all across the globe. In addition, we offer cutting-edge digital solutions to technology startups and established brands. Our clients are our priority for us, and we put our best efforts into fulfilling our commitments.
                 </p>
                 <div className='row'>
                   <div className='col-md-6'>
@@ -75,16 +76,18 @@ const AboutAreaOne = () => {
                         <Image
                           src='/assets/img/icon/2.png'
                           alt='icon 1'
-                          width={50}
-                          height={50}
+                          width={40}
+                          height={40}
                           style={{ transition: '0.4s' }}
                         />
                       </div>
                       <div className='details'>
-                        <h5>Our Ambition</h5>
+                        <h5>Experienced team</h5>
                         <p>
-                          Lorem is Ipsum is simply is design iomyi is text Lorem
-                          Ipsum is simply is our busi designer is our country.
+                        Our team comprises an innovative
+                        and committed workforce to design
+                        websites and effectively develop
+                        mobile apps and digital marketers.
                         </p>
                       </div>
                     </div>
@@ -95,20 +98,21 @@ const AboutAreaOne = () => {
                         <Image
                           src='/assets/img/icon/3.png'
                           alt='icon 2'
-                          width={50}
-                          height={50}
+                          width={40}
+                          height={40}
                           style={{ transition: '0.4s' }}
                         />
                       </div>
                       <div className='details'>
-                        <h5>Our Ambition</h5>
+                        <h5>Proven results</h5>
                         <p>
-                          Lorem is Ipsum is simply is design iomyi is text Lorem
-                          Ipsum is simply is our busi designer is our country.
+                        We combine traditional with current marketing methods to enhance your business, providing flawless execution.
                         </p>
                       </div>
                     </div>
                   </div>
+                  
+                  
                 </div>
               </div>
             </div>

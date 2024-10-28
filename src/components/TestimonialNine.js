@@ -48,10 +48,10 @@ const TestimonialNine = () => {
         <div className="testimonial-slider-1 owl-carousel slider-control-round slider-control-dots slider-control-right-top">
           <Slider {...settings}>
             {[
-              "https://www.youtube.com/embed/9s4Kye-bJcE",
-              "https://www.youtube.com/embed/O98OiqSnzt8",
-              "https://www.youtube.com/embed/L_zUCF875EY",
-              "https://www.youtube.com/embed/HP9bEm2q_rU"
+              "https://www.youtube.com/embed/rXoswaC7BlU?si=ntvZ1ZpG_S2M2wOE",
+              "https://www.youtube.com/embed/wkMwLAAkYpg?si=vkF6aIPh8P0EyXsd",
+              "https://www.youtube.com/embed/L_zUCF875EY?si=LOfumWCPWBjUaWOg",
+              "https://www.youtube.com/embed/pWjkGfJsjKA?si=Fq_SPnqlU-hGa1j6"
             ].map((src, index) => (
               <div className="item staggered" key={index} style={{ transform: index % 2 === 0 ? 'translateY(-20px)' : 'translateY(20px)' }}>
                 <iframe

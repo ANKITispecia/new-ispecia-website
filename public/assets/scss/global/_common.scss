@@ -494,8 +494,9 @@
     ## Breadcumb
 ------------------------------------------*/
 .breadcrumb-area {
-  padding: 222px 0 108px;
-  position: relative;
+  padding-top:100px;
+  padding-bottom:80px;
+  position: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

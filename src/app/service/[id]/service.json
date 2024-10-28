@@ -3,112 +3,478 @@
     "id": "web-development",
     "name": "Web Development",
     "description": "Building responsive and dynamic websites tailored to client needs.",
+    "detailedDescription": "Our expert web developers create stunning, high-performance websites that captivate your audience and drive results. We specialize in:",
     "whyChooseUs": "Our experienced team utilizes the latest technologies for quality delivery.",
-    "contactText": "Tell us about your Web Development project."
+    "contactText": "Tell us about your Web Development project.",
+    "features": [
+      "Custom web design and development",
+      "Responsive design for all devices",
+      "E-commerce solutions",
+      "Content management systems (CMS)",
+      "Search engine optimization (SEO)"
+    ],
+    "technologies": ["React", "Angular", "Vue.js", "Node.js", "PHP"],
+    "caseStudies": [
+      {
+        "title": "Ecommerce Website for a Fashion Brand",
+        "description": "Developed a high-performance e-commerce website with seamless checkout and personalized product recommendations.",
+        "imageUrl": "https://example.com/ecommerce-website.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "John Doe",
+        "title": "Senior Web Developer",
+        "expertise": "React, Angular, Node.js"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Monthly maintenance plans available"
+    },
+    "security": {
+      "measures": "SSL certificates, regular security audits, firewall protection"
+    }
   },
   {
     "id": "mobile-development",
     "name": "Mobile App Development",
     "description": "Creating user-friendly mobile applications for iOS and Android platforms.",
+    "detailedDescription": "We design and develop innovative mobile apps that deliver exceptional user experiences. Our expertise spans:",
     "whyChooseUs": "Our apps ensure an excellent user experience and high performance.",
-    "contactText": "Tell us about your Mobile App Development project."
+    "contactText": "Tell us about your Mobile App Development project.",
+    "features": [
+      "Native app development",
+      "Hybrid app development",
+      "Cross-platform development",
+      "App store optimization (ASO)",
+      "M-commerce solutions"
+    ],
+    "technologies": ["Swift", "Kotlin", "React Native", "Flutter"],
+    "caseStudies": [
+      {
+        "title": "Food Delivery App",
+        "description": "Developed a food delivery app with features like real-time tracking, online payments, and push notifications.",
+        "imageUrl": "https://example.com/food-delivery-app.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Jane Smith",
+        "title": "Mobile App Developer",
+        "expertise": "Swift, Kotlin, React Native"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular app updates and bug fixes"
+    },
+    "security": {
+      "measures": "Data encryption, secure authentication, regular security audits"
+    }
   },
   {
     "id": "ecommerce-development",
     "name": "E-commerce Development",
     "description": "Developing robust online stores with secure payment gateways.",
+    "detailedDescription": "Our e-commerce solutions help you sell your products online with ease. We offer:",
     "whyChooseUs": "We build scalable e-commerce solutions that enhance customer engagement.",
-    "contactText": "Discuss your E-commerce needs with us."
+    "contactText": "Discuss your E-commerce needs with us.",
+    "features": [
+      "Custom e-commerce platforms",
+      "Secure payment gateways",
+      "Inventory management",
+      "Marketing and promotions tools",
+      "Customer relationship management (CRM) integration"
+    ],
+    "technologies": ["Magento", "Shopify", "WooCommerce", "BigCommerce"],
+    "caseStudies": [
+      {
+        "title": "Luxury Fashion E-commerce Store",
+        "description": "Developed a high-end e-commerce store with personalized product recommendations and a seamless checkout process.",
+        "imageUrl": "https://example.com/luxury-fashion-store.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Michael Johnson",
+        "title": "E-commerce Developer",
+        "expertise": "Magento, Shopify, WooCommerce"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular platform updates and security patches"
+    },
+    "security": {
+      "measures": "PCI DSS compliance, fraud prevention tools, secure payment gateways"
+    }
   },
   {
     "id": "crm",
     "name": "CRM Development",
     "description": "Custom CRM solutions to streamline your business processes.",
+    "detailedDescription": "Our custom CRM solutions are tailored to your specific business needs, helping you manage customer relationships and improve sales efficiency.",
     "whyChooseUs": "Our CRMs are designed to improve customer relationships and boost sales.",
-    "contactText": "Let us know your CRM requirements."
+    "contactText": "Let us know your CRM requirements.",
+    "features": [
+      "Customer relationship management",
+      "Sales pipeline management",
+      "Marketing automation",
+      "Customer support ticketing",
+      "Data analytics and reporting"
+    ],
+    "technologies": ["Salesforce", "HubSpot", "Zoho", "custom CRM development"],
+    "caseStudies": [
+      {
+        "title": "CRM for a Real Estate Agency",
+        "description": "Developed a CRM solution to manage leads, track deals, and automate marketing campaigns.",
+        "imageUrl": "https://example.com/real-estate-crm.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Emily Davis",
+        "title": "CRM Developer",
+        "expertise": "Salesforce, HubSpot, Zoho"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular updates and bug fixes"
+    },
+    "security": {
+      "measures": "Data encryption, access controls, regular security audits"
+    }
   },
   {
     "id": "ui-ux",
     "name": "UI/UX Design",
     "description": "Designing intuitive and attractive interfaces for better user engagement.",
+    "detailedDescription": "Our experienced designers create stunning user interfaces and user experiences that delight your users. We focus on:",
     "whyChooseUs": "Our designs focus on user experience, ensuring ease of use and satisfaction.",
-    "contactText": "Share your design ideas with us."
+    "contactText": "Share your design ideas with us.",
+    "features": [
+      "User research and analysis",
+      "Wireframing and prototyping",
+      "Visual design and branding",
+      "User testing and iteration",
+      "Accessibility and inclusivity"
+    ],
+    "technologies": ["Figma", "Adobe XD", "Sketch"],
+    "caseStudies": [
+      {
+        "title": "Mobile App UI/UX Design",
+        "description": "Designed a visually appealing and intuitive mobile app interface for a healthcare startup.",
+        "imageUrl": "https://example.com/mobile-app-ui-ux.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Sarah Lee",
+        "title": "UI/UX Designer",
+        "expertise": "Figma, Adobe XD, UX Research"
+      }
+    ]
   },
   {
     "id": "marketing",
     "name": "Digital Marketing",
     "description": "Implementing strategies to enhance your online presence and reach.",
+    "detailedDescription": "Our digital marketing experts help you reach your target audience and drive conversions. We offer:",
     "whyChooseUs": "We use data-driven strategies to maximize your marketing ROI.",
-    "contactText": "Let’s discuss your digital marketing strategy."
-  },
+    "contactText": "Let’s discuss your digital marketing strategy.",
+    "features": [
+      "Search engine optimization (SEO)",
+      "Pay-per-click (PPC) advertising",
+      "Social media marketing",
+      "Content marketing",
+      "Email marketing"
+    ],
+    "technologies": ["Google Analytics", "Google Ads", "HubSpot", "Hootsuite"],
+    "caseStudies": [
+      {
+        "title": "Digital Marketing Campaign for a Tech Startup",
+        "description": "Increased website traffic by 30% and generated 20% more leads with a targeted digital marketing campaign.",
+        "imageUrl": "https://example.com/digital-marketing-campaign.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "David Kim",
+        "title": "Digital Marketing Specialist",
+        "expertise": "SEO, PPC, Social Media Marketing"
+      }
+    ]
+  },  
   {
     "id": "website-development",
     "name": "Website Development",
     "description": "End-to-end solutions for developing websites that drive engagement.",
+    "detailedDescription": "Our team provides comprehensive website development services that ensure a captivating online presence for your brand. We focus on:",
     "whyChooseUs": "We ensure your website is optimized for both speed and performance.",
-    "contactText": "Contact us for website development services."
+    "contactText": "Contact us for website development services.",
+    "features": [
+      "Custom website design",
+      "SEO-friendly architecture",
+      "Mobile responsiveness",
+      "CMS integration",
+      "Performance optimization"
+    ],
+    "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "Joomla"],
+    "caseStudies": [
+      {
+        "title": "Corporate Website for a Finance Company",
+        "description": "Built a fast, secure website with an elegant design tailored for a financial consulting firm.",
+        "imageUrl": "https://example.com/finance-company-website.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Alice Brown",
+        "title": "Lead Website Developer",
+        "expertise": "HTML, CSS, JavaScript, WordPress"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Ongoing site updates and performance monitoring"
+    },
+    "security": {
+      "measures": "SSL certificates, regular vulnerability scans, firewalls"
+    }
   },
   {
     "id": "web-app-development",
     "name": "Web App Development",
     "description": "Building scalable web applications to meet diverse business needs.",
+    "detailedDescription": "Our web app development services empower businesses with responsive, feature-rich applications. We provide:",
     "whyChooseUs": "Our web apps are built with scalability and performance in mind.",
-    "contactText": "Tell us about your web app project."
+    "contactText": "Tell us about your web app project.",
+    "features": [
+      "Single Page Applications (SPAs)",
+      "Progressive Web Apps (PWAs)",
+      "Custom API development",
+      "High scalability and performance",
+      "Secure authentication and data protection"
+    ],
+    "technologies": ["React", "Vue.js", "Django", "Ruby on Rails", "ASP.NET"],
+    "caseStudies": [
+      {
+        "title": "CRM Web Application for a Sales Team",
+        "description": "Developed a CRM web app that streamlined sales processes and enhanced lead tracking.",
+        "imageUrl": "https://example.com/crm-web-app.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Tom Green",
+        "title": "Web Application Developer",
+        "expertise": "React, Vue.js, Django"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular updates and bug fixes"
+    },
+    "security": {
+      "measures": "Data encryption, role-based access control, regular security assessments"
+    }
   },
   {
     "id": "progressive-web-apps",
     "name": "Progressive Web Apps (PWA)",
     "description": "Creating fast and reliable PWAs for a seamless user experience.",
+    "detailedDescription": "Our Progressive Web Apps combine the best of web and mobile applications, providing a fast, app-like experience. We deliver:",
     "whyChooseUs": "PWAs combine the best of web and mobile apps, ensuring accessibility.",
-    "contactText": "Inquire about our PWA solutions."
+    "contactText": "Inquire about our PWA solutions.",
+    "features": [
+      "Offline functionality",
+      "Push notifications",
+      "Installable on user devices",
+      "Optimized for performance",
+      "Responsive and adaptive design"
+    ],
+    "technologies": ["React", "Vue.js", "Service Workers", "IndexedDB", "Firebase"],
+    "caseStudies": [
+      {
+        "title": "PWA for an E-commerce Store",
+        "description": "Built a Progressive Web App with offline shopping capabilities for an online retail store.",
+        "imageUrl": "https://example.com/pwa-ecommerce.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Linda Park",
+        "title": "PWA Specialist",
+        "expertise": "Service Workers, Firebase, Vue.js"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular updates and new feature integration"
+    },
+    "security": {
+      "measures": "HTTPS protocol, offline data encryption, access control"
+    }
   },
   {
     "id": "graphic-design",
     "name": "Graphic Design",
     "description": "Providing creative graphic design services for branding and marketing.",
+    "detailedDescription": "Our graphic designers craft visually compelling designs that communicate your brand’s essence. We offer:",
     "whyChooseUs": "Our designs are visually appealing and aligned with your brand identity.",
-    "contactText": "Let’s create stunning visuals for your brand."
+    "contactText": "Let’s create stunning visuals for your brand.",
+    "features": [
+      "Branding and logo design",
+      "Marketing collateral",
+      "Social media graphics",
+      "Packaging design",
+      "Custom illustrations"
+    ],
+    "technologies": ["Adobe Illustrator", "Photoshop", "Canva"],
+    "caseStudies": [
+      {
+        "title": "Rebranding for a Tech Startup",
+        "description": "Created a modern logo, branding guidelines, and social media assets for a startup.",
+        "imageUrl": "https://example.com/branding-tech-startup.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Rachel Adams",
+        "title": "Graphic Designer",
+        "expertise": "Branding, Illustrations, Adobe Suite"
+      }
+    ]
   },
   {
     "id": "software-development",
     "name": "Software Development",
     "description": "Custom software solutions tailored to your specific business needs.",
+    "detailedDescription": "Our software development team creates robust applications that meet your business requirements. Our services include:",
     "whyChooseUs": "We employ agile methodologies for flexible and adaptive software delivery.",
-    "contactText": "Discuss your software requirements with us."
+    "contactText": "Discuss your software requirements with us.",
+    "features": [
+      "Enterprise software solutions",
+      "API integrations",
+      "Custom software development",
+      "Third-party software integration",
+      "Cloud-based solutions"
+    ],
+    "technologies": ["Java", "Python", ".NET", "C++", "AWS"],
+    "caseStudies": [
+      {
+        "title": "Inventory Management System for Retail",
+        "description": "Developed a customized inventory management software to streamline stock tracking and automate reordering.",
+        "imageUrl": "https://example.com/inventory-management.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "James Wilson",
+        "title": "Senior Software Engineer",
+        "expertise": "Java, Python, .NET"
+      }
+    ],
+    "support": {
+      "sla": "24/7 support",
+      "maintenance": "Regular software updates and performance checks"
+    },
+    "security": {
+      "measures": "Data encryption, role-based access control, regular security reviews"
+    }
   },
   {
     "id": "seo-services",
     "name": "SEO Services",
     "description": "Optimizing your website to improve visibility and drive organic traffic.",
+    "detailedDescription": "Our SEO specialists work to enhance your website’s search engine ranking and increase visibility. We focus on:",
     "whyChooseUs": "Our SEO strategies are designed to boost your online presence effectively.",
-    "contactText": "Let’s talk about your SEO needs."
+    "contactText": "Let’s talk about your SEO needs.",
+    "features": [
+      "Keyword research",
+      "On-page optimization",
+      "Link building",
+      "Technical SEO",
+      "Content strategy"
+    ],
+    "technologies": ["Google Analytics", "Google Search Console", "Ahrefs", "SEMrush"],
+    "caseStudies": [
+      {
+        "title": "SEO Strategy for an E-commerce Site",
+        "description": "Increased search visibility and organic traffic by optimizing product pages and content.",
+        "imageUrl": "https://example.com/seo-ecommerce.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Mark Roberts",
+        "title": "SEO Specialist",
+        "expertise": "Technical SEO, Content Strategy, Google Analytics"
+      }
+    ]
   },
   {
     "id": "ai",
     "name": "AI Development",
     "description": "Integrating AI solutions to enhance your business operations.",
+    "detailedDescription": "Our AI development services help businesses harness the power of artificial intelligence to solve complex problems and streamline operations. Our services include:",
     "whyChooseUs": "We leverage cutting-edge AI technologies for innovative solutions.",
-    "contactText": "Explore our AI development services."
-  },
-  {
-    "id": "blockchain",
-    "name": "Blockchain Solutions",
-    "description": "Developing secure blockchain solutions for various applications.",
-    "whyChooseUs": "Our expertise ensures safe and transparent blockchain implementations.",
-    "contactText": "Learn more about our blockchain services."
-  },
-  {
-    "id": "iot",
-    "name": "IoT Solutions",
-    "description": "Connecting devices and systems for smarter operations.",
-    "whyChooseUs": "Our IoT solutions improve efficiency and enable data-driven decisions.",
-    "contactText": "Inquire about our IoT capabilities."
+    "contactText": "Explore our AI development services.",
+    "features": [
+      "Machine learning solutions",
+      "Natural language processing",
+      "Predictive analytics",
+      "Computer vision applications",
+      "Chatbot development"
+    ],
+    "technologies": ["TensorFlow", "PyTorch", "OpenAI", "Google AI", "IBM Watson"],
+    "caseStudies": [
+      {
+        "title": "AI-powered Customer Support Bot",
+        "description": "Built a chatbot to handle routine inquiries, reducing response times and improving customer satisfaction.",
+        "imageUrl": "https://example.com/ai-chatbot.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Lucy Evans",
+        "title": "AI Developer",
+        "expertise": "Machine Learning, NLP, Chatbot Development"
+      }
+    ]
   },
   {
     "id": "data-science",
-    "name": "Data Science & Analytics",
-    "description": "Providing insights through data analysis to drive informed decision-making.",
-    "whyChooseUs": "Our data science solutions help unlock the potential of your data.",
-    "contactText": "Let’s analyze your data for better outcomes."
+    "name": "Data Science",
+    "description": "Unlocking insights from data to drive informed business decisions.",
+    "detailedDescription": "Our data science team provides end-to-end data analysis and visualization solutions to reveal valuable insights. We specialize in:",
+    "whyChooseUs": "Our data-driven approach helps you make strategic, informed decisions.",
+    "contactText": "Let’s analyze your data for valuable insights.",
+    "features": [
+      "Data analysis and modeling",
+      "Data visualization",
+      "Predictive analytics",
+      "Big data processing",
+      "Custom dashboards and reporting"
+    ],
+    "technologies": ["Python", "R", "SQL", "Tableau", "Power BI"],
+    "caseStudies": [
+      {
+        "title": "Predictive Analytics for a Retail Chain",
+        "description": "Implemented predictive analytics to forecast demand and optimize inventory management.",
+        "imageUrl": "https://example.com/predictive-analytics.jpg"
+      }
+    ],
+    "team": [
+      {
+        "name": "Daniel Chen",
+        "title": "Data Scientist",
+        "expertise": "Predictive Analytics, Data Visualization, Big Data"
+      }
+    ]
   }
 ]
+
+ 

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { usePathname } from 'next/navigation'; // Import usePathname to get the current route
-import Image from 'next/image';
+
 
 const Breadcrumb = ({ title }) => {
   const pathname = usePathname(); // Get the current route
@@ -19,12 +19,7 @@ const Breadcrumb = ({ title }) => {
     <>
       {/* ================ Breadcrumb Start ================ */}
       <div className="breadcrumb-area" >
-        {/* <Image
-        src={'/assets/img/service.webp'}
-        height={200}
-        width={500}
-        alt='image'
-        /> */}
+        
         <div className="container justify-center">
           <div className="breadcrumb-inner justify-center">
             <div className="row justify-content-center justify-center">
@@ -49,7 +44,7 @@ const Breadcrumb = ({ title }) => {
       <style jsx>{`
         .breadcrumb-area {
           position: relative;
-          height: max-content;
+          height: 8vh;
           overflow: hidden;
           background-color: white; /* Initial black background */
           
@@ -57,11 +52,12 @@ const Breadcrumb = ({ title }) => {
           background-opacity: 0.5;
           background-position: center;
           animation: fadeToImage 3.5s ease forwards;
-          margin-top: 6vh;
+          margin-top: 1.6vh;
           display: flex;
           flex-direction:row;
           text-align: center;
           font-size: 1em;
+          padding:none;
         }
 
         

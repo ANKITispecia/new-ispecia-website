@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos'; // Import AOS for animations
 import { handleFormSubmission } from '../actions/handleFormSubmission'; // Adjust the path accordingly
+import Image from 'next/image';
 
 const ContactAreaOne = () => {
   const [isClient, setIsClient] = useState(false); // Ensure component renders properly on client
@@ -69,7 +70,7 @@ const ContactAreaOne = () => {
                 data-aos-delay="200"
                 data-aos-duration="1500"
               >
-                <img className="w-100" src="/assets/img/bg/4.jpg" alt="img" />
+                <Image width={800} height={800} objectFit='cover' className="w-100" src="/assets/img/bg/5.jpg" alt="img" />
               </div>
               <div
                 className="col-lg-4 wow animated fadeInRight"

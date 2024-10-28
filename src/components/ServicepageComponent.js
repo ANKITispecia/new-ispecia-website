@@ -3,12 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import services from '@/app/service/[id]/service.json';
 import Link from 'next/link';
-import { FaPlus } from 'react-icons/fa';
 import Loading from '@/app/loading';
 
 const ServicepageComponent = ({ params }) => {
-  const { id } = params; // Access the dynamic route parameter directly
-
+  const { id } = params;
   const [service, setService] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -21,44 +19,121 @@ const ServicepageComponent = ({ params }) => {
   }, [id]);
 
   if (isLoading) {
-    return (
-      <Loading/>
-    ); // Handle loading state
+    return <Loading />; 
   }
 
   if (!service) {
-    return (
-      <div style={{ textAlign: 'center', padding: '50px' }}>Service not found!</div>
-    ); // Handle 404 state
+    return <div style={{ textAlign: 'center', padding: '50px' }}>Service not found!</div>;
   }
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1 style={{ marginBottom: '20px', fontSize: '2rem' }}>{service.name}</h1>
-      <p style={{ marginBottom: '20px', fontSize: '1rem', color: '#555' }}>{service.description}</p>
-
-      {/* New Button Added Here */}
-      
-
-      <h2 style={{ marginBottom: '10px', fontSize: '1.5rem', color: '#333' }}>{service.whyChooseUs}</h2>
-      <Link className="btn mt-0"
-        href="/portfolio"  // Change this to the correct path for your portfolio
+    <div className="container" style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+      <div
         style={{
-          display: 'inline-block',
-          marginBottom: '20px', // Margin bottom for spacing
-          padding: '10px 20px',
-          backgroundColor: '#87c349',
-          color: 'white',
-          borderRadius: '4px',
-          textDecoration: 'none',
+          backgroundColor: 'white',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+          padding: '20px',
+          display: 'block',
         }}
       >
-        See Projects
-      </Link>
-      
+        {/* Banner Image */}
+        <img
+          src="/assets/img/servicebanner.png" // Update with actual path
+          alt={`${service.name} banner`}
+          style={{ width: '100%', borderRadius: '12px 12px 0 0', marginBottom: '20px' }}
+        />
 
-      {/* Dynamic Contact Area Section */}
-<div className='price-process-area pd-top-120'>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '20px',
+            marginTop: '20px',
+          }}
+        >
+          {/* Description */}
+          <div style={{ gridColumn: '1 / -1' ,padding:'3%'}}>
+            <h1 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '20px' }}>{service.name}</h1>
+            <p style={{ fontSize: '1rem', color: '#555', marginBottom: '20px' }}>{service.description}</p>
+
+            <h2 style={{ fontSize: '1.5rem', fontWeight: '500', color: '#333', marginBottom: '10px' }}>
+              Why Choose Us?
+            </h2>
+            <p style={{ color: '#777', marginBottom: '20px' }}>{service.whyChooseUs}</p>
+          </div>
+
+          {/* Feature List */}
+          <div style={{padding:'3%'}}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '500', color: '#333', marginBottom: '10px' }}>
+              Features
+            </h3>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: '#666' ,gap:'10px'}}>
+              {service.features.map((feature, index) => (
+                <li key={index} style={{ marginBottom: '5px' }}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Technologies */}
+          <div>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '500', color: '#333', marginBottom: '10px' ,}}>
+              Technologies
+            </h3>
+            <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', color: '#666',display:'flex', flexDirection:'column' }}>
+              {service.technologies.map((tech, index) => (
+                <li
+                  key={index}
+                  style={{
+                    backgroundColor: '#f0f0f0',
+                    padding: '8px 12px',
+                    borderRadius: '8px',
+                    marginBottom: '5px',
+                  }}
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Team */}
+          <div style={{padding:'3%'}}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '500', color: '#333', marginBottom: '10px' }}>
+              Team
+            </h3>
+            {service.team.map((member, index) => (
+              <div key={index} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <div>
+                  <p style={{ fontWeight: '600', color: '#333' }}>{member.name}</p>
+                  <p style={{ color: '#666' }}>{member.title}</p>
+                  <p style={{ fontSize: '0.875rem', color: '#888' }}>{member.expertise}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Other Services */}
+          <div>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '500', color: '#333', marginBottom: '10px' }}>
+              Other Services
+            </h3>
+            <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
+              {services
+                .filter((s) => s.id !== service.id)
+                .map((otherService) => (
+                  <li key={otherService.id} style={{ marginBottom: '10px' }}>
+                    <Link href={`/service/${otherService.id}`} style={{ color: '#3b82f6', textDecoration: 'none' }}>
+                      {otherService.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div className='price-process-area pd-top-120'>
   <div className='contact-inner-1 contact-inner-2'>
     <div className='row'>
       <div
@@ -139,7 +214,6 @@ const ServicepageComponent = ({ params }) => {
     </div>
   </div>
 </div>
-      {/* End of Contact Area Section */}
     </div>
   );
 };

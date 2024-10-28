@@ -28,7 +28,7 @@ const FooterEight = () => {
   return (
     <>
       {/* footer area start */}
-      <footer className="footer-area footer-area_8 bg-black-2-ico bg-cover mt-0 p-5">
+      <footer className="footer-area footer-area_8 bg-[#4a4645]-ico bg-cover mt-0 p-5">
         {/* <div className="footer-subscribe">
           <div className="container">
             <div className="footer-subscribe-inner style-3 bg-cover">
@@ -57,10 +57,10 @@ const FooterEight = () => {
               <div className="widget widget_about">
                 <div className="thumb">
                   <Image
-                    src="/assets/img/logo.webp"
+                    src="/assets/img/logofooter.png"
                     alt="img"
-                    width={150}
-                    height={43}
+                    width={70}
+                    height={60}
                     priority={true} // Optimize critical image loading
                   />
                 </div>
@@ -172,16 +172,16 @@ const FooterEight = () => {
                 <h4 className="widget-title">Contact us</h4>
                 <ul className="details text-white text-center text-md-start mb-4 mb-md-0">
                   <li>
-                    <FaMapMarkerAlt /> Dehradun, India
+                    <FaMapMarkerAlt /> <Link href="https://maps.google.com/?q=30.283,78.00018">Dehradun, India</Link>
                   </li>
                   <li className="mt-3">
-                    <FaPhoneAlt /> (+91) 8650406532
+                    <FaPhoneAlt /> <Link href="tel:+91 8650406532">(+91) 8650406532</Link>
                   </li>
                   <li className="mt-2">
-                    <FaEnvelope /> info@ispecia.com
+                    <FaEnvelope /> <Link href="mailto:info@ispecia.com">info@ispecia.com</Link>
                   </li>
                   <li className="mt-2">
-                    <FaPhoneAlt /> er.sudeepgupta
+                    <FaPhoneAlt /> <Link href={'skype:er.sudeepgupta'}>er.sudeepgupta</Link>
                   </li>
                 </ul>
               </div>

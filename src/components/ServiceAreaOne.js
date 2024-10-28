@@ -29,10 +29,10 @@ const ServiceAreaOne = () => {
                   </div>
                   <div className='details'>
                     <h5>
-                      <Link href='/service-details'>{data.title}</Link>
+                      <Link href={`/service/${data.title}`}>{data.title.toUpperCase()}</Link>
                     </h5>
                     <p>{data.des}</p>
-                    <Link className='btn btn-border-base' href='/service-details'>
+                    <Link className='btn btn-border-base' href={`/service/${data.title}`}>
                       Touch More <FaPlus />
                     </Link>
                   </div>

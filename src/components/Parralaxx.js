@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import gsap from 'gsap'; // Import gsap for better tree-shaking
 import ScrollTrigger from 'gsap/ScrollTrigger'; // Import only ScrollTrigger
 import Image from 'next/image';
+import data from './Parralax.json'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -80,6 +81,7 @@ const ImageWrapper = styled.div`
   overflow: visible;
   position: relative;
   border-radius: 3%;
+  margin:2%;
 
   img {
     width: 100%;
@@ -173,22 +175,26 @@ const ScrollAnimation = () => {
                 <Image
                   src={`/assets/img/p${i + 1}.webp`}
                   alt={`Image ${i + 1}`}
-                  layout="responsive" // Use layout responsive for better performance
-                  width={1000}
-                  height={591}
-                  objectFit="cover"
+                  layout="responsive"// Use layout responsive for better performance
+                  width={890}
+                  height={480}
+                  objectFit='cover'
                   priority // Prioritize loading for critical images
+                  className='img-fluid pt-4 mt-4 mb-4 pb-4'
                 />
               </ImageWrapper>
+              <br/>
             </Section>
+            
           ))}
+          <br/>
         </SectionWrapper>
       </Container>
 
       {activeIndex !== null && (
         <FloatingTextBlock active={activeIndex !== null}>
-          <h4>{`Heading ${activeIndex + 1}`}</h4>
-          <p>{`This is the description for section ${activeIndex + 1}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum.`}</p>
+          <h4>{data[activeIndex].heading}</h4>
+          <p>{data[activeIndex].description}</p>
           <button href="#" className="btn btn-primary">Learn More</button>
         </FloatingTextBlock>
       )}
