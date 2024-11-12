@@ -7,11 +7,13 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
+  FaLinkedin,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
 } from 'react-icons/fa';
+import { FaX, FaXTwitter } from 'react-icons/fa6';
 
 const FooterEight = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -74,22 +76,27 @@ const FooterEight = () => {
                   </p>
                   <ul className="social-media text-center text-md-start mb-4 mb-md-0">
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.facebook.com/ispeciatech">
                         <FaFacebookF />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
-                        <FaTwitter />
+                      <Link href="https://twitter.com/IspeciaTech">
+                        <FaXTwitter />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.instagram.com/ispeciatech/">
                         <FaInstagram />
                       </Link>
                     </li>
                     <li>
-                      <Link href="#">
+                      <Link href="https://www.linkedin.com/company/ispecia">
+                        <FaLinkedin />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.youtube.com/@ispeciatechnologies">
                         <FaYoutube />
                       </Link>
                     </li>
@@ -114,7 +121,7 @@ const FooterEight = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services">
+                    <Link href="/service">
                       <FaArrowRight /> Services
                     </Link>
                   </li>
@@ -124,10 +131,26 @@ const FooterEight = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/testimonial">
+                      <FaArrowRight /> Testimonials
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog">
+                      <FaArrowRight /> Blogs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/Careers">
+                      <FaArrowRight /> Career
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/contact">
                       <FaArrowRight /> Contact Us
                     </Link>
                   </li>
+                  
                 </ul>
               </div>
             </div>
@@ -138,28 +161,48 @@ const FooterEight = () => {
                 <h4 className="widget-title text-center text-md-start mb-4 mb-md-0">Services</h4>
                 <ul className="text-center text-md-start mb-md-0 mt-4">
                   <li>
-                    <Link href="/services/web-development">
+                    <Link href="/service/web-development">
                       <FaArrowRight /> Web Development
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/app-development">
+                    <Link href="/service/mobile-development">
                       <FaArrowRight /> App Development
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/ui-ux-design">
+                    <Link href="/service/ui-ux">
                       <FaArrowRight /> UI/UX Design
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/digital-marketing">
+                    <Link href="/service/marketing">
                       <FaArrowRight /> Digital Marketing
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/cloud-solutions">
-                      <FaArrowRight /> Cloud Solutions
+                    <Link href="/service/progressive-web-apps">
+                      <FaArrowRight /> PWA Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service/crm">
+                      <FaArrowRight /> CRM Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service/seo-services">
+                      <FaArrowRight /> SEO Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service/graphic-design">
+                      <FaArrowRight /> Graphic Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service/software-development">
+                      <FaArrowRight /> Software Development
                     </Link>
                   </li>
                 </ul>
