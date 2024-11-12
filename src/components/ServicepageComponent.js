@@ -192,14 +192,13 @@ const ServicepageComponent = ({ params }) => {
               </div>
               <div className="col-12">
                 <Link
-                  className="btn btn-border-gray mt-0"
+                  className="btn btn-border-base mt-0"
                   href="#"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
                     padding: '10px 20px',
-                    backgroundColor: '#3b82f6',
-                    color: 'white',
+                    
                     borderRadius: '4px',
                     textDecoration: 'none',
                   }}

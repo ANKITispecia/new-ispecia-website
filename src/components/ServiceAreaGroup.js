@@ -33,21 +33,19 @@ const ServiceAreaGroup = () => {
                   </div>
                   <div className="details">
                     <h5>
-                      <Link href="/service-details">{data.title}</Link>
+                      <Link href={`/service/${data.title}`}>{data.title}</Link>
                     </h5>
                     <p>{data.des}</p>
                     <Link 
                       style={{
-                        padding: "0.5rem 1rem",
-                        backgroundColor: "#3b82f6",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "0.5rem",
+                        
+                        
+                        
                         fontWeight: "600",
                         transition: "background-color 0.3s ease"
                       }} 
-                      href="/service-details" 
-                      className="btn btn-border-base"
+                      href={`/service/${data.title}`} 
+                      className="btn btn-border-base mt-0"
                     >
                       Touch More <FaPlus />
                     </Link>

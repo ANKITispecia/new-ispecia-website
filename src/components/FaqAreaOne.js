@@ -22,11 +22,6 @@ const FaqAreaOne = () => {
                   src='assets/img/about/4.webp'
                   alt='img'
                 />
-                {/* <img
-                  className='animate-img-bottom-right top_image_bounce'
-                  src='assets/img/about/5.png'
-                  alt='img'
-                /> */}
               </div>
             </div>
             <div
@@ -41,9 +36,8 @@ const FaqAreaOne = () => {
                   Creating <span>Digital</span> Masterpieces
                 </h2>
                 <p className='content'>
-                  It is a long established fact that a reader will be distr
-                  acted bioiiy the end gail designa readable content of a page
-                  when looking.
+                  Get to know more about how we at Ispecia Technologies can help
+                  you achieve your business goals with our comprehensive services.
                 </p>
               </div>
               <div
@@ -60,7 +54,7 @@ const FaqAreaOne = () => {
                       aria-expanded='true'
                       aria-controls='collapseOne'
                     >
-                      What services do you offer?
+                      What services does Ispecia Technologies offer?
                     </button>
                   </h2>
                   <div
@@ -70,9 +64,7 @@ const FaqAreaOne = () => {
                     data-bs-parent='#accordionExample'
                   >
                     <div className='accordion-body'>
-                      Many desktop publishing packages and web page editors now
-                      use Lorem Ipsum as their default model text, search for
-                      'lorem ipsum' will uncover
+                      We provide a range of technology solutions, including software development, IT consulting, digital transformation, cloud computing, cybersecurity, and custom application development. Each service is tailored to meet specific business needs.
                     </div>
                   </div>
                 </div>
@@ -86,7 +78,7 @@ const FaqAreaOne = () => {
                       aria-expanded='false'
                       aria-controls='collapseTwo'
                     >
-                      How long does it take for you to complete a project?
+                      What industries does Ispecia Technologies serve?
                     </button>
                   </h2>
                   <div
@@ -96,9 +88,7 @@ const FaqAreaOne = () => {
                     data-bs-parent='#accordionExample'
                   >
                     <div className='accordion-body'>
-                      Many desktop publishing packages and web page editors now
-                      use Lorem Ipsum as their default model text, search for
-                      'lorem ipsum' will uncover
+                      Our team works across diverse industries, such as finance, healthcare, retail, manufacturing, and logistics. We tailor solutions for each industry’s unique requirements.
                     </div>
                   </div>
                 </div>
@@ -112,7 +102,7 @@ const FaqAreaOne = () => {
                       aria-expanded='false'
                       aria-controls='collapseThree'
                     >
-                      How much does it cost to work with your agency?
+                      How can Ispecia Technologies assist with digital transformation?
                     </button>
                   </h2>
                   <div
@@ -122,9 +112,79 @@ const FaqAreaOne = () => {
                     data-bs-parent='#accordionExample'
                   >
                     <div className='accordion-body'>
-                      Many desktop publishing packages and web page editors now
-                      use Lorem Ipsum as their default model text, search for
-                      'lorem ipsum' will uncover
+                      We help businesses enhance processes to be more efficient, scalable, and adaptive. Through strategy and technology integration, we make sure your business adapts seamlessly to a digital-first approach.
+                    </div>
+                  </div>
+                </div>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingFour'>
+                    <button
+                      className='accordion-button collapsed'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseFour'
+                      aria-expanded='false'
+                      aria-controls='collapseFour'
+                    >
+                      Does Ispecia Technologies offer customized software solutions?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseFour'
+                    className='accordion-collapse collapse'
+                    aria-labelledby='headingFour'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div className='accordion-body'>
+                      Yes, we specialize in customized software solutions to align with your unique needs. From planning to deployment, we ensure each step is tailored to your business goals.
+                    </div>
+                  </div>
+                </div>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingFive'>
+                    <button
+                      className='accordion-button collapsed'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseFive'
+                      aria-expanded='false'
+                      aria-controls='collapseFive'
+                    >
+                      How does Ispecia Technologies ensure security in its solutions?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseFive'
+                    className='accordion-collapse collapse'
+                    aria-labelledby='headingFive'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div className='accordion-body'>
+                      Security is a priority in every project. We apply best practices, such as encryption and secure coding, to ensure your data remains protected.
+                    </div>
+                  </div>
+                </div>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingSix'>
+                    <button
+                      className='accordion-button collapsed'
+                      type='button'
+                      data-bs-toggle='collapse'
+                      data-bs-target='#collapseSix'
+                      aria-expanded='false'
+                      aria-controls='collapseSix'
+                    >
+                      What is the average timeline for a project?
+                    </button>
+                  </h2>
+                  <div
+                    id='collapseSix'
+                    className='accordion-collapse collapse'
+                    aria-labelledby='headingSix'
+                    data-bs-parent='#accordionExample'
+                  >
+                    <div className='accordion-body'>
+                      Project timelines vary based on complexity but generally range from a few weeks to several months. We provide an upfront, transparent estimate for each project.
                     </div>
                   </div>
                 </div>

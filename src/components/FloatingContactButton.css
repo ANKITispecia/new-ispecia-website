@@ -1,80 +1,104 @@
 .floating-contact-button {
-    position: fixed;
-    bottom: 10vh; /* Move a little above */
-    right: 4vw; /* Move a little farther from right */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 9999;
-  }
-  
-  .main-button {
-    background-color: #85c445;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 9999;
-  }
-  
-  .main-button:hover {
-    background-color: #85c445;
-  }
-  
+  position: fixed;
+  bottom: 10vh; /* Move a little above */
+  right: 4vw; /* Move a little farther from right */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.whatsapp-button {
+  background-color: #85c445; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 8px; /* Space between WhatsApp button and contact form */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #85c445; /* Darker green on hover */
+  color:aliceblue;
+}
+
+.main-button {
+  background-color: #85c445;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+
+.main-button:hover {
+  background-color: #70a13d; /* Slightly darker green on hover */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #85c445;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  width: 300px; /* Set a default width for larger screens */
+}
+
+.contact-form h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 4px 0;
+  padding: 8px;
+  border: 1px solid #85c445;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #85c445;
+  color: rgb(8, 8, 8);
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  color: black;
+  background-color: #70a13d; /* Darker green on hover */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
   .contact-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
-    background-color: white;
-    border: 1px solid #85c445;
-    border-radius: 4px;
-    padding: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    width: 300px; /* Set a default width for larger screens */
+    width: 90vw; /* Make the form take up 90% of the viewport width */
+    max-width: 400px; /* Optional: limit maximum width */
   }
-  
-  .contact-form h3 {
-    margin: 0 0 10px 0;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    margin: 4px 0;
-    padding: 8px;
-    border: 1px solid #85c445;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 14px;
-  }
-  
-  .contact-form textarea {
-    height: 100px;
-  }
-  
-  .submit-button {
-    background-color: #85c445;
-    color: rgb(8, 8, 8);
-    border: 1px solid black;
-    border-radius: 10%;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-button:hover {
-    color: black;
-  }
-  
-  /* Media Query for Small Screens */
-  @media (max-width: 600px) {
-    .contact-form {
-      width: 90vw; /* Make the form take up 90% of the viewport width */
-      max-width: 400px; /* Optional: limit maximum width */
-    }
-  }
-  
+}

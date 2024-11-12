@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import './FloatingContactButton.css';
-import {   FaMessage } from 'react-icons/fa6';
+import { FaMessage } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 
 const FloatingContactButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +28,22 @@ const FloatingContactButton = () => {
 
   return (
     <div className="floating-contact-button">
+      {/* WhatsApp Chat Redirection Button */}
+      <a
+        href="https://wa.me/8650406532" // Replace with your WhatsApp number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-button"
+      >
+        <FaWhatsapp size={30} />
+      </a>
+
+      {/* Main Floating Button */}
       <button className="main-button" onClick={toggleMenu}>
-        {isOpen ?   <FaTimes /> : <FaMessage />}
+        {isOpen ? <FaTimes size={30} /> : <FaMessage size={30} />}
       </button>
+
+      {/* Contact Form */}
       {isOpen && (
         <div className="contact-form">
           <h3>Leave a Message</h3>
@@ -54,7 +68,9 @@ const FloatingContactButton = () => {
               onChange={(e) => setMessage(e.target.value)}
               required
             />
-            <button type="submit" className="submit-button btn btn-border-base mt-0 pt-0">Send</button>
+            <button type="submit" className="submit-button btn btn-border-base mt-0 pt-0">
+              Send
+            </button>
           </form>
         </div>
       )}

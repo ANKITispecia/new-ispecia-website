@@ -25,7 +25,7 @@ const Breadcrumb = ({ title }) => {
             <div className="row justify-content-center justify-center">
               <div className="col-lg-6 justify-center">
                 {/* Page title */}
-                <h2 className="page-title text-black">{title}</h2>
+                <h4 className=" " style={{color:"#86c445"}}>{title}</h4>
                 {/* Breadcrumb list directly under title */}
                 <ul className="page-list text-black">
                   <li className="text-black">

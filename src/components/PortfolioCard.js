@@ -25,7 +25,7 @@ const PortfolioCard = ({ card }) => {
             {showFullDescription ? "Read Less" : "Read More"}
           </button>
         )}
-        <a href={card.link} target="_blank" rel="noopener noreferrer" className="visit-btn">
+        <a href={card.link} target="_blank" rel="noopener noreferrer" className="btn btn-border-base">
           Visit
         </a>
       </div>

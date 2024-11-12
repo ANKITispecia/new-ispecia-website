@@ -21,7 +21,7 @@ const Portfolio = () => {
           ))}
         </div>
         {visibleCards < data.length && (
-          <button className="load-more-btn" onClick={loadMoreCards}>
+          <button className="btn btn-border-base" onClick={loadMoreCards}>
             Load More
           </button>
         )}

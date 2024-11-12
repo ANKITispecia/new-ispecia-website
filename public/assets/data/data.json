@@ -1,0 +1,242 @@
+[
+  {
+    "id": "business-development-executive",
+    "title": "Business Development Executive",
+    "description": "We are seeking a motivated and goal-oriented Business Development Executive to join our team. As a Business Development Executive, you will be responsible for lead generation, client acquisitions, and maintaining strong relationships with clients. You will work closely with our team representatives to bring in new business opportunities and achieve sales targets.",
+    "responsibilities": [
+      "Lead Generation and New Client Acquisitions: Identify potential clients through various channels, including online research, networking, and referrals.",
+      "Client Meeting and Coordination: Schedule and conduct meetings with prospective clients to understand their needs and present our products/services effectively.",
+      "Follow-up and Conversion: Maintain regular follow-up with clients to nurture leads and convert them into strong prospects.",
+      "Proposal and Payment Follow-up: Prepare and send proposals to clients, ensuring timely follow-up on outstanding payments.",
+      "Team Collaboration: Collaborate with team representatives to strategize and implement effective business development techniques.",
+      "Market Analysis: Conduct thorough research on customer preferences and competitor information to develop effective sales strategies.",
+      "Reporting: Provide regular reports on sales activities, progress, and challenges to top management.",
+      "Client Feedback: Gather feedback from clients to identify areas for improvement and enhance customer satisfaction."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in a relevant field (Preferred).",
+      "experience": "Fresher or At least 6 months of experience in business development or a related role.",
+      "language": "Fluent in English (Preferred).",
+      "location": "Dehradun, Uttarakhand (In-person work).",
+      "jobType": ["Full-time", "Regular / Permanent position", "Fresher candidates are welcome to apply."],
+      "salary": "₹14,000.00 – ₹20,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Candidates should be able to reliably commute to our office in Dehradun or plan to relocate before starting work (Required)."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "If you are an enthusiastic and self-driven individual with a passion for business development and building strong client relationships, we encourage you to apply for this exciting opportunity. Join our dynamic team and contribute to our continued growth and success."
+  },
+  {
+    "id": "business-development-manager",
+    "title": "Business Development Manager",
+    "description": "We are seeking a Business Development Manager responsible for lead generation, client acquisition, and relationship management. The manager will also collaborate with the team to develop strategies, meet sales targets, and help the company grow.",
+    "responsibilities": [
+      "Lead Generation and Client Acquisition: Identify and pursue new business opportunities.",
+      "Client Relationship Management: Cultivate strong, long-lasting relationships with clients.",
+      "Sales Strategy: Work with the team to implement business strategies.",
+      "Proposal Development: Prepare and present tailored proposals to clients.",
+      "Reporting: Provide detailed reports on sales and client activities.",
+      "Market Research: Analyze competitor strategies and market trends."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in Business, Marketing, or a related field.",
+      "experience": "3-5 years of experience in business development or sales.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹25,000.00 – ₹35,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Join our team and drive the growth of Ispecia Technologies with your business acumen and passion for client relationships. Apply today!"
+  },
+  {
+    "id": "full-stack-flutter-developer",
+    "title": "Full Stack Flutter Developer",
+    "description": "We are looking for a skilled Full Stack Flutter Developer to join our team. This role involves developing and maintaining cross-platform applications using Flutter and working on both the front-end and back-end components.",
+    "responsibilities": [
+      "Develop high-quality, responsive, and performant mobile applications using Flutter for iOS and Android.",
+      "Collaborate with backend developers to build and consume APIs.",
+      "Design and manage databases using technologies like Firebase, MySQL, or MongoDB.",
+      "Write clean, efficient code and conduct code reviews.",
+      "Optimize app performance and scalability.",
+      "Create and maintain technical documentation for projects."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in Computer Science or a related field.",
+      "experience": "6 months to 3 years of experience in Flutter development.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹20,000.00 – ₹35,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "If you're a talented Flutter developer eager to work on cutting-edge mobile applications, we'd love to have you on our team. Apply today!"
+  },
+  {
+    "id": "php-wordpress-intern",
+    "title": "PHP/WordPress Intern",
+    "description": "This internship is ideal for individuals looking to gain hands-on experience in PHP and WordPress development. You will assist in the development and maintenance of websites and applications using PHP and WordPress.",
+    "responsibilities": [
+      "Assist in the development of WordPress themes and plugins.",
+      "Support backend development using PHP.",
+      "Test and debug WordPress sites and PHP code.",
+      "Collaborate with developers to maintain and optimize websites."
+    ],
+    "requirements": {
+      "education": "Pursuing a degree in IT, Computer Science, or related field.",
+      "experience": "No prior experience required.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Internship", "Full-time"],
+      "salary": "Stipend provided.",
+      "schedule": ["Flexible", "Day shift"]
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Gain valuable hands-on experience while contributing to real-world projects. Apply for the PHP/WordPress Internship today!"
+  },
+  {
+    "id": "web-developer",
+    "title": "Web Developer",
+    "description": "We are looking for a Web Developer who will be responsible for developing and maintaining websites and web applications. You will work with the design and backend teams to deliver high-quality web solutions.",
+    "responsibilities": [
+      "Develop responsive, high-performance websites.",
+      "Collaborate with front-end and back-end developers.",
+      "Ensure cross-browser compatibility.",
+      "Optimize website performance and SEO.",
+      "Troubleshoot and debug issues."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in Computer Science or equivalent.",
+      "experience": "1-3 years of experience in web development.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹18,000.00 – ₹30,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Join our dynamic team and help build beautiful and functional websites. Apply today!"
+  },
+  {
+    "id": "technical-support",
+    "title": "Technical Support",
+    "description": "We are hiring a Technical Support representative to assist clients with technical issues related to our products and services. This role requires problem-solving skills and the ability to work closely with both clients and the development team.",
+    "responsibilities": [
+      "Provide technical assistance to clients via phone, email, or chat.",
+      "Troubleshoot and resolve issues related to software, hardware, and network.",
+      "Document and report issues, solutions, and improvements.",
+      "Collaborate with the development team to resolve complex technical problems."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in IT or related field.",
+      "experience": "1-2 years of technical support experience.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹15,000.00 – ₹25,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Join our support team and help clients solve technical problems. Apply now!"
+  },
+  {
+    "id": "digital-marketing-specialist",
+    "title": "Digital Marketing Specialist",
+    "description": "We are looking for a Digital Marketing Specialist to manage and optimize our digital marketing campaigns. You will be responsible for SEO, PPC, email marketing, and social media marketing.",
+    "responsibilities": [
+      "Manage and optimize digital advertising campaigns (SEO, PPC).",
+      "Develop and execute email marketing strategies.",
+      "Monitor and report on campaign performance.",
+      "Conduct market research to identify trends and opportunities."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in Marketing or a related field.",
+      "experience": "1-2 years of experience in digital marketing.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹18,000.00 – ₹25,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Be part of a growing company and help drive our digital presence. Apply now!"
+  },
+  {
+    "id": "content-writer",
+    "title": "Content Writer",
+    "description": "We are looking for a creative and skilled Content Writer to create high-quality, engaging content for our website, blogs, and marketing materials.",
+    "responsibilities": [
+      "Write well-researched and engaging articles and blog posts.",
+      "Create content for marketing campaigns.",
+      "Collaborate with the team to develop content strategies."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in English, Journalism, or related field.",
+      "experience": "1-2 years of experience in content writing.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹12,000.00 – ₹20,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "Join our team and help us craft compelling content. Apply today!"
+  },
+  {
+    "id": "graphic-designer",
+    "title": "Graphic Designer",
+    "description": "We are seeking a talented Graphic Designer to create visually appealing graphics for our brand, website, and marketing materials.",
+    "responsibilities": [
+      "Design and create graphics for online and offline use.",
+      "Collaborate with the marketing team to develop visual content.",
+      "Ensure that designs align with brand guidelines."
+    ],
+    "requirements": {
+      "education": "Bachelor’s degree in Graphic Design or related field.",
+      "experience": "1-2 years of experience in graphic design.",
+      "language": "Fluent in English.",
+      "location": "Dehradun, Uttarakhand.",
+      "jobType": ["Full-time", "Regular / Permanent position"],
+      "salary": "₹15,000.00 – ₹25,000.00 per month.",
+      "schedule": ["Day shift", "Morning shift"],
+      "commute": "Required to commute to Dehradun office."
+    },
+    "contact": {
+      "email": "hr.ispecia@gmail.com",
+      "phone": "+918650406532"
+    },
+    "applicationMessage": "If you have a passion for design and want to work on exciting projects, apply now!"
+  }
+]

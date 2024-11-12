@@ -14,7 +14,7 @@ const WorkProcessFour = () => {
               <div className="section-title text-center pb-5">
                 <h6 className="sub-title-sky-blue">WORK PROCESS</h6>
                 <h2 className="title">
-                  Empowering Your Business With Artificial
+                  Empowering Your Business Through Innovative Solutions
                 </h2>
               </div>
             </div>
@@ -24,13 +24,12 @@ const WorkProcessFour = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="single-work-process-inner style-2 text-center">
                   <div className="thumb mb-3">
-                    <img src="assets/img/icon/36.svg" alt="img" />
+                    <img src="assets/img/icon/36.svg" alt="Assessment" />
                   </div>
                   <div className="details">
-                    <h5 className="mb-3">Assessment</h5>
+                    <h5 className="mb-3">Comprehensive Assessment</h5>
                     <p className="content">
-                      Research ipsum dolor sit consec tetur sed diam in the
-                      aliquam tempor
+                      We conduct a thorough analysis of your business needs and goals, identifying key areas where technology can enhance performance and drive growth.
                     </p>
                   </div>
                 </div>
@@ -38,13 +37,12 @@ const WorkProcessFour = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="single-work-process-inner style-2 text-center">
                   <div className="thumb mb-3">
-                    <img src="assets/img/icon/37.svg" alt="img" />
+                    <img src="assets/img/icon/37.svg" alt="Implementation Planning" />
                   </div>
                   <div className="details">
-                    <h5 className="mb-3">Implementationplanning</h5>
+                    <h5 className="mb-3">Strategic Implementation Planning</h5>
                     <p className="content">
-                      Create ipsum dolor sit consec tetur sed diam in the
-                      aliquam tempor
+                      Based on the assessment, we develop a clear, actionable implementation plan tailored to your unique business objectives.
                     </p>
                   </div>
                 </div>
@@ -52,13 +50,12 @@ const WorkProcessFour = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="single-work-process-inner style-2 text-center">
                   <div className="thumb mb-3">
-                    <img src="assets/img/icon/38.svg" alt="img" />
+                    <img src="assets/img/icon/38.svg" alt="Capabilities" />
                   </div>
                   <div className="details">
-                    <h5 className="mb-3">Capabilities</h5>
+                    <h5 className="mb-3">Building Capabilities</h5>
                     <p className="content">
-                      Develope ipsum dolor sit consec tetur sed diam in the
-                      aliquam tempor
+                      Our team works on enhancing your technical capabilities, whether through software development, systems integration, or digital transformation.
                     </p>
                   </div>
                 </div>
@@ -66,13 +63,12 @@ const WorkProcessFour = () => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="single-work-process-inner style-2 text-center">
                   <div className="thumb mb-3">
-                    <img src="assets/img/icon/39.svg" alt="img" />
+                    <img src="assets/img/icon/39.svg" alt="Innovation" />
                   </div>
                   <div className="details">
-                    <h5 className="mb-3">Innovation</h5>
+                    <h5 className="mb-3">Continuous Innovation</h5>
                     <p className="content">
-                      Shop ipsum dolor sit consec tetur Malesuada sed diam in
-                      the
+                      We stay ahead of the curve by continuously innovating, ensuring your business leverages the latest technological advancements.
                     </p>
                   </div>
                 </div>

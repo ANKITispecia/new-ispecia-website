@@ -42,26 +42,26 @@ const AboutAreaFive = () => {
                   <div className="col-md-6">
                     <ul className="single-list-inner style-check style-heading style-check mb-3">
                       <li>
-                        <FaCheckCircle className="sky" /> Client-Centric Approach
+                        <FaCheckCircle className="" /> Client-Centric Approach
                       </li>
                       <li>
-                        <FaCheckCircle className="sky" /> Innovative Solutions
+                        <FaCheckCircle className="" /> Innovative Solutions
                       </li>
                     </ul>
                   </div>
                   <div className="col-md-6">
                     <ul className="single-list-inner style-check style-heading style-check mb-3">
                       <li>
-                        <FaCheckCircle className="sky" /> Global Expertise
+                        <FaCheckCircle className="" /> Global Expertise
                       </li>
                       <li>
-                        <FaCheckCircle className="sky" /> 360-Degree Services
+                        <FaCheckCircle className="" /> 360-Degree Services
                       </li>
                     </ul>
                   </div>
                 </div>
                 <Link
-                  className="btn btn-base-color border-radius-5"
+                  className="btn btn-border-base border-radius-5"
                   href="/testimonials"
                 >
                   Proven Track Record <FaArrowRight />

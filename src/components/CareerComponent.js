@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import jobData from "../../public/assets/data/data"; // Adjust the path based on your file structure
+import jobData from "../../public/assets/data/data.json"; // Adjust the path based on your file structure
 
 
 const CareerComponent = () => {
@@ -16,8 +16,8 @@ const CareerComponent = () => {
           <div className="row justify-content-center pd-top-120" style={{ width: '100%', maxWidth: '1200px' }}>
             <div className="col-xl-10 col-lg-10 col-md-12">
               <div className="section-title mb-0 mt-4 mt-lg-0 text-center">
-                <h6 className="sub-title">YOUR ANSWER</h6>
-                <h2 className="title">Have Any <span>Question</span> Please?</h2>
+                
+                <h4 className="title">Explore <span>Openings</span> Available</h4>
               </div>
               <div className="accordion accordion-inner style-2 accordion-icon-left mt-3" id="accordionExample">
                 {jobData.map((job) => (
