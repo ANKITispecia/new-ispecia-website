@@ -175,11 +175,14 @@ const ScrollAnimation = () => {
                 <Image
                   src={`/assets/img/p${i + 1}.webp`}
                   alt={`Image ${i + 1}`}
-                  layout="responsive"// Use layout responsive for better performance
+                  // Use layout responsive for better performance
                   width={890}
                   height={480}
-                  objectFit='cover'
-                  priority // Prioritize loading for critical images
+                  style={{
+                    objectFit: 'cover',  // Use CSS styles instead of 'objectFit'
+                    borderRadius:'1%'
+                  }}
+                   // Prioritize loading for critical images
                   className='img-fluid pt-4 mt-4 mb-4 pb-4'
                 />
               </ImageWrapper>

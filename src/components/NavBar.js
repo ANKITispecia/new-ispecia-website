@@ -231,7 +231,7 @@ const NavBar = () => {
                 <Link href="/testimonial">Testimonial</Link>
               </li>
               <li className="menu-item-has-children">
-                <a href="/Career" onClick={()=>router.push('/Career')}>Career</a>
+                <a href="/Careers" onClick={()=>router.push('/Careers')}>Career</a>
               </li>
               <li>
                 <Link href="/blog">Blogs</Link>
@@ -248,7 +248,6 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      {/* navbar end */}
     </>
   );
 };
