@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 1; /* Lower z-index if other components should overlay */
+  z-index: 999; /* Lower z-index if other components should overlay */
   background-color: rgba(37, 37, 37, 0.7); /* Optional semi-transparent background */
 
   display: flex; /* Centering content */

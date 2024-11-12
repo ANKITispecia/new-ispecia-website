@@ -15,9 +15,12 @@ const FloatingContactButton = dynamic(() => import('@/components/FloatingContact
 });
 
 export const metadata = {
-  title: "Service || AgileTech - IT Solutions & Technology NEXT JS Template",
+  title: "Service || Ispecia technologies - IT Solutions & Technology",
   description:
-    "Agiletech provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
+    "Ispecia provide you to build the best agency, app, business, digital, it services, it solutions, network solution, startup, technology, technology company, technology service template.",
+  icons: {
+    icons:"/assets/img/favicon.ico"
+  }
 };
 
 export default function RootLayout({ children }) {

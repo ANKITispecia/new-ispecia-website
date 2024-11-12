@@ -2,97 +2,220 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaCalendarAlt, FaRegComments, FaRegUser } from 'react-icons/fa';
+import './BlogAreaOne.css'; // Import the CSS file
 
 const BlogAreaOne = () => {
-  const [latestPost, setLatestPost] = useState(null);
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // Fetch the latest blog post
   useEffect(() => {
-    const fetchLatestPost = async () => {
+    const fetchPosts = async () => {
       try {
-        const res = await fetch('https://www.ispecia.com/wp-json/wp/v2/posts?_embed&per_page=1');
-        const posts = await res.json();
-        if (posts.length > 0) {
-          setLatestPost(posts[0]);
-        }
+        const res = await fetch('https://www.ispecia.com/wp-json/wp/v2/posts?_embed&per_page=6');
+        const fetchedPosts = await res.json();
+        setPosts(fetchedPosts);
+        setLoading(false);
       } catch (error) {
-        console.error('Error fetching the latest blog post:', error);
+        console.error('Error fetching blog posts:', error);
+        setLoading(false);
       }
     };
 
-    fetchLatestPost();
+    fetchPosts();
   }, []);
 
-  if (!latestPost) {
-    return <div>Loading...</div>; // Show a loading state while fetching the post
+  if (loading) {
+    return <div style={{ textAlign: 'center', padding: '1rem' }}>Loading...</div>;
   }
 
-  const { title, date, _embedded, slug } = latestPost;
-
   return (
-    <>
-      {/*===================== Blog Area One start =====================*/} 
-      <div className="blog-area pd-bottom-90">
-        <div className="container">
-          <div className="section-title text-center">
-            <h6 className="sub-title">New Blog</h6>
-            <h2 className="title">
-              Explore our newest <span>blogs</span>
-            </h2>
-          </div>
-          <div className="row justify-content-center">
-            {/* Show the latest blog */}
-            <div className="col-lg-6 col-md-8">
-              <div className="single-blog-list">
-                <div className="thumb">
-                  {_embedded?.['wp:featuredmedia']?.[0]?.source_url ? (
-                    <img src={_embedded['wp:featuredmedia'][0].source_url} alt={title.rendered} />
-                  ) : (
-                    <img src="assets/img/blog/placeholder.png" alt="No Image Available" />
-                  )}
+    <div style={{
+      padding: '2rem 0',
+      
+    }}>
+      <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '0 1rem'
+      }}>
+        {/* Header */}
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '1.5rem'
+        }}>
+          <h6 style={{
+            color: '#86c445',
+            fontSize: '0.875rem',
+            fontWeight: 600,
+            marginBottom: '0.5rem'
+          }}>
+            Latest Blogs
+          </h6>
+          <h2 style={{
+            fontSize: '1.5rem',
+            fontWeight: 700,
+            color: '#1F2937'
+          }}>
+            Explore our <span style={{ color: '#86c445' }}>insights</span>
+          </h2>
+        </div>
+        
+        {/* Grid Container - Added blog-grid class */}
+        <div className="blog-grid" style={{
+          display: 'grid',
+          gap: '1rem'
+        }}>
+          {posts.map((post) => (
+            <div key={post.id} style={{
+              backgroundColor: '#ffffff',
+              borderRadius: '0.375rem',
+              boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
+              overflow: 'hidden',
+              transition: 'box-shadow 0.3s ease',
+            }}>
+              {/* Image Container */}
+              <div style={{
+                position: 'relative',
+                height: '8rem'
+              }}>
+                <img 
+                  src={post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'assets/img/blog/placeholder.png'}
+                  alt={post.title.rendered}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  backgroundColor: '#86c445',
+                  color: '#ffffff',
+                  padding: '0.25rem 0.5rem',
+                  borderTopRightRadius: '0.375rem',
+                  fontSize: '0.75rem'
+                }}>
+                  {new Date(post.date).toLocaleDateString(undefined, { 
+                    month: 'short',
+                    day: 'numeric'
+                  })}
                 </div>
-                <div className="details">
-                  <p className="date mb-3 d-flex align-items-center">
-                    <FaCalendarAlt className="me-2" />
-                    {new Date(date).toLocaleDateString()}
-                  </p>
-                  <h5>
-                    <Link href={`/blog/${slug}`}>
-                      {/* Remove the <a> tag here */}
-                      {title.rendered}
-                    </Link>
-                  </h5>
-                  <div className="meta">
-                    <div className="row">
-                      <div className="col-6">
-                        <p>
-                          <FaRegUser />
-                          {_embedded?.author?.[0]?.name || 'Admin'}
-                        </p>
-                      </div>
-                      <div className="col-6 text-end">
-                        <p>
-                          <FaRegComments />
-                          0 Comments
-                        </p>
-                      </div>
-                    </div>
+              </div>
+              
+              {/* Content */}
+              <div style={{
+                padding: '0.75rem'
+              }}>
+                <Link 
+                  href={`/blog/${post.slug}`}
+                  style={{
+                    textDecoration: 'none'
+                  }}
+                >
+                  <h3 style={{
+                    fontSize: '0.875rem',
+                    fontWeight: 600,
+                    color: '#86c445',
+                    marginBottom: '0.5rem',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                    minHeight: '2.5rem'
+                  }}>
+                    {post.title.rendered}
+                  </h3>
+                </Link>
+                
+                <div style={{
+                  fontSize: '0.75rem',
+                  color: '#4B5563',
+                  display: '-webkit-box',
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  marginBottom: '0.5rem'
+                }}
+                  dangerouslySetInnerHTML={{
+                    __html: post.excerpt.rendered
+                  }}
+                />
+                
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  fontSize: '0.75rem',
+                  color: '#6B7280',
+                  paddingTop: '0.5rem',
+                  borderTop: '1px solid #E5E7EB'
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center'
+                  }}>
+                    <FaRegUser style={{
+                      width: '0.75rem',
+                      height: '0.75rem',
+                      marginRight: '0.25rem'
+                    }} />
+                    <span style={{
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                      maxWidth: '60px'
+                    }}>
+                      {post._embedded?.author?.[0]?.name || 'Admin'}
+                    </span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center'
+                  }}>
+                    <FaRegComments style={{
+                      width: '0.75rem',
+                      height: '0.75rem',
+                      marginRight: '0.25rem'
+                    }} />
+                    <span>0</span>
                   </div>
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+        
+        {/* View All Button */}
+        <div style={{
+          textAlign: 'center',
+          marginTop: '1.5rem'
+        }}>
+          <Link 
+            href="/blog" 
+            style={{
+              display: 'inline-block',
+              padding: '0.5rem 1rem',
+              backgroundColor: '#3B82F6',
+              color: '#ffffff',
+              textDecoration: 'none',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              transition: 'background-color 0.3s ease'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#86c445'}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#ffffff';
+              e.currentTarget.style.color = 'Black';
+            }}
 
-            {/* See More Blogs button */}
-            <div className="col-lg-4 d-flex align-items-center justify-content-center">
-              <Link href="/blog" className="btn btn-border-base mt-0">
-                See More Blogs
-              </Link>
-            </div>
-          </div>
+          >
+            View All Blogs
+          </Link>
         </div>
       </div>
-      {/* ===================== BlogAreaOne End =====================*/}
-    </>
+    </div>
   );
 };
 

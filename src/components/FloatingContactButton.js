@@ -1,79 +1,93 @@
+// FloatingContactButton.js
 'use client';
 import React, { useState } from 'react';
+import { FaEnvelope, FaWhatsapp, FaPhone, FaTimes } from 'react-icons/fa';
 import './FloatingContactButton.css';
-import { FaMessage } from 'react-icons/fa6';
-import { FaTimes } from 'react-icons/fa';
-import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 
 const FloatingContactButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [isFormVisible, setIsFormVisible] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log({ name, email, message });
-    // Optionally, reset the form fields
-    setName('');
-    setEmail('');
-    setMessage('');
-    setIsOpen(false); // Close the form after submission
+    console.log(formData);
+    setFormData({ name: '', email: '', message: '' });
+    setIsFormVisible(false);
+  };
+
+  const toggleFormVisibility = () => {
+    setIsFormVisible(prev => !prev);
   };
 
   return (
     <div className="floating-contact-button">
-      {/* WhatsApp Chat Redirection Button */}
-      <a
-        href="https://wa.me/8650406532" // Replace with your WhatsApp number
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-button"
-      >
-        <FaWhatsapp size={30} />
-      </a>
-
-      {/* Main Floating Button */}
-      <button className="main-button" onClick={toggleMenu}>
-        {isOpen ? <FaTimes size={30} /> : <FaMessage size={30} />}
-      </button>
-
       {/* Contact Form */}
-      {isOpen && (
-        <div className="contact-form">
+      {isFormVisible && (
+        <div className="contact-form visible">
+          <button className="close-button" onClick={toggleFormVisibility}>
+            <FaTimes size={16} />
+          </button>
           <h3>Leave a Message</h3>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={formData.name}
+              onChange={handleInputChange}
               required
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formData.email}
+              onChange={handleInputChange}
               required
             />
             <textarea
+              name="message"
               placeholder="Your Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={formData.message}
+              onChange={handleInputChange}
               required
             />
-            <button type="submit" className="submit-button btn btn-border-base mt-0 pt-0">
-              Send
+            <button type="submit" className="submit-button">
+              Send Message
             </button>
           </form>
         </div>
       )}
+
+      {/* Contact Buttons */}
+      <div className="contact-buttons">
+        <button className="main-button" onClick={toggleFormVisibility}>
+          <FaEnvelope size={20} />
+        </button>
+        <a
+          href="https://wa.me/8650406532"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-button"
+        >
+          <FaWhatsapp size={20} />
+        </a>
+        <a href="tel:8650406532" className="phone-button">
+          <FaPhone size={20} />
+        </a>
+      </div>
     </div>
   );
 };
