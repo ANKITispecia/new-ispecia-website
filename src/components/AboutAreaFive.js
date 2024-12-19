@@ -6,8 +6,9 @@ const AboutAreaFive = () => {
   return (
     <>
       {/* =============== About Area Five End ===============*/}
-      <div className="about-area about-area_5 pd-top-120 pd-bottom-120">
+      <div className="about-area about-area_5 pd-top-60 pd-bottom-120">
         <div className="container">
+        <h6 className="sub-title-sky-blue" style={{ textAlign: "center", paddingBottom: "2rem", color:"#80ce2d", fontSize:"2rem", fontWeight:"bold", fontFamily:`'Plus Jakarta Sans', sans-serif`}}>Why Ispecia Technologies</h6>
           <div className="row">
             <div
               className="col-lg-6 mb-4 mb-lg-0"
@@ -18,9 +19,9 @@ const AboutAreaFive = () => {
               <div className="about-thumb-inner">
                 
                 <img
-                  className="main-img"
                   src="assets/img/about/20.jpg"
                   alt="img"
+                  style={{ borderRadius: "1rem", height: "65vh", width: "100%" }}
                 />
               </div>
             </div>
@@ -30,8 +31,9 @@ const AboutAreaFive = () => {
               data-aos-delay="200"
               data-aos-duration="1500"
             >
-              <div className="section-title mb-0 ps-xl-5">
-                <h6 className="sub-title-sky-blue">Why Ispecia Technologies</h6>
+             
+              <div className="mb-0 ps-xl-5" style={{fontFamily:`'Plus Jakarta Sans', sans-serif`}}>
+                
                 <h2 className="title">
                 How does Ispecia Technologies bring value to the table and pave the path for your success?
                 </h2>

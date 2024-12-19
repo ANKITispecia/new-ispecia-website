@@ -44,8 +44,9 @@ const ContactAreaFour = () => {
                 />
                 <img
                   className="main-img m-4"
-                  src="assets/img/about/19.2.png"
+                  src="/assets/img/about/calling.png"
                   alt="img"
+                  style={{background:"transparent"}}
                 />
               </div>
             </div>

@@ -1,3 +1,4 @@
+import TestimonialSlider from '@/components/TestimonialSlider';
 import dynamic from 'next/dynamic';
 
 // Dynamically imported components
@@ -11,6 +12,7 @@ const CounterAreaOne = dynamic(() => import('@/components/CounterAreaOne'));
 const ContactAreaOne = dynamic(() => import('@/components/ContactAreaOne'));
 const WorkProcessOne = dynamic(() => import('@/components/WorkProcessOne'));
 const BlogAreaOne = dynamic(() => import('@/components/BlogAreaOne'));
+
 
 // Unused imports (kept as-is)
 
@@ -35,6 +37,9 @@ const page = () => {
       
       {/* <BannerOne /> */}
       <BannerThree/>
+      {/* <BannerThreeChange /> */}
+
+     
 
       {/* About Area One */}
       <AboutAreaOne />
@@ -53,7 +58,8 @@ const page = () => {
 
       {/* Case Study Area One */}
       {/* <TestimonialTen/> */}
-      <TestimonialNine/>
+      {/* <TestimonialNine/> */}
+      <TestimonialSlider />
       
       <FaqAreaOne/>
 
@@ -69,6 +75,8 @@ const page = () => {
 
       {/* Work Process One */}
       <WorkProcessOne />
+
+     
 
       {/* Pricing Area One */}
 

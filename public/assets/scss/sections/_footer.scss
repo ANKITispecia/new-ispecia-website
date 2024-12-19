@@ -247,3 +247,9 @@
     border-top: 1px solid #e3e3e3;
   }
 }
+
+.inputPlaceholderColor::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000 !important;
+  }
+  

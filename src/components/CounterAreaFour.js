@@ -6,15 +6,16 @@ const CounterAreaFour = () => {
   return (
     <>
       {/*================= counter area start {/*=================*/}
-      <div className='counter-area mg-top--100'>
-        <div className='container pd-bottom-90'>
+      <div className='counter-area mg-top-60'>
+        <div className='container pd-bottom-90 '>
           <div
-            className='bg-base counter-4-area pt-5 border-radius-20'
+            className='bg-base counter-4-area pt-5 border-radius-20 '
             data-aos='fade-up'
             data-aos-delay='500'
             data-aos-duration='1500'
+            
           >
-            <div className='row'>
+            <div className='row' >
               <div className='col-lg-3 align-self-center col-md-6 '>
                 {/* <div className='single-counter-inner'>
                   <h5 className='counter-4-title'>
@@ -39,7 +40,7 @@ const CounterAreaFour = () => {
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className='text-white mb-0'>active Clients</p>
+                    <p className='text-white mb-0'>Active Clients</p>
                   </div>
                 </div>
               </div>
@@ -60,7 +61,7 @@ const CounterAreaFour = () => {
                         }
                       </TrackVisibility>
                     </h4>
-                    <p className='text-white mb-0'>Projects done</p>
+                    <p className='text-white mb-0'>Projects Done</p>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ const WorkProcessOne = () => {
   return (
     <>
       {/*==================== Work Process One start ====================*/}
-      <div className='work-process-area pd-top-120 pd-bottom-90'>
+      <div className='work-process-area pd-top-30 pd-bottom-90'>
         <div className='container'>
           <div className='section-title text-center'>
             <h6 className='sub-title'>OUR VALUES</h6>

@@ -58,6 +58,23 @@
     }
   }
 }
+/* Continuous floating animation */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Move image up by 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-thumb-inner .main-img {
+  animation: floatImage 3s ease-in-out infinite; /* Apply the animation */
+}
+
 
 .single-about-inner {
   .thumb {

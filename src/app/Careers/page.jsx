@@ -3,6 +3,7 @@ import AboutAreaThree from '@/components/AboutAreaThree';
 import Breadcrumb from '@/components/Breadcrumb';
 import CareerComponent from '@/components/CareerComponent';
 import ContactAreaFour from '@/components/ContactAreaFour';
+import './CareerPage.css';
 import React from 'react'
 
 export const metadata = {
@@ -13,13 +14,15 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-    <Breadcrumb title='Career'/>
+      <div className="careerBg">
+    <Breadcrumb title={'Careers'} className="breadCrumb"/>
+    </div>
     <AboutAreaThree/>
     <CareerComponent/>
-    
     <ContactAreaFour/>
     </div>
   )
 }
 
 export default page;
+

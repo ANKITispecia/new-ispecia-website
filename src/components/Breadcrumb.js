@@ -25,7 +25,7 @@ const Breadcrumb = ({ title }) => {
             <div className="row justify-content-center justify-center">
               <div className="col-lg-6 justify-center">
                 {/* Page title */}
-                <h4 className=" " style={{color:"#86c445"}}>{title}</h4>
+                <h4 className="careerTitle " style={{color:"#86c445"}}>{title}</h4>
                 {/* Breadcrumb list directly under title */}
                 <ul className="page-list text-black">
                   <li className="text-black">
@@ -44,10 +44,9 @@ const Breadcrumb = ({ title }) => {
       <style jsx>{`
         .breadcrumb-area {
           position: relative;
-          height: 8vh;
+          z-index: 1;
           overflow: hidden;
-          background-color: white; /* Initial black background */
-          
+          background-color: transparent; /* Initial black background */
           background-size: cover;
           background-opacity: 0.5;
           background-position: center;
@@ -56,6 +55,7 @@ const Breadcrumb = ({ title }) => {
           display: flex;
           flex-direction:row;
           text-align: center;
+          justify-content: center;
           font-size: 1em;
           padding:none;
         }

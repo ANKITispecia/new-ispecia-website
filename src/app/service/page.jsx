@@ -19,10 +19,11 @@ const page = () => {
   return (
     <>
       {/* Navigation Bar */}
-      
+      <div className="aboutBg">
 
       {/* Navigation Bar */}
       <Breadcrumb title={'Service'} />
+      </div>
 
       {/* Service Area One */}
       <ServiceAreaGroup />

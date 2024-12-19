@@ -7,7 +7,7 @@ const AboutAreaOne = () => {
     <>
       {/* ================== AboutAreaOne start  ==================*/}
 
-      <div className='about-area pd-top-120'>
+      <div className='about-area pd-top-60'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
@@ -58,7 +58,8 @@ const AboutAreaOne = () => {
               data-aos-delay='100'
               data-aos-duration='1500'
             >
-              <div className='section-title mt-5 mt-lg-0 w-[65%]'>
+              <div className='section-title mt-120 mt-lg-10 w-[65%]'>
+               <div>
                 <h6 className='sub-title'>Our Recognition</h6>
                 <h2 className='title'>
                 <span>Ispecia</span> Your Technology partner
@@ -69,8 +70,11 @@ const AboutAreaOne = () => {
                 <br/>
                 Mobile and website development has become a key player in the modern marketing game. Making this our main motto, we strive to deliver our clients innovative and cost-effective solutions to boost their online presence, achieve business objectives and drive high ROI. We offer unparalleled solutions for all types of industries and clients all across the globe. In addition, we offer cutting-edge digital solutions to technology startups and established brands. Our clients are our priority for us, and we put our best efforts into fulfilling our commitments.
                 </p>
-                <div className='row'>
-                  <div className='col-md-6'>
+                </div>
+                </div>
+                </div>
+                <div className='row' style={{ marginTop: '4rem', textAlign:'center'}}>
+                  <div className='col-md-4'>
                     <div className='single-about-inner'>
                       <div className='thumb mb-3'>
                         <Image
@@ -92,7 +96,8 @@ const AboutAreaOne = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='col-md-6'>
+                  
+                  <div className='col-md-4'>
                     <div className='single-about-inner'>
                       <div className='thumb mb-3'>
                         <Image
@@ -101,6 +106,7 @@ const AboutAreaOne = () => {
                           width={40}
                           height={40}
                           style={{ transition: '0.4s' }}
+                         
                         />
                       </div>
                       <div className='details'>
@@ -111,11 +117,32 @@ const AboutAreaOne = () => {
                       </div>
                     </div>
                   </div>
+
+                  <div className='col-md-4'>
+                    <div className='single-about-inner'>
+                      <div className='thumb mb-3'>
+                        <Image
+                          src='/assets/img/icon/4.png'
+                          alt='icon 2'
+                          width={40}
+                          height={40}
+                          style={{ transition: '0.4s'}}
+                          
+                        />
+                      </div>
+                      <div className='details'>
+                        <h5>24X7 Support</h5>
+                        <p>
+                        Our clients are a part of our team. So, we strive to resolve issues at any time of the day.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   
                   
                 </div>
-              </div>
-            </div>
+              
+            
           </div>
         </div>
       </div>

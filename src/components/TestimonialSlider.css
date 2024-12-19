@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .testimonial-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e2a50;
+    color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .testimonial-container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(247, 219, 219);
+  }
+  
+  .testimonial-container .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(247, 219, 219);
+  }
+  
+  .testimonial-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .left-section {
+    position: relative;
+    margin-right: 1rem;
+  }
+  
+  .client-image {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .play-button {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #5f4bd8;
+    color: white;
+    border: none;
+    font-size: 1.9rem;
+    padding: 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .play-button:hover {
+    background-color: #4138a1;
+  }
+  
+  .right-section {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 1rem;
+  }
+  
+  .quote {
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: rgb(247, 219, 219);
+  }
+  
+  .client-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #86c445;
+  }
+  
+  .client-position {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #5f4bd8;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0rem;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .arrow-button.left {
+    left: 10px;
+  }
+  
+  .arrow-button.right {
+    right: 10px;
+  }
+  
+  .arrow-button:hover {
+    background-color: #4138a1;
+  }
+  
+  .quote-icon {
+    font-size: 120px;
+    color: #86c445;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .testimonial-slide {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .client-image {
+      width: 250px;
+      height: 300px;
+    }
+  
+    .play-button {
+      height: 50px;
+      width: 50px;
+      font-size: 1.5rem;
+    }
+    .arrow-button {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-45%);
+      }
+      
+  
+    .right-section {
+      margin-top: 1.5rem;
+      max-width: 90%;
+    }
+  
+    .quote {
+      font-size: 1.1rem;
+    }
+
+    .quote-icon {
+        font-size: 90px;
+        color: #4138a1;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-container .title {
+      font-size: 1.8rem;
+    }
+  
+    .testimonial-container .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .client-image {
+      width: 200px;
+      height: 250px;
+    }
+  
+    .play-button {
+      height: 40px;
+      width: 40px;
+      font-size: 1.2rem;
+    }
+
+    .arrow-button {
+        position: absolute;
+        top: 20%;
+        transform: translateY(-45%);
+      }
+  
+    .quote {
+      font-size: 1rem;
+    }
+    .quote-icon {
+        font-size: 60px;
+        color: #4138a1;
+      }
+  
+    .client-name {
+      font-size: 1.3rem;
+    }
+  
+    .arrow-button {
+      height: 40px;
+      width: 40px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-container {
+      padding: 1rem;
+    }
+  
+    .testimonial-container .title {
+      font-size: 1.5rem;
+    }
+  
+    .testimonial-container .subtitle {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    .testimonial-slide {
+      margin-top: 30px;
+    }
+  
+    .client-image {
+      width: 180px;
+      height: 220px;
+    }
+  
+    .play-button {
+      height: 35px;
+      width: 35px;
+      font-size: 1rem;
+    }
+
+    .arrow-button {
+        position: absolute;
+        top: 5%;
+        transform: translateY(-45%);
+      }
+  
+    .quote {
+      font-size: 0.9rem;
+    }
+    .quote-icon {
+        font-size: 40px;
+        color: #4138a1;
+      }
+  
+    .client-name {
+      font-size: 1.1rem;
+    }
+  
+    .arrow-button {
+      height: 35px;
+      width: 35px;
+      font-size: 1rem;
+    }
+  }
+  

@@ -7,7 +7,7 @@ const ServiceAreaOne = () => {
   return (
     <>
       {/*=================== service area start ===================*/}
-      <div className='service-area bg-relative pd-top-100'>
+      <div className='service-area bg-relative pd-top-60'>
         <img
           className='position-bottom-left top_image_bounce'
           src='assets/img/icon/4.png'
@@ -20,10 +20,10 @@ const ServiceAreaOne = () => {
               Your Partner In <span>Digital</span> Success
             </h2>
           </div>
-          <div className='row'>
+          <div className='row '>
             {serviceList.slice(0, 3).map((data, index) => (
               <div className='col-lg-4 col-md-6' key={index}>
-                <div className='single-service-inner text-center'>
+                <div className='single-service-inner text-center row-one'>
                   <div className='thumb'>
                     <img src={data.img} alt='img' />
                   </div>

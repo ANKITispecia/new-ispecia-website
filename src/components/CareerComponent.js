@@ -13,9 +13,9 @@ const CareerComponent = () => {
     return (
       <div className="faq-area pd-bottom-120">
         <div className="container d-flex flex-column align-items-center">
-          <div className="row justify-content-center pd-top-120" style={{ width: '100%', maxWidth: '1200px' }}>
+          <div className="row justify-content-center pd-top-60" style={{ width: '100%', maxWidth: '1200px' }}>
             <div className="col-xl-10 col-lg-10 col-md-12">
-              <div className="section-title mb-0 mt-4 mt-lg-0 text-center">
+              <div className="section-title mb-10 mt-0 mt-lg-0 text-center">
                 
                 <h4 className="title">Explore <span>Openings</span> Available</h4>
               </div>

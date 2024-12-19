@@ -8,6 +8,7 @@
   align-items: flex-end;
   z-index: 9999;
   gap: 10px;
+  outline: none;
 }
 
 /* Contact Buttons Styling */
@@ -158,4 +159,10 @@
 }
 .close-button:hover {
   color: #ff0000;
+}
+
+.contact-form:hover{
+    box-shadow: 5px 5px 10px #98d65a;
+    transition: 0.5s;
+    scale: 1.01;
 }

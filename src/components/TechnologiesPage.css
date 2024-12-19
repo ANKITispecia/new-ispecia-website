@@ -1,0 +1,12 @@
+.technologies-page{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 100px;
+    border-radius: 20px
+}
+
+.topic-heading:hover{
+    background-color: rgba(201, 79, 31, 0.76);
+}

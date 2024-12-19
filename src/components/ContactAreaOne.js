@@ -78,12 +78,12 @@ const ContactAreaOne = () => {
                 data-aos-delay="200"
                 data-aos-duration="1500"
               >
-                <div className="section-title mb-0">
-                  <h6 className="sub-title">GET IN TOUCH</h6>
+                <div className="section-title  mb-0" id='form-bg'>
+                  <h6 className="sub-title" style={{fontWeight: 'bold'}}>GET IN TOUCH</h6>
                   <h2 className="title">
-                    Bringing Your <span>Vision</span> To Life
+                  <span style={{fontWeight: 'bold'}}> Bringing</span> Your Vision To Life
                   </h2>
-                  <p className="content">
+                  <p className="content" style={{color: 'white', fontWeight: 'bold'}}>
                     For your car we will do everything advice design in us
                     repairs and maintenance. We are the some preferred.
                   </p>
@@ -97,6 +97,8 @@ const ContactAreaOne = () => {
                             placeholder="Your Name"
                             value={formData.name}
                             onChange={handleChange}
+                            style={{backgroundColor: 'rgba(234, 234, 253, 0.822)', }}
+                            className='inputPlaceholderColor'
                           />
                         </div>
                       </div>
@@ -108,6 +110,8 @@ const ContactAreaOne = () => {
                             placeholder="Your Email"
                             value={formData.email}
                             onChange={handleChange}
+                             style={{backgroundColor: 'rgba(234, 234, 253, 0.822)', }}
+                            className='inputPlaceholderColor'
                           />
                         </div>
                       </div>
@@ -119,6 +123,8 @@ const ContactAreaOne = () => {
                             placeholder="Your Phone"
                             value={formData.phone}
                             onChange={handleChange}
+                             style={{backgroundColor: 'rgba(234, 234, 253, 0.822)', }}
+                            className='inputPlaceholderColor'
                           />
                         </div>
                       </div>
@@ -130,6 +136,8 @@ const ContactAreaOne = () => {
                             placeholder="Your Subject"
                             value={formData.subject}
                             onChange={handleChange}
+                             style={{backgroundColor: 'rgba(234, 234, 253, 0.822)', }}
+                            className='inputPlaceholderColor'
                           />
                         </div>
                       </div>
@@ -140,6 +148,8 @@ const ContactAreaOne = () => {
                             placeholder="Your Message"
                             value={formData.message}
                             onChange={handleChange}
+                             style={{backgroundColor: 'rgba(234, 234, 253, 0.822)', }}
+                            className='inputPlaceholderColor'
                           />
                         </div>
                       </div>

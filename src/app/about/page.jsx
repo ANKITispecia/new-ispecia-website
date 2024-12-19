@@ -24,6 +24,7 @@ import ServiceAreaGroupTwo from "@/components/ServiceAreaGroupTwo";
 import ServiceAreaOne from "@/components/ServiceAreaOne";
 import TeamAreaOne from "@/components/TeamAreaOne";
 import TestimonialNine from "@/components/TestimonialNine";
+import TestimonialSlider from "@/components/TestimonialSlider";
 import WorkProcessFour from "@/components/WorkProcessFour";
 import WorkProcessOne from "@/components/WorkProcessOne";
 import WorkProcessThree from "@/components/WorkProcessThree";
@@ -44,7 +45,10 @@ const page = () => {
       
 
       {/* Navigation Bar */}
-      <Breadcrumb title={'About Us'} />
+      <div className="aboutBg" style={{ backgroundImage: ' url("https://img.freepik.com/free-vector/blue-curve-frame-template-vector_53876-165851.jpg?ga=GA1.1.370775638.1732604444&semt=ais_hybrid")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed',  width: '100%', height: '50vh', borderRadius:"0px 0px 90px 0px"}}>
+        <Breadcrumb title={'About Us'}/>
+      </div>
+      
       
       <AboutAreaTwo/>
       
@@ -65,7 +69,7 @@ const page = () => {
       <WorkProcessFour />
 
       
-      <TestimonialNine/>
+      <TestimonialSlider />
       
 
       {/* Contact Area One */}

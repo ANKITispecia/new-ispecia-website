@@ -4,6 +4,8 @@ import data from "./Data.json";
 import PortfolioCard from "@/components/PortfolioCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import "./portfolio.css";
+import TechnologiesPage from "@/components/TechnologiesPage";
+
 
 const Portfolio = () => {
   const [visibleCards, setVisibleCards] = useState(4); // Start with 4 cards
@@ -27,6 +29,8 @@ const Portfolio = () => {
         )}
         
       </div>
+     <TechnologiesPage />
+     
     </>
   );
 };

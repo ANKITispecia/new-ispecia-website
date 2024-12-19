@@ -5,7 +5,7 @@ const WorkProcessFour = () => {
     <>
       {/*==================== Work Process Three start ====================*/}
       <div
-        className="work-process-area bg-position-right pd-top-120 pd-bottom-90"
+        className="work-process-area bg-position-right pd-top-30 pd-bottom-90"
         style={{ backgroundImage: 'url("./assets/img/bg/16.png")' }}
       >
         <div className="container">

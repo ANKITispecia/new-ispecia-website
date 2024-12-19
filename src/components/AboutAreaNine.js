@@ -33,7 +33,7 @@ const AboutAreaNine = () => {
                 Innovating for Success
                 </h2>
                 <p className="content mb-4">
-                specia Technologies started as a passion project with a mission to empower businesses through cutting-edge technology. From our humble beginnings in India, we've grown into a global force, delivering comprehensive IT solutions that prioritize innovation, creativity, and results. Our journey has been driven by a relentless commitment to helping clients thrive in the digital space. Over the years, we've worked with startups, established brands, and businesses across various industries, always putting our expertise and clients' needs at the forefront.
+                Ispecia Technologies started as a passion project with a mission to empower businesses through cutting-edge technology. From our humble beginnings in India, we've grown into a global force, delivering comprehensive IT solutions that prioritize innovation, creativity, and results. Our journey has been driven by a relentless commitment to helping clients thrive in the digital space. Over the years, we've worked with startups, established brands, and businesses across various industries, always putting our expertise and clients' needs at the forefront.
                 </p>
                 <div className="row">
                   <div className="col-lg-6">

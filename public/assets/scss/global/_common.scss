@@ -860,7 +860,8 @@
   }
 }
 .bg-base {
-  background: var(--main-color);
+  background: rgba($color: #cbe294, $alpha: 1.0);
+  
 }
 .bg-base-2 {
   background: #50af9b !important;
@@ -924,10 +925,17 @@
     position: relative;
     z-index: 2;
   }
+ 
   .bg-z-index {
     position: relative;
     z-index: 2;
   }
+}
+
+.row-one:hover{
+  
+  box-shadow: 5px 5px 10px rgba(117, 124, 93, 0.596);
+  scale: 1.02;
 }
 .bg-overlay-light {
   position: relative;
@@ -950,6 +958,8 @@
     z-index: 2;
   }
 }
+
+
 .bg-parallex {
   background-attachment: fixed;
   background-position: center 0;

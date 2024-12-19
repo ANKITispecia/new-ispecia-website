@@ -6,7 +6,7 @@ const AboutAreaTwo = () => {
   return (
     <>
       {/* =============== About Area Two Start =============== */}
-      <div className='about-area pd-top-120 pd-bottom-120'>
+      <div className='about-area pd-top-60 pd-bottom-120'>
         <div className='container'>
           <div className='row'>
             {/* Left Side: Image */}
@@ -43,7 +43,7 @@ const AboutAreaTwo = () => {
                   We offer unparalleled solutions for various industries, clients worldwide, and startups. Our team is committed to delivering cost-effective solutions that enhance your online presence and drive high ROI.
                 </p>
                 
-                <Link className='btn btn-border-base' href='/about'>
+                <Link className='btn btn-border-base' href='/about' style={{textAlign: 'center'}}>
                   Discover More <FaPlus />
                 </Link>
               </div>

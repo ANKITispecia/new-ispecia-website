@@ -46,6 +46,7 @@ const TestimonialNine = () => {
           <h2 className="title">Client Testimonials</h2>
         </div>
         <div className="testimonial-slider-1 owl-carousel slider-control-round slider-control-dots slider-control-right-top">
+        {settings.nextArrow}
           <Slider {...settings}>
             {[
               "https://www.youtube.com/embed/rXoswaC7BlU?si=ntvZ1ZpG_S2M2wOE",
