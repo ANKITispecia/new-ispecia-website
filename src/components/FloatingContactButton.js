@@ -76,6 +76,7 @@ const FloatingContactButton = () => {
         <button className="main-button" onClick={toggleFormVisibility}>
           <FaEnvelope size={20} />
         </button>
+        <button className='main-button'>
         <a
           href="https://wa.me/8650406532"
           target="_blank"
@@ -84,9 +85,12 @@ const FloatingContactButton = () => {
         >
           <FaWhatsapp size={20} />
         </a>
+        </button>
+        <button className='main-button'>
         <a href="tel:8650406532" className="phone-button">
           <FaPhone size={20} />
         </a>
+        </button>
       </div>
     </div>
   );

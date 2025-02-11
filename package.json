@@ -33,6 +33,8 @@
     "react-on-screen": "^2.1.1",
     "react-progress-bar": "^0.1.0",
     "react-range": "^1.8.14",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^7.1.1",
     "react-scroll-parallax": "^3.4.5",
     "react-scroll-to-top": "^3.0.0",
     "react-slick": "^0.30.2",

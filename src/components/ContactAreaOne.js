@@ -83,7 +83,7 @@ const ContactAreaOne = () => {
                   <h2 className="title">
                   <span style={{fontWeight: 'bold'}}> Bringing</span> Your Vision To Life
                   </h2>
-                  <p className="content" style={{color: 'white', fontWeight: 'bold'}}>
+                  <p className="content" style={{color: 'black', fontWeight: 'bold'}}>
                     For your car we will do everything advice design in us
                     repairs and maintenance. We are the some preferred.
                   </p>

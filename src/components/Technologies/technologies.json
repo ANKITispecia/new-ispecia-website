@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Frontend Programming Languages",
+      "data": [
+        { "name": "CSS", "logo": "https://cdn-icons-png.flaticon.com/512/732/732190.png" },
+        { "name": "HTML", "logo": "https://cdn-icons-png.flaticon.com/512/732/732212.png" },
+        { "name": "Javascript", "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
+        { "name": "Angular", "logo": "https://cdn-icons-png.flaticon.com/128/15484/15484402.png" },
+        { "name": "React", "logo": "https://cdn-icons-png.flaticon.com/512/919/919851.png" },
+        { "name": "Vue.js", "logo": "https://cdn-icons-png.flaticon.com/128/15484/15484278.png" },
+        { "name": "ember", "logo": "https://emberjs.com/images/ember-logo.svg" },
+        { "name": "Meteor", "logo": "https://dmtgy0px4zdqn.cloudfront.net/images/brand/meteor-logo-orange.png" },
+        { "name": "Nextjs", "logo": "https://www.svgrepo.com/show/354113/nextjs-icon.svg" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Backend Programming Languages",
+      "data": [
+        { "name": "Node.js", "logo": "https://cdn-icons-png.flaticon.com/512/919/919825.png" },
+        { "name": "Python", "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png" },
+        { "name": "Ruby", "logo": "https://cdn-icons-png.flaticon.com/512/919/919842.png" }
+      ]
+    }
+  ]

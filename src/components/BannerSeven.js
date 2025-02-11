@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaPlus } from 'react-icons/fa';
 
+
 const BannerSeven = () => {
   return (
     <>
@@ -46,10 +47,12 @@ const BannerSeven = () => {
                 data-wow-duration="1.5s"
                 data-wow-delay="0.3s"
               >
+
                 <img
                   className="main-img"
-                  src="assets/img/home-8/2.png"
+                  src="https://media1.tenor.com/m/4HMaOgLAhykAAAAC/element-atom.gif"
                   alt="img"
+                  style={{borderRadius:"50%", height: '300px', width: '300px'}}
                 />
               </div>
             </div>

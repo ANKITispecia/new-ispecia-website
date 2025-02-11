@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import ContactBanner from "@/components/ContactForm/ContactBanner/ContactBanner";
 import ContactMain from "@/components/ContactMain";
 import FooterOne from "@/components/FooterOne";
 import NavBar from "@/components/NavBar";
@@ -21,7 +22,8 @@ const page = () => {
       
 
       {/* Navigation Bar */}
-      <Breadcrumb title={"Contact"} />
+      {/* <Breadcrumb title={"Contact"} /> */}
+      <ContactBanner/>
 
       {/* Contact Main */}
       <ContactMain />

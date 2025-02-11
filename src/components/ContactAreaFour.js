@@ -3,19 +3,24 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import { handleFormSubmission } from '../actions/handleFormSubmission'; // Adjust the import path as needed
-
+import './Ca4.css'
 const ContactAreaFour = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     contact: '',
     message: '',
+    resume: null
   });
   const [submissionStatus, setSubmissionStatus] = useState('');
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, type, files } = e.target;
+    if (type === 'file') {
+      setFormData({ ...formData, [name]: files[0] });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -27,7 +32,7 @@ const ContactAreaFour = () => {
   return (
     <>
       {/*================= counter area start =================*/}
-      <div className="contact-area pd-top-90 pd-bottom-120">
+      <div className="contact-area pd-top-90 pd-bottom-90">
         <div className="container">
           <div className="row">
             <div
@@ -59,11 +64,10 @@ const ContactAreaFour = () => {
               <div className="section-title mb-0 mt-5 mt-lg-0">
                 <h6 className="sub-title">GET IN TOUCH</h6>
                 <h2 className="title">
-                  Your Business To <span>Growth</span> Please Touch?
+                Ready to <span>Grow</span> Your Career?
                 </h2>
                 <p className="content">
-                  For your car we will do everything advice design in us repairs
-                  and maintenance. We are the some preferred.
+                Get in touch with us to learn more about open roles and career development.
                 </p>
                 <form className="mt-4" onSubmit={handleSubmit}>
                   <div className="row">
@@ -100,6 +104,7 @@ const ContactAreaFour = () => {
                         />
                       </div>
                     </div>
+                    
                     <div className="col-lg-12">
                       <div className="single-input-inner style-border">
                         <textarea
@@ -110,6 +115,22 @@ const ContactAreaFour = () => {
                         />
                       </div>
                     </div>
+                    <div className="col-lg-12">
+                      <div className="single-input-inner style-border">
+                        <div className="file-input-wrapper">
+                          <input
+                            type="file"
+                            name="resume"
+                            accept=".pdf,.doc,.docx"
+                            onChange={handleChange}
+                            className="file-input"
+                          />
+                          <span className="file-input-text">
+                            {formData.resume ? formData.resume.name : 'Upload Resume (PDF, DOC, DOCX)'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                     <div className="col-12">
                       <button className="btn btn-border-gray mt-0" type="submit">
                         Contact Us <FaPlus />
@@ -117,7 +138,7 @@ const ContactAreaFour = () => {
                     </div>
                   </div>
                 </form>
-                {submissionStatus && <p>{submissionStatus}</p>} {/* Display submission status */}
+                {submissionStatus && <p>{submissionStatus}</p>}
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const BannerNine = () => {
       >
         <div className="container pt-xl-5 pb-xl-5">
           <div className="row">
-            <div className="col-lg-6 align-self-center">
+            <div className="col-lg-7 align-self-center" style={{textAlign:"left"}}>
               <div className="banner-inner pe-xl-5 pt-4 pt-lg-0">
                 <h2
                   className="title text-white wow animated fadeInLeft"
@@ -26,9 +26,7 @@ const BannerNine = () => {
                   data-wow-duration="1.5s"
                   data-wow-delay="0.5s"
                 >
-                  And In Order To Make A Business, Brand Advertising And
-                  Marketing Plays An Important Role. Similarly, In Making
-                  Cultivation Business Are Necessary Brand Advertising.
+                  Join our dynamic team and be a part of a forward-thinking company that values innovation, collaboration, and personal growth. Explore opportunities to make a difference and grow your career with us!
                 </p>
                 <Link
                   className="btn btn-base bg-base-9 wow animated fadeInLeft"
@@ -40,7 +38,7 @@ const BannerNine = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div
                 className="mt-5 margin-right--150 mt-lg-0 wow animated fadeInRight"
                 data-wow-duration="1.5s"

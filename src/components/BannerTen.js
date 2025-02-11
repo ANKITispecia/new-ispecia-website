@@ -104,7 +104,7 @@ const BannerTen = () => {
         <div className="about-area about-area_marquee about-area_ten bg-gray pt-5 pb-5">
           <div className="container">
             <div className="client-slider owl-carousel">
-              <Marquee gradient={false}>
+              <Marquee gradient={true}>
                 <div className="thumb">
                   <img src="assets/img/client/7.svg" alt="img" />
                 </div>

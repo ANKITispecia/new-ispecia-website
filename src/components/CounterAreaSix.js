@@ -6,7 +6,7 @@ const CounterAreaSix = () => {
   return (
     <>
       {/* counter area start */}
-      <div className="counter-area bg-black-ico bg-relative pd-top-110">
+      <div className="counter-area bg-black-ico bg-relative pd-top-60" style={{ backgroundImage: 'url("https://www.shutterstock.com/shutterstock/photos/2274412231/display_1500/stock-vector-many-rainbow-gradient-random-bright-soft-balls-background-colorful-balls-background-for-kids-zone-2274412231.jpg")' }}>
         <div className="container">
           <div className="bg-base-9 border-radius-5 pt-xl-5 pt-4 position-relative z-index-2 mg-bottom---120">
             <div className="row">
@@ -24,13 +24,13 @@ const CounterAreaSix = () => {
                       {({ isVisible }) =>
                         isVisible && (
                           <span className="counter">
-                            <CountUp delay={0} start={0} end={200} /> +
+                            <CountUp delay={0} start={0} end={850} /> +
                           </span>
                         )
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Team member</p>
+                  <p className="text-white">Projects Done</p>
                 </div>
               </div>
               <div
@@ -47,7 +47,7 @@ const CounterAreaSix = () => {
                       {({ isVisible }) =>
                         isVisible && (
                           <span className="counter">
-                            <CountUp delay={0} start={0} end={10} /> K+
+                            <CountUp delay={0} start={0} end={25} /> +
                           </span>
                         )
                       }
@@ -70,13 +70,13 @@ const CounterAreaSix = () => {
                       {({ isVisible }) =>
                         isVisible && (
                           <span className="counter">
-                            <CountUp delay={0} start={0} end={200} /> +
+                            <CountUp delay={0} start={0} end={330} /> +
                           </span>
                         )
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Team member</p>
+                  <p className="text-white">Active Clients</p>
                 </div>
               </div>
               <div
@@ -93,13 +93,13 @@ const CounterAreaSix = () => {
                       {({ isVisible }) =>
                         isVisible && (
                           <span className="counter">
-                            <CountUp delay={0} start={0} end={200} /> +
+                            <CountUp delay={0} start={0} end={10} /> +
                           </span>
                         )
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Team member</p>
+                  <p className="text-white">Glorious Year</p>
                 </div>
               </div>
             </div>

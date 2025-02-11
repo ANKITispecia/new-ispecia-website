@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Logistics",
+      "description":
+        "We develop cutting-edge software for the logistics industry, including supply chain software with AI/ML-enabled predictive analytics, helping them serve their customers across the globe.",
+      "icon": "📦",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    },
+    {
+      "id": 2,
+      "name": "Healthcare",
+      "description":
+        "We understand the instant benefits of digitalizing medical care and help healthcare organizations realize them while ensuring critical compliances like HIPAA and others.",
+      "icon": "❤️",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    },
+    {
+      "id": 3,
+      "name": "Retail",
+      "description":
+        "We provide cutting-edge solutions for the retail industry, enhancing customer experience with advanced analytics and innovative digital tools.",
+      "icon": "🛍️",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    },
+    {
+      "id": 4,
+      "name": "Finance",
+      "description":
+        "Our financial solutions empower businesses to manage assets and optimize operational efficiency through cutting-edge technology.",
+      "icon": "💰",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    },
+    {
+      "id": 5,
+      "name": "Education",
+      "description":
+        "We help educational institutions embrace technology with innovative e-learning platforms and student management systems.",
+      "icon": "📘",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    },
+    {
+      "id": 6,
+      "name": "Technology",
+      "description":
+        "We provide the tech industry's most robust and scalable solutions for digital transformation and growth.",
+      "icon": "💻",
+      "image":
+        "https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-meaning.webp"
+    }
+  ]

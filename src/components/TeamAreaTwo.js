@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
+
 const TeamAreaTwo = () => {
   return (
     <>
@@ -23,8 +24,9 @@ const TeamAreaTwo = () => {
                 <div className="thumb">
                   <img
                     className="img-fluid"
-                    src="assets/img/team/4.png"
+                    src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww"
                     alt="img"
+                    style={{width:"410px", height:"450px"}}
                   />
                 </div>
                 <div className="details">
@@ -57,7 +59,7 @@ const TeamAreaTwo = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-team-inner style-2 text-center">
                 <div className="thumb">
-                  <img src="assets/img/team/5.png" alt="img" />
+                  <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="img"  style={{width:"410px", height:"450px", backgroundSize:"cover"}} />
                 </div>
                 <div className="details">
                   <div className="details-inner">
@@ -89,7 +91,7 @@ const TeamAreaTwo = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-team-inner style-2 text-center">
                 <div className="thumb">
-                  <img src="assets/img/team/6.png" alt="img" />
+                  <img src="https://img.freepik.com/free-photo/young-adult-man-wearing-hoodie-beanie_23-2149393636.jpg" alt="img" style={{width:"410px", height:"450px", backgroundSize:"cover"}}/>
                 </div>
                 <div className="details">
                   <div className="details-inner">

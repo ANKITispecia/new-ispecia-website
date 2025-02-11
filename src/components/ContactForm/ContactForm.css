@@ -1,0 +1,237 @@
+
+.contact-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fdf8f5;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .contact-container {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Decorative Elements */
+  .leaf-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40,70 Q70,10 140,70 Q70,130 40,70' stroke='%23E5E5E5' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    opacity: 0.2;
+  }
+  
+  .leaf-decoration.left {
+    top: 0;
+    left: -80px;
+  }
+  
+  .leaf-decoration.right {
+    bottom: 0;
+    right: -80px;
+    transform: rotate(180deg);
+  }
+  
+  /* Form Header */
+  .form-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .subheading {
+    color: #86c545;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #2d3748;
+    font-family: serif;
+  }
+  /* additional css for animation */
+
+
+/* Success Ripple Effect */
+.success-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 107, 107, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  
+  /* Input hover effect */
+  .input-container:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Icon bounce animation on input focus */
+  .input-container:focus-within .input-icon {
+    animation: iconBounce 0.5s ease;
+  }
+  
+  @keyframes iconBounce {
+    0%, 100% { transform: translateY(-50%) scale(1); }
+    50% { transform: translateY(-50%) scale(1.2); }
+  }
+  
+  /* Smooth transition for submit button */
+  .submit-button {
+    transition: transform 0.2s ease;
+  }
+  
+  .submit-button:active {
+    transform: scale(0.95);
+  }
+
+  /* Form Layout */
+  .contact-form-new {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  /* Input Containers */
+  .input-container {
+    position: relative;
+  }
+  
+  /* Inputs and Textarea */
+  input, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.5rem 0;
+    color: #2d3748;
+    transition: border-color 0.3s ease;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #a0aec0;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-bottom-color: #86c545;
+  }
+  
+  textarea {
+    resize: none;
+    min-height: 100px;
+  }
+  
+  /* Input Icons */
+  .input-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Privacy Notice */
+  .privacy-notice {
+    font-size: 0.875rem;
+    color: #718096;
+    margin: 1rem 0;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 32px;
+    background: transparent;
+    border: 1px solid #86c545;
+    color: #6fa737;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-top: 20px;
+}
+
+.submit-button span {
+    display: inline-block;
+}
+
+.submit-button .button-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #86c545;
+    color: white;
+}
+
+.submit-button:hover .button-icon {
+    transform: translateX(5px);
+}
+
+/* Make sure the button is properly positioned */
+form {
+    position: relative;
+}
+
+.submit-button {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      width: 90%;
+    }
+    .heading{
+      font-size: 1.5rem;
+    }
+  
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  
+    .leaf-decoration {
+      display: none;
+    }
+  }

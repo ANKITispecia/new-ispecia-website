@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Salesforce Development",
+      "description":
+        "Get a scalable, intensive, and engaging salesforce application that boosts your business revenues with our salesforce app development services that give highly advanced and market-winning mobile and web apps.",
+      "icons": [
+        "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/implemention.svg",
+         "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/consulting.svg",
+          "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/sales-cloud.svg",
+           "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/service-cloud.svg"]
+    },
+    {
+      "title": "Mobile App Development",
+      "description":
+        "Strengthen your digital presence and increase your revenue with our robust mobile app development process that unlocks the opportunity of adding value to your business while intensifying your reach globally.",
+      "icons": [
+        "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/android.svg",
+         "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/ios.svg",
+          "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/react.svg",
+           "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/flutter.svg"]
+    },
+    {
+      "title": "Web Development",
+      "description":
+        "Create stunning and responsive websites tailored to your business needs with our cutting-edge web development services.",
+      "icons": [
+        "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/frontend.svg",
+         "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/backend.svg",
+          "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/fullstack.svg",
+           "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/devops.svg"]
+    },
+    {
+      "title": "E-commerce Solutions",
+      "description":
+        "Empower your online store with feature-rich e-commerce solutions that drive sales and enhance customer experience.",
+      "icons": [
+        "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/seo.svg",
+         "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/sem.svg",
+          "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/smo.svg",
+           "https://d2e3cmtjkfw2a3.cloudfront.net/static/media/home/service/aso.svg"]
+    }
+   
+  ]

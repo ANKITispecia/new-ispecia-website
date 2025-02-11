@@ -1,14 +1,23 @@
+'use client';
 import Image from 'next/image';
 import React from "react";
 import "./aboutimage.css";
+import { useMediaQuery } from 'react-responsive';
 
 const AboutAreaOne = () => {
+  const isMobile = useMediaQuery({maxWidth: 767})
+  const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1023})
+  const isDesktop = useMediaQuery({maxWidth: 1365})
+
   return (
     <>
       {/* ================== AboutAreaOne start  ==================*/}
 
       <div className='about-area pd-top-60'>
         <div className='container'>
+        <div style={{ textAlign: 'center'}}>
+                <h6 className='sub-title' style={{marginBottom: '2rem', marginTop: '2rem', color: '#86c445', fontSize: '2rem' }}>Our Recognition</h6>
+        </div>
           <div className='row'>
             <div className='col-lg-6'>
               <div
@@ -58,10 +67,10 @@ const AboutAreaOne = () => {
               data-aos-delay='100'
               data-aos-duration='1500'
             >
+              
               <div className='section-title mt-120 mt-lg-10 w-[65%]'>
                <div>
-                <h6 className='sub-title'>Our Recognition</h6>
-                <h2 className='title'>
+                <h2 className='title' style={{textAlign: isMobile ? 'center' : 'start'}}>
                 <span>Ispecia</span> Your Technology partner
                 </h2>
                 <p className='content mb-4 mb-xl-5'>

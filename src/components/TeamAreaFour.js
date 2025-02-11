@@ -7,8 +7,8 @@ const TeamAreaFour = () => {
     <>
       {/*====================== team area start ======================*/}
       <div
-        className='team-area bg-relative pd-top-115 pd-bottom-100'
-        style={{ backgroundImage: 'url("./assets/img/home-6/17.png")' }}
+        className='team-area bg-relative pd-top-60 pd-bottom-100'
+        style={{ backgroundColor: '#1e1e1e' }}
       >
         <div className='container'>
           <div className='section-title text-center style-white'>
@@ -19,7 +19,7 @@ const TeamAreaFour = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-team-inner style-3 text-center'>
                 <div className='thumb'>
-                  <img src='assets/img/team/1.png' alt='img' />
+                <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="img"  style={{width:"350px", height:"340px", backgroundSize:"cover"}} />
                   <ul className='team-social-inner'>
                     <li>
                       <Link href='#'>
@@ -49,7 +49,7 @@ const TeamAreaFour = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-team-inner style-3 text-center'>
                 <div className='thumb'>
-                  <img src='assets/img/team/2.png' alt='img' />
+                <img src="https://img.freepik.com/free-photo/young-adult-man-wearing-hoodie-beanie_23-2149393636.jpg" alt="img" style={{width:"350px", height:"340px", backgroundSize:"cover"}}/>
                   <ul className='team-social-inner'>
                     <li>
                       <Link href='#'>
@@ -79,7 +79,9 @@ const TeamAreaFour = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-team-inner style-3 text-center'>
                 <div className='thumb'>
-                  <img src='assets/img/team/3.png' alt='img' />
+                  <img  src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww"
+                    alt="img"
+                    style={{width:"350px", height:"340px"}} />
                   <ul className='team-social-inner'>
                     <li>
                       <Link href='#'>

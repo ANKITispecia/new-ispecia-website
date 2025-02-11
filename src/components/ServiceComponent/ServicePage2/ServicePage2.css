@@ -1,0 +1,134 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  } */
+  
+  .services-container {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    color: #86c445;
+    margin-bottom: 40px;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: start;
+  }
+  .service-card:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+  .service-content {
+    width: 80%;
+  }
+  
+  .service-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .service-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  
+  .explore-button {
+    background-color: #86c445;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .explore-button:hover  {
+    background-color: #e6a800;
+    transform: rotateZ(7deg);
+  }
+  
+  .service-newicons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+  
+  .newicon {
+    background-color: #dbfcb862;
+    border: 2px dashed gray;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .newicon:hover{
+    transform: rotateY(140deg);
+    transition: 0.5s;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .services-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 90%;
+    }
+
+    .service-content {
+      width: 100%;
+    }
+  
+    .service-newicons {
+    justify-content: center;
+      position: relative;
+      margin-top: 50px;
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .newicon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

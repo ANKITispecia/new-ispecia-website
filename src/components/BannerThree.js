@@ -5,9 +5,16 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
 import { gsap } from 'gsap';
+import { useMediaQuery } from 'react-responsive';
+
 
 const BannerThreeChange = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const isMobile = useMediaQuery({maxWidth: 767})
+  const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1023})
+  const isDesktop = useMediaQuery({maxWidth: 1365})
+
 
   // Refs for GSAP animations
   const h6Ref = useRef(null);
@@ -50,7 +57,7 @@ const BannerThreeChange = () => {
         <img className="bg-img-2" src="assets/img/banner-3/4.png" alt="img" />
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 align-self-center" style={{ width: '50vw' }}>
+            <div className="col-lg-6 align-self-center" style={{width: isMobile?'100vw':'50vw',textAlign:isMobile?'center':'inherit' }}>
               <div className="banner-inner pe-xl-5">
                 <h6
                   ref={h6Ref}
@@ -101,7 +108,7 @@ const BannerThreeChange = () => {
                 ></div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-10" style={{ width: '40vw' }}>
+            <div className="col-lg-6 col-md-10" style={{  width: '40vw', display: isMobile?'none':'inherit' }}>
               <div
                 className="banner-thumb-3"
                 data-aos="fade-left"
@@ -115,7 +122,7 @@ const BannerThreeChange = () => {
                     alt="img"
                     width={120}
                     height={120}
-                    style={{ position: 'absolute', left: '-40px', zIndex: 1 }}
+                    style={{ position: 'absolute', left: '-40px', zIndex: 1,transform: 'rotate(360deg)' }}
                   />
 
                   <Image

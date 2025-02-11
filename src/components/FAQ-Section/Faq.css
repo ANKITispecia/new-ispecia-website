@@ -1,0 +1,130 @@
+.faq-container {
+    background-color: whitesmoke; 
+    color: #16161d;
+    margin-top: 50px;
+}
+
+.faq-page {
+    display: flex;
+    background-color: whitesmoke; 
+    color: #16161d;
+    height: 70vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+  
+  .tab {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    color: #000000;
+    transition: background-color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #86c545;
+  }
+
+  .tab.active:hover {
+    background-color: #86c545;
+  }
+  
+  .tab:hover {
+    background-color: rgba(197, 193, 193, 0.733);
+  }
+  
+  .faq-content {
+    flex-grow: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .faq-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .faq-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-question {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-question:hover {
+    background-color: #dbdada;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    background-color: rgb(168, 166, 166);
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #000000;
+  }
+  
+  .dropdown-icon {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-page {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tab {
+      font-size: 0.9rem;
+    }
+  
+    .content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .faq-question {
+      font-size: 0.9rem;
+    }
+  }
+  

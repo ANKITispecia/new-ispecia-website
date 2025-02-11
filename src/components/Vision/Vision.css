@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .landing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding: 80px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Left Section */
+  .left-section {
+    width: 45%;
+  }
+  
+  .badge {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+  
+  /* Small Green Circle Initially */
+  .button-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #86c445;
+    border-radius: 50%;
+    left: 10px;
+    transition: all .3s ease;
+  }
+  
+  /* Hover Effect */
+  
+  
+  .cta-button:hover .button-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  
+  .cta-button:hover .button-text {
+    color: black;
+  }
+  
+  /* Right Section */
+  .vision-right-section {
+    width: 50%;
+  }
+  
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .quote-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 60px;
+    max-width: 350px;
+  }
+  
+  .quote-item.right {
+    margin-left: auto;
+    text-align: left;
+  }
+  
+  .quote-number {
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    width: 40px;
+    height: 3px;
+    background: #86c454;
+    margin-top: 5px;
+  }
+   .quote-item:hover .underline{
+    width:90%;
+    transition: 1.5s;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .landing-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .left-section,
+    .vision-right-section {
+      width: 100%;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+  
+    .quote-item {
+      padding-left: 0;
+    }
+  
+    .quote-number {
+      position: relative;
+      font-size: 60px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .button-circle{
+        width:30px;
+        height: 25px;
+    }
+    .cta-button {
+        font-size: 10px;
+    }
+  }
+  

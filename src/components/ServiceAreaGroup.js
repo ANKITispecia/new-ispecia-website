@@ -2,8 +2,9 @@ import React from "react";
 import { FaPlus } from "react-icons/fa";
 import serviceList from "../scripts/serviceList";
 import Link from "next/link";
+import './ServiceAreaGroup.css'
 import ContactButton from "./ContactButton";
-
+// import "./ServiceAreaGroup.css";
 const ServiceAreaGroup = () => {
   return (
     <>
@@ -24,9 +25,9 @@ const ServiceAreaGroup = () => {
               Your Partner In <span>Digital</span> Success
             </h2>
           </div>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }} className="row">
+          <div className="service-area-row">
             {serviceList.map((data, index) => (
-              <div style={{ width: "33.33%", padding: "1rem" }} className="col-lg-4 col-md-6" key={index}>
+              <div style={{display: "flex", justifyContent: "center", alignItems: "center", padding: "1rem", minHeight: "300px" }} className="col-lg-3 col-md-6" key={index}>
                 <div style={{ textAlign: "center", padding: "1.5rem", borderRadius: "0.5rem", boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)" }} className="single-service-inner">
                   <div className="thumb">
                     <img src={data.img} alt="img" />
@@ -38,9 +39,6 @@ const ServiceAreaGroup = () => {
                     <p>{data.des}</p>
                     <Link 
                       style={{
-                        
-                        
-                        
                         fontWeight: "600",
                         transition: "background-color 0.3s ease"
                       }} 
@@ -64,10 +62,7 @@ const ServiceAreaGroup = () => {
 
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    
 
       {/* =================== service area end ===================*/}
     </>

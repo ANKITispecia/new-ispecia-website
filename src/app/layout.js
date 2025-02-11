@@ -5,10 +5,14 @@ import "./globals.scss";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react"; // Import Suspense from React
 import Loading from "./loading";
+import FooterEight from "@/components/FooterEight";
+import Cursor from "@/components/Cursor/Cursor";
+
 
 // Lazy load Footer and FloatingContactButton
+
 const NavBar = dynamic(() => import('@/components/NavBar'), { ssr: false });
-const FooterEight = dynamic(() => import('@/components/FooterEight'), { ssr: false });
+const FooterTwo = dynamic(() => import('@/components/FooterTwo'), { ssr: false });
 const FloatingContactButton = dynamic(() => import('@/components/FloatingContactButton'), {
   ssr: false,
   loading: () => <Loading />,
@@ -27,19 +31,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    
+      
     </head>
-
+   
 
       <body suppressHydrationWarning={true}>
+        
         <BootstrapInit />
         {/* Use Strict Mode only in development */}
         {process.env.NODE_ENV === "development" ? (
           <React.StrictMode>
+            <Cursor />
             <Suspense fallback={<Loading />}> {/* Add Suspense here */}
               <NavBar />
               <FloatingContactButton />
               {children}
+              {/* <FooterTwo /> */}
               <FooterEight />
             </Suspense>
           </React.StrictMode>
@@ -48,9 +55,12 @@ export default function RootLayout({ children }) {
             <NavBar />
             <FloatingContactButton />
             {children}
+            {/* <FooterTwo /> */}
             <FooterEight />
           </Suspense>
         )}
+
+        
       </body>
     </html>
   );

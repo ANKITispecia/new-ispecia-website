@@ -217,4 +217,4 @@ const FooterOne = () => {
   );
 };
 
-export default FooterOne;
+export default FooterOne

@@ -1,0 +1,162 @@
+/* SpaLanding.css */
+.spa-container {
+    min-height: 100%;
+    background-color: #fdf8f5;
+    padding: 80px 120px;
+    font-family: serif;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+  }
+  
+  .main-title {
+    font-size: 64px;
+    color: #2d2d2d;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .changing-word {
+    min-width: 180px;
+    display: inline-block;
+    color: #86c545;
+  }
+  
+  .emoji {
+    font-size: 48px;
+  }
+  
+  .description {
+    max-width: 400px;
+    color: #666;
+    line-height: 1.6;
+    font-family: sans-serif;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .stat-number {
+    font-size: 48px;
+    color: #2d2d2d;
+    font-weight: 600;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #666;
+    font-family: sans-serif;
+  }
+  
+  /* Bottom Section */
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .secondary-title {
+    font-size: 36px;
+    color: #2d2d2d;
+    margin: 0;
+    max-width: 500px;
+  }
+  
+  .book-button {
+    position: relative;
+    padding: 12px 32px;
+    background: transparent;
+    border: 1px solid #86c545;
+    color: #86c545;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .book-button span {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .book-button .hover-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+  }
+  
+  .book-button:hover .default-text {
+    transform: translateY(-200%);
+  }
+  
+  .book-button:hover .hover-text {
+    transform: translateY(0);
+  }
+  
+  .book-button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .spa-container {
+      padding: 40px 60px;
+    }
+  
+    .stats-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-section {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .main-title {
+      font-size: 35px;
+    }
+    .secondary-title{
+      font-size: 25px;
+      max-width: 100%;
+    }
+  
+    .bottom-section {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+  }

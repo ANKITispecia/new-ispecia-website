@@ -40,10 +40,16 @@ const FaqAreaOne = () => {
                   you achieve your business goals with our comprehensive services.
                 </p>
               </div>
+             
               <div
                 className='accordion accordion-inner style-2 accordion-icon-left mt-3'
-                id='accordionExample'
+                id='accordionExample' style={{border:"1px solid black", padding:"2rem", borderRadius:"10px"}}
               >
+                 <div className="category-btns" style={{display:"flex", gap:"1rem", textAlign:"center", backgroundColor:"white", padding:"1rem", borderRadius:"0.5rem", boxShadow:"0 2px 10px rgba(0, 0, 0, 0.1)"}}>
+                <button style={{backgroundColor:"black", color:"white", padding:"0.5rem 1rem", borderRadius:"0.5rem", boxShadow:"0 2px 10px rgba(0, 0, 0, 0.1)"}}>Software Development</button>
+                <button style={{backgroundColor:"black", color:"white", padding:"0.5rem 1rem", borderRadius:"0.5rem", boxShadow:"0 2px 10px rgba(0, 0, 0, 0.1)"}}>IT Consulting</button>
+                <button style={{backgroundColor:"black", color:"white", padding:"0.5rem 1rem", borderRadius:"0.5rem", boxShadow:"0 2px 10px rgba(0, 0, 0, 0.1)"}}>Digital Transformation</button>
+              </div>
                 <div className='accordion-item'>
                   <h2 className='accordion-header' id='headingOne'>
                     <button

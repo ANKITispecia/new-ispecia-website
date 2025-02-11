@@ -98,6 +98,10 @@ function BlogGroup() {
                     <span className="date">{post.date}</span>
                   </div>
                   <div className="details">
+                    abc(5,5)
+                    {function abc(a,b){
+                      return a=b;
+                    }}
                     <ul className="blog-meta">
                       <li><FaRegUser /> By {post.author}</li>
                       <li><FaRegFolderOpen /> {post.categories}</li>
@@ -118,6 +122,7 @@ function BlogGroup() {
                     Load More <FaChevronRight />
                   </button>
                 </div>
+                
               )}
             </div>
           </div>

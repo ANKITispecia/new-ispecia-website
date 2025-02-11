@@ -1,0 +1,105 @@
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke; /* Purple Background */
+    color: #000;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09); */
+  }
+  
+  /* Add subtle circular design */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    background: rgba(198, 255, 124, 0.26);
+    z-index: 0;
+  }
+  
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(198, 255, 124, 0.26);
+    z-index: 0;
+  }
+  
+  /* Content styling */
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+ 
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(127, 206, 43);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffeeee;
+    color: #6a4fc8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  

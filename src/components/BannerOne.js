@@ -30,7 +30,7 @@ const BannerOne = () => {
                   data-aos-delay='100'
                   data-aos-duration='1500'
                 >
-                  DESIGNING FOR THE FUTURE
+                  Industries We Serve
                 </h6>
                 <h2
                   className='title'

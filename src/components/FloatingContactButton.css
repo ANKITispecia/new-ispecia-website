@@ -11,6 +11,10 @@
   outline: none;
 }
 
+/* .floating-contact-button:hover{
+  transform:rotateY(180deg);
+  transition: 0.5s;
+} */
 /* Contact Buttons Styling */
 .main-button,
 .whatsapp-button,
@@ -46,6 +50,7 @@
 .whatsapp-button:hover,
 .phone-button:hover {
   transform: scale(1.1);
+  
 }
 
 /* Contact Form Styling */

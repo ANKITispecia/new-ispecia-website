@@ -2,6 +2,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, Toaster } from 'react-hot-toast';
+import ContactForm from './ContactForm/ContactForm';
+import Landing from './ContactForm/Landing/Landing';
 const ContactMain = () => {
   const form = useRef();
 
@@ -38,8 +40,13 @@ const ContactMain = () => {
       <Toaster position="bottom-center" reverseOrder={false} />
       <>
         {/* contact area start */}
-        <div className="contact-area pd-top-120 pd-bottom-120 ">
+        <Landing  />
+        <ContactForm />
+       
+        {/* <div className="contact-area pd-top-120 pd-bottom-120 ">
+      
           <div className="container">
+            
             <div className="contact-page-inner bg-gray">
               <div className="section-title mb-4 pb-2">
                 <h2 className="title">Direct contact us? </h2>
@@ -106,7 +113,7 @@ const ContactMain = () => {
               </form>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* contact area end */}
         {/* contact list start */}
         <div className="contact-page-list">

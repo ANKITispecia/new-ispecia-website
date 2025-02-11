@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import {
@@ -21,11 +22,20 @@ const FooterTwo = () => {
             <div className="col-lg-3 col-md-6">
               <div className="widget widget_about">
                 <div className="thumb">
-                  <img src="assets/img/logo.png" alt="img" />
+                  <Image
+                   src="/assets/img/logofooter.png"
+                    alt="img"
+                    width={70}
+                    height={70}
+                    priority={true}
+                     />
                 </div>
                 <div className="details">
                   <p>
-                    Melbourne is simply is dumiomy is text Lorem Ipsum is simply
+                  Ispecia Technologies,an Indian-based IT company,
+                    provides 360-degree solutions to all sizes of  businesses.
+                    Its primary objective is to accomplish clients’ businesses
+                    in the online realm with innovative solutions.
                   </p>
                   <div className="subscribe mt-4">
                     <input type="text" placeholder="E-mail" />

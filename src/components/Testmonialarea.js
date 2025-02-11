@@ -39,7 +39,7 @@ const TestimonialGrid = () => {
 
   const handleMouseLeave = useCallback((id) => {
     const iframe = document.getElementById(`iframe-${id}`);
-    const src = iframe.src.split('?')[0]; // Remove autoplay on leave
+    const src = iframe.src.split('?')[0]; 
     iframe.src = src;
   }, []);
 

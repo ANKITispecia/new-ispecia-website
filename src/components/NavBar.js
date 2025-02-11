@@ -4,11 +4,14 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import MegaMenu from './ServiceMegaMenu/MegaMenu';
+import HireMegaMenu from './HireMegaMenu/HireMegaMenu';
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
   const [isImageError, setIsImageError] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   const menuActive = () => {
     setActive(!active);
@@ -106,54 +109,20 @@ const NavBar = () => {
           <div className={active ? 'collapse navbar-collapse sopen' : 'collapse navbar-collapse'} id="itech_main_menu">
             <ul className="navbar-nav menu-open text-lg-end">
               {/* Nav Links */}
-              <li className="menu-item-has-children mega-menu">
+              <li className="menu-item-has-children mega-menu" >
                 <Link href="/service" onClick={() => router.push('/service')}>Services</Link>
                 <div className="sub-menu hidden">
-                  <div className="row">
-                    {/* Columns for Mega Menu */}
-                    <div className="col-lg-3 col-xl-3 ">
-                      <ul>
-                        <li style={{ marginLeft: '50px' }}>
-                          <span className="menu-title">Our Services</span>
-                        </li>
-                        <li><Link href="/service/web-development">Web Development</Link></li>
-                        <li><Link href="/service/mobile-development">Mobile App Development</Link></li>
-                        <li><Link href="/service/crm">CRM</Link></li>
-                        <li><Link href="/service/ui-ux">UI/UX Design</Link></li>
-                        <li><Link href="/service/marketing">Marketing</Link></li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-3 col-xl-3">
-                      <ul>
-                        <li><span className="menu-title">Who We Offer Services To</span></li>
-                        <li>Startups</li>
-                        <li>Enterprises</li>
-                        <li>Non-Profits</li>
-                        <li>Agencies</li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-3 col-xl-3">
-                      <ul>
-                        <li><Link href="/service/website-development">Website Development</Link></li>
-                        <li><Link href="/service/web-app-development">Web App Development</Link></li>
-                        <li><Link href="/service/progressive-web-apps">Progressive Web App (PWA)</Link></li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-3 col-xl-3">
-                      <ul>
-                        <li><Link href="/service/graphic-design">Graphic Design</Link></li>
-                        <li><Link href="/service/software-development">Software Development</Link></li>
-                        <li><Link href="/service/seo-services">SEO Services</Link></li>
-                      </ul>
-                    </div>
-                  </div>
+                <MegaMenu />
                 </div>
               </li>
+
+
+
               <li className="menu-item-has-children">
                 <Link href="/about" onClick={() => router.push('/about')}>About</Link>
               </li>
               <li className="menu-item-has-children mega-menu">
-                <Link href="#">Development</Link>
+                <Link href="/Industries" >Industries</Link>
                 <div className="sub-menu">
                   <div className="row">
                     {/* Additional Mega Menu Columns */}
@@ -200,7 +169,12 @@ const NavBar = () => {
 
               {/* Other Nav Links */}
               <li><Link href="/portfolio">Portfolio</Link></li>
-              <li><Link href="/testimonial">Testimonial</Link></li>
+              <li className="menu-item-has-children mega-menu" >
+                <Link href="/hiring" onClick={() => router.push('/hiring')}>Hire Top Talent</Link>
+                <div className="sub-menu hidden">
+                <HireMegaMenu />
+                </div>
+              </li>
               <li className="menu-item-has-children">
                 <a href="/Careers" onClick={() => router.push('/Careers')}>Career</a>
               </li>
@@ -220,7 +194,6 @@ const NavBar = () => {
         /* Fullscreen Overlay */
         .popup-overlay {
           position: fixed;
-          
           width: 100%;
           height: 100vh;
           background: rgba(0, 0, 0, 0.6);

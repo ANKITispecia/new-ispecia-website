@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "category": "INSURANCE",
+      "title": "Empowered Fortune 500 Company",
+      "description":"We Partnered With AXA, World's 2nd Biggest Insurance Firm & Provided 80% Faster Roadside Assistance.",
+      "videoUrl": "https://tamediacdn.techaheadcorp.com/wp-content/uploads/2022/05/16051133/thm.mp4",
+      "service": "",
+      "industry": "Healthcare"
+    },
+    {
+      "id": 2,
+      "category": "IoT",
+      "title": "IoT-Powered Smart Homes",
+      "description":"We Leveraged IoT, Human-Centric Design & Powerful Tech To Bring A Never Seen Before Smart Home Solution.",
+      "videoUrl": "https://tamediacdn.techaheadcorp.com/wp-content/uploads/2023/12/16042731/JLL-VIDEO.mp4",
+      "service": "Web Development",
+      "industry": ""
+    },
+    {
+      "id": 3,
+      "category": "FITNESS",
+      "title": "The Healthy Mummy",
+      "description": "Sample description for fitness category.",
+      "videoUrl": "https://tamediacdn.techaheadcorp.com/wp-content/uploads/2024/02/16041102/plunge-5.mp4",
+      "service": "",
+      "industry": "Fintech"
+    },
+    {
+      "id": 4,
+      "category": "REAL ESTATE",
+      "title": "Real Estate Solutions",
+      "description": "Sample description for fitness category.",
+      "videoUrl": "https://tamediacdn.techaheadcorp.com/wp-content/uploads/2022/04/16051136/espn.mp4",
+      "service": "Cloud Solutions",
+      "industry": ""
+    }
+   
+  ]
