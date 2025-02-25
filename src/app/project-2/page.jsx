@@ -32,9 +32,7 @@ const page = () => {
      
 
       {/* Contact Area One */}
-      <div className="pd-bottom-120">
-        <ContactAreaOne />
-      </div>
+      
 
       
 
