@@ -1,6 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import ContactAreaOne from "@/components/ContactAreaOne";
-import CounterAreaOne from "@/components/CounterAreaOne";
 import FooterOne from "@/components/FooterOne";
 import NavBar from "@/components/NavBar";
 import ProjectAreaOne from "@/components/ProjectAreaOne";
