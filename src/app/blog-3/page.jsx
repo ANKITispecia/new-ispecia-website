@@ -1,4 +1,3 @@
-import BlogGroupThree from "@/components/BlogGroupThree";
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/FooterOne";
 import NavBar from "@/components/NavBar";
@@ -24,7 +23,7 @@ const page = () => {
       <Breadcrumb title={'Blog 03'} />
 
       {/* BlogGroupThree */}
-      <BlogGroupThree />
+     
 
       {/* Footer One */}
       <FooterOne />
