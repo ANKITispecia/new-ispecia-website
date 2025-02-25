@@ -1,5 +1,4 @@
 import AboutAreaSeven from '@/components/AboutAreaSeven';
-import AboutAreaSix from '@/components/AboutAreaSix';
 import AboutAreaTwo from '@/components/AboutAreaTwo';
 import Breadcrumb from '@/components/Breadcrumb';
 import TestimonialAbout from '@/components/TestimonialAbout';
