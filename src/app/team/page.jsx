@@ -1,11 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/FooterOne";
 import NavBar from "@/components/NavBar";
-import TeamAreaGroup from "@/components/TeamAreaGroup";
-
-
-
-
 
 export const metadata = {
   title: "Team || AglieTech - IT Solutions & Technology NEXT JS Template",
@@ -24,7 +19,7 @@ const page = () => {
       <Breadcrumb title={"Team"} />
 
       {/* Team Area Group */}
-      <TeamAreaGroup />
+     
 
       {/* Footer One */}
       <FooterOne />
